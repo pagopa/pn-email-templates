@@ -6,10 +6,10 @@
       <mj-all font-family="Titillium Web, Arial" />
     </mj-attributes>
     <mj-style>
-      /* :root {
+      :root {
         color-scheme: light dark;
         supported-color-schemes: light dark;
-      } */
+      }
 
       body {
         background-color: #FFFFFF;
@@ -18,7 +18,6 @@
       h1 {
         font-size: 32px;
         line-height: 40px;
-        color: #17324D;
         font-weight: 700;
         text-align: left;
       }
@@ -31,11 +30,34 @@
         margin-top: 0px;
       }
 
+      .text div {
+        color: #17324D !important;
+      }
+
+      .disclaimer div {
+        color: #5C6F82 !important;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #212327;
+          color: #FFFFFF;
+        }
+
+        .text div {
+          color: #FFFFFF !important;
+        }
+
+        .disclaimer div {
+          color: #CCD4DC !important;
+        }
+      }
+
     </mj-style>
-    <!-- <mj-raw>
+    <mj-raw>
       <meta name="color-scheme" content="light dark">
       <meta name="supported-color-schemes" content="light dark">
-    </mj-raw> -->
+    </mj-raw>
   </mj-head>
   <mj-body>
     <mj-wrapper>
@@ -49,13 +71,13 @@
           </mj-text>
           <mj-spacer height="16px" />
           <!-- Titolo e sottotitolo -->
-          <mj-text color="#17324D" font-weight="bold" align="left" css-class="titolo">
+          <mj-text css-class="text" font-weight="bold" align="left">
             <h1 style="font-size:32px; line-height:40px;">Avviso di notifica del {gg/mm/aaaa}</h1>
           </mj-text>
-          <mj-text font-size="16px" line-height="24px" color="#17324D" font-weight="400" align="left">
+          <mj-text css-class="text" font-size="16px" line-height="24px" font-weight="400" align="left">
             <p>Gentile {nome} {cognome},</p>
           </mj-text>
-          <mj-text font-size="16px" line-height="24px" color="#17324D" font-weight="400" align="left">
+          <mj-text css-class="text" font-size="16px" line-height="24px" font-weight="400" align="left">
             <p>hai ricevuto una notifica tramite Piattaforma Notifiche con oggetto <strong>{Oggetto della notifica}</strong> e Codice IUN <strong>{YYYYMM-1-ABCD-EFGH-X}</strong>.</p>
             <p>Per accedere agli atti:</p>
             <ol>
@@ -66,13 +88,13 @@
             <!-- Attachment -->
             <p>Se preferisci ritirare gli atti in versione cartacea presso un Ufficio Postale o delegare qualcuno a farlo, scarica il documento allegato: oltre alle informazioni di questo messaggio, contiene il modulo per la delega e il codice QR per il ritiro.</p>
             <!-- FAQ -->
-            <p>Ricorda che puoi accedere agli atti entro 120 giorni dalla data di perfezionamento. <a href="${PNFaqURL}" style="color: #0073E6">Quando avviene il perfezionamento di una notifica?</a>.</p>
+            <p>Ricorda che puoi accedere agli atti entro 120 giorni dalla data di perfezionamento. <a href="${PNFaqURL}" style="color: #0073E6">Quando avviene il perfezionamento di una notifica?</a></p>
           </mj-text>
-          <mj-text font-size="16px" line-height="24px" color="#17324D">
+          <mj-text css-class="text" font-size="16px" line-height="24px">
             <p>A presto,<br aria-hidden="true">Piattaforma Notifiche</p>
           </mj-text>
           <mj-spacer height="8px" />
-          <mj-text font-size="14px" line-height="20px" color="#5C6F82">
+          <mj-text css-class="disclaimer" font-size="14px" line-height="20px">
             <p>Ricevi questa comunicazione perché la tua PEC fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perché l’hai eletta come domicilio solo per il mittente di questo messaggio. Se hai eletto questa PEC come domicilio solo per il mittente di questo messaggio, ti consigliamo di associarla anche nella sezione “I tuoi dati” di Piattaforma Notifiche. In questo modo, riceverai le notifiche solo per via digitale e risparmerai sui costi di invio del cartaceo.</p>
           </mj-text>
         </mj-column>
