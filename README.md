@@ -33,3 +33,7 @@ Templates are compatible with the following clients:
 - AOL Mail
 - Outlook.com Mail (dark mode included)
 - Yahoo! Mail
+
+### Other mail templates
+
+- [Area Riservata (former SelfCare)](https://github.com/pagopa/selfcare-email-templates)
