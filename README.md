@@ -15,3 +15,21 @@ The minified HTML output should be exported and committed with the template itse
 ## How to deploy changes
 
 These exported templates are processed and sent by [pn-delivery-push](https://github.com/pagopa/pn-delivery-push).
+
+## Compatibility
+
+Templates are compatible with the following clients:
+
+- Apple Mail 13+ (dark mode included)
+- Gmail Web app
+- OL Office 365 (dark mode included)
+- Outlook 2013, 2016, 2019, 2021
+- Windows 10 Mail (dark mode included)
+- Windows 11 Mail
+- Gmail App (Android 6+)
+- Gmail App (iOS 13.1+)
+- iPad (iOS 13.1+)
+- iPhone (iOS 13.1+)
+- AOL Mail
+- Outlook.com Mail (dark mode included)
+- Yahoo! Mail
