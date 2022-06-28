@@ -5,45 +5,50 @@
     <mj-attributes>
       <mj-all font-family="Titillium Web, Arial" />
     </mj-attributes>
-    <mj-raw>
-      <style type="text/css">
-        body {
-          background-color: #FFFFFF;
-        }
+    <mj-style>
+      /* :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      } */
 
-        h1 {
-          font-size: 32px;
-          line-height: 40px;
-          color: #17324D;
-          font-weight: 700;
-          text-align: left;
-        }
+      body {
+        background-color: #FFFFFF;
+      }
 
-        h4 {
-          margin-bottom: 0px;
-        }
+      h1 {
+        font-size: 32px;
+        line-height: 40px;
+        color: #17324D;
+        font-weight: 700;
+        text-align: left;
+      }
 
-        p {
-          margin-top: 0px;
-        }
-      </style>
-    </mj-raw>
+      h4 {
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-top: 0px;
+      }
+
+    </mj-style>
+    <!-- <mj-raw>
+      <meta name="color-scheme" content="light dark">
+      <meta name="supported-color-schemes" content="light dark">
+    </mj-raw> -->
   </mj-head>
   <mj-body>
     <mj-wrapper>
-      <!-- logo pagoPA -->
-      <mj-section background-color="#ffffff">
+      <mj-section>
         <mj-column>
+          <!-- logo pagoPA -->
           <mj-text>
             <mj-raw>
               <img src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png" alt="Logo PagoPA S.p.A." class="logopagopa" width="116" align="left" style="display:block;width:116px;" />
             </mj-raw>
           </mj-text>
-        </mj-column>
-      </mj-section>
-      <!-- Titolo e sottotitolo -->
-      <mj-section background-color="#ffffff">
-        <mj-column>
+          <mj-spacer height="16px" />
+          <!-- Titolo e sottotitolo -->
           <mj-text color="#17324D" font-weight="bold" align="left" css-class="titolo">
             <h1 style="font-size:32px; line-height:40px;">Avviso di notifica del {gg/mm/aaaa}</h1>
           </mj-text>
