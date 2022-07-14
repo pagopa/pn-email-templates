@@ -1,7 +1,7 @@
 <mjml lang="it">
   <mj-head>
     <mj-title>Hai ricevuto una notifica</mj-title>
-     <mj-font name="Titillium Web" href="https://fonts.googleapis.com/css?family=Titillium+Web:regular,bold" />
+    <mj-font name="Titillium Web" href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css" />
     <mj-attributes>
       <mj-all font-family="Titillium Web, Arial" />
     </mj-attributes>
