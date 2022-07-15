@@ -95,7 +95,8 @@
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
             <!-- Perfezionamento Notifica -->
-            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica. <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a></p>
+            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica.
+              <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a></p> -->
             <!--  Avviso su PEC -->
             <p>Se non hai un indirizzo PEC, leggi subito la notifica: eviterai di ricevere la raccomandata cartacea e risparmierai sui costi di invio.</p>
           </mj-text>

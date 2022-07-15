@@ -95,11 +95,13 @@
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
             <!-- Perfezionamento Notifica -->
-            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica. <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a></p>
+            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica.
+              <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
+            </p>
             <!-- Attachment -->
             <p>Se preferisci ritirare gli atti in versione cartacea presso un Ufficio Postale o vuoi delegare qualcuno a farlo, scarica il documento allegato: oltre alle informazioni di questa e-mail, contiene il modulo per la delega e il codice QR per il ritiro.</p>
             <!-- FAQ -->
-            <p>Per maggiori informazioni, <a href="${PNFaqURL}" class="link" style="color: #0073E6">consulta le nostre FAQ.</a></p>
+            <!-- <p>Per maggiori informazioni, <a href="${PNFaqURL}" class="link" style="color: #0073E6">consulta le nostre FAQ.</a></p> -->
           </mj-text>
           <mj-text css-class="text" font-size="16px" line-height="24px">
             <p>A presto,<br aria-hidden="true">Piattaforma Notifiche</p>

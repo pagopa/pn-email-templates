@@ -95,7 +95,9 @@
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
             <!-- Perfezionamento Notifica -->
-            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica. <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a></p>
+            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica.
+              <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
+            </p>
           </mj-text>
           <mj-text css-class="text" font-size="16px" line-height="24px">
             <p>A presto,<br aria-hidden="true">Piattaforma Notifiche</p>
