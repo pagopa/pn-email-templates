@@ -89,7 +89,8 @@
             <p>hai ricevuto una notifica da parte di <strong>{Nome ente}</strong> con oggetto <strong>{Oggetto della notifica}</strong> e Codice IUN (Identificativo Univoco di Notifica) <strong>{YYYYMM-1-ABCD-EFGH-X}</strong>.</p>
             <p>Per leggerla e scaricare i documenti allegati:</p>
             <ol>
-              <li>vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">notifichedigitali.it</a>;</li>
+              <!-- Don't include https:// in the URL label -->
+              <li>vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">{piattaformaNotificheURLLabel}</a>;</li>
               <li>entra con identità digitale SPID o Carta di Identità Elettronica (CIE) 3.0;</li>
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
@@ -105,7 +106,7 @@
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text css-class="disclaimer" font-size="14px" line-height="20px">
-            <p>Ricevi questa e-mail perché la tua PEC fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perché in passato l’hai comunicata all’ente che ti ha inviato la notifica. Se vuoi fare delle modifiche o aggiungere altri recapiti, vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">notifichedigitali.it</a> e seleziona “I tuoi recapiti”.</p>
+            <p>Ricevi questa e-mail perché la tua PEC fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perché in passato l’hai comunicata all’ente che ti ha inviato la notifica. Se vuoi fare delle modifiche o aggiungere altri recapiti, vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">{piattaformaNotificheURLLabel}</a> e seleziona “I tuoi recapiti”.</p>
           </mj-text>
         </mj-column>
       </mj-section>
