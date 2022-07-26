@@ -95,16 +95,18 @@
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
             <!-- Perfezionamento Notifica -->
-            <p>I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica.
+            <p>Questa comunicazione non contiene allegati, poiché i documenti sono disponibili online su Piattaforma Notifiche per 120 giorni dal perfezionamento della notifica.
               <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
             </p>
+            <!-- Maggiori informazioni -->
+            <p>Per maggiori informazioni su Piattaforma Notifiche, visita <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">{piattaformaNotificheURLLabel}</a>.</p>
           </mj-text>
           <mj-text css-class="text" font-size="16px" line-height="24px">
             <p>A presto,<br aria-hidden="true">Piattaforma Notifiche</p>
           </mj-text>
           <mj-spacer height="8px" />
           <mj-text css-class="disclaimer" font-size="14px" line-height="20px">
-            <p>Ricevi questo messaggio perché in passato hai comunicato questo indirizzo PEC all’ente che ti ha inviato la notifica o perché l’hai inserito come recapito legale in Piattaforma Notifiche. Se vuoi fare delle modifiche o aggiungere altri recapiti, vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">{piattaformaNotificheURLLabel}</a> e seleziona “I tuoi recapiti”.</p>
+            <p>Ricevi questo messaggio perché in passato hai comunicato questo indirizzo PEC all’ente che ti ha inviato la notifica o perché l’hai inserito come recapito in Piattaforma Notifiche o perché è in un registro pubblico. Se vuoi fare delle modifiche o aggiungere altri recapiti, vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">{piattaformaNotificheURLLabel}</a> e seleziona “I tuoi recapiti”.</p>
           </mj-text>
         </mj-column>
       </mj-section>

@@ -34,6 +34,6 @@ Templates are compatible with the following clients:
 - Outlook.com Mail (dark mode included)
 - Yahoo! Mail
 
-### Other mail templates
+### Related mail templates
 
 - [Area Riservata (former SelfCare)](https://github.com/pagopa/selfcare-email-templates)
