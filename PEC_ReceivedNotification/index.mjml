@@ -99,7 +99,7 @@
               <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
             </p>
             <!-- Maggiori informazioni -->
-            <p>Per maggiori informazioni su Piattaforma Notifiche, visita <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073E6">${piattaformaNotificheURLLabel}</a>.</p>
+            <p>Per maggiori informazioni su Piattaforma Notifiche, visita <a title="Continua sul sito informativo di Piattaforma Notifiche" class="link" href="${piattaformaNotificheLandingURL}" style="color: #0073E6">${piattaformaNotificheLandingURLLabel}</a>.</p>
           </mj-text>
           <mj-text css-class="text" font-size="16px" line-height="24px">
             <p>A presto,<br aria-hidden="true">Piattaforma Notifiche</p>
