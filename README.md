@@ -36,5 +36,6 @@ Templates are compatible with the following clients:
 
 ### Related mail templates
 
+- [IO App](https://github.com/pagopa/io-app-email-templates)
 - [Area Riservata (former SelfCare)](https://github.com/pagopa/selfcare-email-templates)
 - [pagoPA](https://github.com/pagopa/pagopa-email-templates)
