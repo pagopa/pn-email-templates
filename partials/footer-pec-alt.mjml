@@ -1,0 +1,20 @@
+<mj-section css-class="section" padding-bottom="16px" padding-top="0px">
+  <mj-column>
+    <mj-text css-class="footer-text" font-size="14px" line-height="20px">
+      <p>
+        Ricevi questa e-mail perché la tua PEC fa parte di uno dei registri
+        previsti dal Codice Amministrazione Digitale o perché in passato l’hai
+        comunicata all’ente che ti ha inviato la notifica. Se vuoi fare delle
+        modifiche o aggiungere altri recapiti, vai su
+        <a
+          title="Continua su Piattaforma Notifiche"
+          class="link"
+          href="${piattaformaNotificheURL}"
+          style="color: #0073e6"
+          >${piattaformaNotificheURLLabel}</a
+        >
+        e seleziona “I tuoi recapiti”.
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>

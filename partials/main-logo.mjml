@@ -1,0 +1,23 @@
+<mj-section css-class="header" padding-bottom="16px" padding-top="16px">
+  <mj-column>
+    <mj-image
+      css-class="light-img"
+      width="100px"
+      align="left"
+      src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png"
+    />
+    <mj-raw>
+      <div
+        class="dark-img"
+        style="mso-hide: all; display: none; padding: 10px 25px"
+      >
+        <img
+          src="../assets/logo_pagopa_white.png"
+          width="100px"
+          class="dark-img"
+          style="display: none"
+        />
+      </div>
+    </mj-raw>
+  </mj-column>
+</mj-section>

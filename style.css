@@ -1,0 +1,118 @@
+:root {
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
+}
+
+body,
+.mail-body {
+  background-color: #FFFFFF;
+}
+
+.header {
+  background-color: #FFFFFF;
+  /* border-top: 8px solid #0073E6; */
+}
+
+.section {
+  background-color: #FFFFFF;
+}
+
+.title div {
+  /* Text Primary */
+  color: #17324D !important;
+}
+
+
+.text div {
+  color: #17324D !important;
+}
+
+.footer-text,
+.footer-text div {
+  color: #5C6F82 !important;
+}
+
+.link {
+  color: #0073E6 !important;
+}
+
+.footer-text a,
+.text a {
+  color: #0073E6 !important;
+}
+
+p {
+  margin-top: 0px;
+}
+
+@media (prefers-color-scheme: light) {
+
+  .dark-img,
+  [data-ogsc] .dark-img {
+    display: none !important;
+    mso-hide: all !important;
+  }
+
+  .light-img,
+  [data-ogsc] .light-img {
+    display: block;
+    display: block !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body,
+  .mail-body {
+    background-color: #323232;
+  }
+
+  .header {
+    background-color: #323232;
+    /* border-top: 8px solid #3da2ff; */
+  }
+
+  .section {
+    background-color: #323232;
+  }
+
+  .title div {
+    color: #ffffff !important;
+  }
+
+  .text div {
+    color: #eeeeee !important;
+  }
+
+  .footer-text,
+  .footer-text div {
+    color: #CCD4DC !important;
+  }
+
+  .footer-text a,
+  .text a {
+    color: #94C4F4 !important;
+    /* Primary Light in HSL - L = +25 */
+  }
+
+  /* IMAGES */
+  /* Source: https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/ */
+
+  .dark-img,
+  [data-ogsc] .dark-img {
+    display: block !important;
+    overflow: visible !important;
+    float: none !important;
+    line-height: auto !important;
+    margin-top: 0px !important;
+    visibility: inherit !important;
+  }
+
+  .light-img,
+  [data-ogsc] .light-img {
+    display: none;
+    display: none !important;
+    mso-hide: all !important;
+  }
+
+}
