@@ -1,4 +1,4 @@
-<mj-section css-class="header" padding-bottom="16px" padding-top="16px">
+<mj-section css-class="header" padding-bottom="16px" padding-top="0px">
   <mj-column>
     <mj-image
       css-class="light-img"

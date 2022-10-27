@@ -24,12 +24,21 @@
           <!-- Title -->
           <mj-text
             css-class="text"
-            font-weight="bold"
+            font-weight="700"
             align="left"
             padding-top="16px"
+            padding-bottom="16px"
+            color="#17324D"
           >
             <!-- H4 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; line-height: 40px; margin: 0">
+            <h1
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                margin: 0;
+              "
+            >
               Avviso di avvenuta ricezione del ${gg/mm/aaaa}
             </h1>
           </mj-text>
@@ -39,30 +48,34 @@
             css-class="text"
             font-size="16px"
             line-height="24px"
-            font-weight="regular"
+            font-weight="400"
             align="left"
             padding-top="16px"
             padding-bottom="0px"
+            color="#17324D"
           >
-            <p>Gentile ${nome} ${cognome},</p>
+            <p style="margin-top: 0px">Gentile ${nome} ${cognome},</p>
           </mj-text>
           <mj-text
             css-class="text"
             font-size="16px"
             line-height="24px"
-            font-weight="regular"
+            font-weight="400"
             align="left"
             padding-top="0px"
+            color="#17324D"
           >
-            <p>
+            <p style="margin-top: 0px">
               hai ricevuto una notifica da parte di
               <strong>${Nome ente}</strong> con oggetto
               <strong>${Oggetto della notifica}</strong> e Codice IUN
               (Identificativo Univoco di Notifica)
               <strong>${YYYYMM-1-ABCD-EFGH-X}</strong>.
             </p>
-            <p>Per leggerla e scaricare i documenti allegati:</p>
-            <ol>
+            <p style="margin-top: 0px">
+              Per leggerla e scaricare i documenti allegati:
+            </p>
+            <ol style="margin-top: 0px">
               <!-- Don't include https:// in the URL label -->
               <li>
                 vai su
@@ -81,13 +94,13 @@
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
             <!-- Perfezionamento Notifica -->
-            <p>
+            <p style="margin-top: 0px">
               I documenti allegati sono disponibili online per 120 giorni dal
               perfezionamento della notifica.
               <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
             </p>
             <!-- Attachment -->
-            <p>
+            <p style="margin-top: 0px">
               Se preferisci ritirare gli atti in versione cartacea presso un
               Ufficio Postale o vuoi delegare qualcuno a farlo, scarica il
               documento allegato: oltre alle informazioni di questa e-mail,
@@ -101,8 +114,11 @@
             font-size="16px"
             line-height="24px"
             padding-bottom="0px"
+            color="#17324D"
           >
-            <p>A presto,<br aria-hidden="true" />Piattaforma Notifiche</p>
+            <p style="margin-top: 0px">
+              A presto,<br aria-hidden="true" />Piattaforma Notifiche
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>

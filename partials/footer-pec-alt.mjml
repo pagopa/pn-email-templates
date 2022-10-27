@@ -1,7 +1,12 @@
 <mj-section css-class="section" padding-bottom="16px" padding-top="0px">
   <mj-column>
-    <mj-text css-class="footer-text" font-size="14px" line-height="20px">
-      <p>
+    <mj-text
+      css-class="footer-text"
+      font-size="14px"
+      line-height="20px"
+      color="#5C6F82"
+    >
+      <p style="margin-top: 0px">
         Ricevi questa e-mail perché la tua PEC fa parte di uno dei registri
         previsti dal Codice Amministrazione Digitale o perché in passato l’hai
         comunicata all’ente che ti ha inviato la notifica. Se vuoi fare delle

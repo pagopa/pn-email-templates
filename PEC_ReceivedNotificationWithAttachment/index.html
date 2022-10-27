@@ -228,7 +228,7 @@
                 <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;">
                   <tbody>
                     <tr>
-                      <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:16px;padding-top:16px;text-align:center;">
+                      <td style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:16px;padding-top:0px;text-align:center;">
                         <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:600px;" ><![endif]-->
                         <div class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;">
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
@@ -269,37 +269,42 @@
                           <table border="0" cellpadding="0" cellspacing="0" role="presentation" style="vertical-align:top;" width="100%">
                             <tbody>
                               <tr>
-                                <td align="left" class="text" style="font-size:0px;padding:10px 25px;padding-top:16px;word-break:break-word;">
-                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:13px;font-weight:bold;line-height:1;text-align:left;color:#000000;">
+                                <td align="left" class="text" style="font-size:0px;padding:10px 25px;padding-top:16px;padding-bottom:16px;word-break:break-word;">
+                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:13px;font-weight:700;line-height:1;text-align:left;color:#17324D;">
                                     <!-- H4 Desktop (from MUI Italia)-->
-                                    <h1 style="font-size: 32px; line-height: 40px; margin: 0"> Avviso di avvenuta ricezione del ${gg/mm/aaaa} </h1>
+                                    <h1 style="
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 40px;
+                margin: 0;
+              "> Avviso di avvenuta ricezione del ${gg/mm/aaaa} </h1>
                                   </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td align="left" class="text" style="font-size:0px;padding:10px 25px;padding-top:16px;padding-bottom:0px;word-break:break-word;">
-                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#000000;">
-                                    <p>Gentile ${nome} ${cognome},</p>
+                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#17324D;">
+                                    <p style="margin-top: 0px">Gentile ${nome} ${cognome},</p>
                                   </div>
                                 </td>
                               </tr>
                               <tr>
                                 <td align="left" class="text" style="font-size:0px;padding:10px 25px;padding-top:0px;word-break:break-word;">
-                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:regular;line-height:24px;text-align:left;color:#000000;">
-                                    <p> hai ricevuto una notifica da parte di <strong>${Nome ente}</strong> con oggetto <strong>${Oggetto della notifica}</strong> e Codice IUN (Identificativo Univoco di Notifica) <strong>${YYYYMM-1-ABCD-EFGH-X}</strong>. </p>
-                                    <p>Per leggerla e scaricare i documenti allegati:</p>
-                                    <ol>
+                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;font-weight:400;line-height:24px;text-align:left;color:#17324D;">
+                                    <p style="margin-top: 0px"> hai ricevuto una notifica da parte di <strong>${Nome ente}</strong> con oggetto <strong>${Oggetto della notifica}</strong> e Codice IUN (Identificativo Univoco di Notifica) <strong>${YYYYMM-1-ABCD-EFGH-X}</strong>. </p>
+                                    <p style="margin-top: 0px"> Per leggerla e scaricare i documenti allegati: </p>
+                                    <ol style="margin-top: 0px">
                                       <!-- Don't include https:// in the URL label -->
                                       <li> vai su <a title="Continua su ${piattaformaNotificheURLLabel}" class="link" href="${piattaformaNotificheURL}" style="color: #0073e6">${piattaformaNotificheURLLabel}</a>; </li>
                                       <li> entra con identità digitale SPID o Carta di Identità Elettronica (CIE) 3.0; </li>
                                       <li>seleziona “Notifiche” dal menu laterale.</li>
                                     </ol>
                                     <!-- Perfezionamento Notifica -->
-                                    <p> I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica.
+                                    <p style="margin-top: 0px"> I documenti allegati sono disponibili online per 120 giorni dal perfezionamento della notifica.
                                       <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
                                     </p>
                                     <!-- Attachment -->
-                                    <p> Se preferisci ritirare gli atti in versione cartacea presso un Ufficio Postale o vuoi delegare qualcuno a farlo, scarica il documento allegato: oltre alle informazioni di questa e-mail, contiene il modulo per la delega e il codice QR per il ritiro. </p>
+                                    <p style="margin-top: 0px"> Se preferisci ritirare gli atti in versione cartacea presso un Ufficio Postale o vuoi delegare qualcuno a farlo, scarica il documento allegato: oltre alle informazioni di questa e-mail, contiene il modulo per la delega e il codice QR per il ritiro. </p>
                                     <!-- FAQ -->
                                     <!-- <p>Per maggiori informazioni, <a href="${PNFaqURL}" class="link" style="color: #0073E6">consulta le nostre FAQ.</a></p> -->
                                   </div>
@@ -307,8 +312,8 @@
                               </tr>
                               <tr>
                                 <td align="left" class="text" style="font-size:0px;padding:10px 25px;padding-bottom:0px;word-break:break-word;">
-                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;line-height:24px;text-align:left;color:#000000;">
-                                    <p>A presto,<br aria-hidden="true" />Piattaforma Notifiche</p>
+                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:16px;line-height:24px;text-align:left;color:#17324D;">
+                                    <p style="margin-top: 0px"> A presto,<br aria-hidden="true" />Piattaforma Notifiche </p>
                                   </div>
                                 </td>
                               </tr>
@@ -360,8 +365,8 @@
                             <tbody>
                               <tr>
                                 <td align="left" class="footer-text" style="font-size:0px;padding:10px 25px;word-break:break-word;">
-                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:14px;line-height:20px;text-align:left;color:#000000;">
-                                    <p> Ricevi questa e-mail perché la tua PEC fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perché in passato l’hai comunicata all’ente che ti ha inviato la notifica. Se vuoi fare delle modifiche o aggiungere altri recapiti, vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073e6">${piattaformaNotificheURLLabel}</a> e seleziona “I tuoi recapiti”. </p>
+                                  <div style="font-family:Titillium Web, system-ui, sans-serif;font-size:14px;line-height:20px;text-align:left;color:#5C6F82;">
+                                    <p style="margin-top: 0px"> Ricevi questa e-mail perché la tua PEC fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perché in passato l’hai comunicata all’ente che ti ha inviato la notifica. Se vuoi fare delle modifiche o aggiungere altri recapiti, vai su <a title="Continua su Piattaforma Notifiche" class="link" href="${piattaformaNotificheURL}" style="color: #0073e6">${piattaformaNotificheURLLabel}</a> e seleziona “I tuoi recapiti”. </p>
                                   </div>
                                 </td>
                               </tr>
