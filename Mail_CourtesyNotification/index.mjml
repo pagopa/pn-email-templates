@@ -81,8 +81,8 @@
                 >;
               </li>
               <li>
-                entra con identità digitale SPID o Carta di Identità Elettronica
-                (CIE) 3.0;
+                accedi con identità digitale SPID o Carta di Identità
+                Elettronica (CIE) 3.0;
               </li>
               <li>seleziona “Notifiche” dal menu laterale.</li>
             </ol>
@@ -107,7 +107,9 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px">A presto,<br aria-hidden="true" />Piattaforma Notifiche</p>
+            <p style="margin-top: 0px">
+              A presto,<br aria-hidden="true" />Piattaforma Notifiche
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>
