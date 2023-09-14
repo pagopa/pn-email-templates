@@ -2,7 +2,9 @@
   color-scheme: light dark;
   supported-color-schemes: light dark;
 }
-
+p {
+  font-size: 18px;
+}
 body,
 .mail-body {
   background-color: #FFFFFF;
@@ -58,6 +60,13 @@ p {
     display: block;
     display: block !important;
   }
+    .column-logo {
+      min-width: 116px;
+      width: auto !important;
+    }
+    .column-text {
+      width: auto !important;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -114,5 +123,12 @@ p {
     display: none !important;
     mso-hide: all !important;
   }
+    .column-logo {
+      min-width: 116px;
+      width: auto !important;
+    }
+    .column-text {
+      width: auto !important;
+    }
 
 }

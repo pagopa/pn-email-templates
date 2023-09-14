@@ -6,18 +6,15 @@
       line-height="20px"
       color="#5C6F82"
     >
-      <p style="margin-top: 0px">
-        Ricevi questo messaggio perché hai inserito questo indirizzo email tra i
-        recapiti di cortesia di Piattaforma Notifiche. Se vuoi fare delle
-        modifiche o aggiungere altri recapiti, vai su
+      <p style="margin-top: 0px; font-size: 14px">
+        Ricevi questa comunicazione perché hai inserito il tuo indirizzo e-mail tra i recapiti di cortesia di SEND. Per modificare i recapiti o aggiungerne altri,
         <a
           title="Continua su Piattaforma Notifiche"
           class="link"
-          href="${piattaformaNotificheURL}"
+          href="${piattaformaNotificheURL}recapiti"
           style="color: #0073e6"
-          >${piattaformaNotificheURLLabel}</a
-        >
-        e seleziona “I tuoi recapiti”.
+          >vai ai tuoi recapiti</a
+        >.
       </p>
     </mj-text>
   </mj-column>
