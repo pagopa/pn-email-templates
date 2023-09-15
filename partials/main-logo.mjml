@@ -1,12 +1,18 @@
 <mj-section css-class="header"  padding="0">
-  <mj-column padding="0">
-  <!-- old logo -> src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png" -->
+  <mj-column padding="0" width="100%">
+  <!-- old logo -> src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png" 
+  
+  
+  
+  src="${sendLogoLink}"
+  
+  -->
     <mj-image
       css-class="light-img"
       width="116px"
       align="left"
       padding-right="0"
-      src="${sendLogoLink}"
+      src="https://www.dev.notifichedigitali.it/static/generic_assets/aar-logo-short-small.png"
       alt="SEND - Servizio Notifiche Digitali"
       
     />
