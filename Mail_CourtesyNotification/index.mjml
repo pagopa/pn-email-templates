@@ -101,7 +101,7 @@
             Se non hai una PEC e visualizzi i documenti entro 5 giorni (120 ore) dall’invio del messaggio, non riceverai la notifica tramite raccomandata.
             </p>
             <p style="font-size:14px; line-height:22px">
-            SEND è uno strumento che rende l’invio di notifiche da parte della Pubblica Amministrazione più sicuro, efficiente ed economico. <a href="https://notifichedigitali.pagopa.it/" title="Scopri di più">Scopri di più</a>
+            SEND è uno strumento che rende l’invio di notifiche da parte della Pubblica Amministrazione più sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di più">Scopri di più</a>
             </p>
           </mj-text>
           <mj-text
