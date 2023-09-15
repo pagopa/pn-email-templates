@@ -117,12 +117,6 @@ p {
     visibility: inherit !important;
   }
 
-  .light-img,
-  [data-ogsc] .light-img {
-    display: none;
-    display: none !important;
-    mso-hide: all !important;
-  }
     .column-logo {
       min-width: 116px;
       width: auto !important;

@@ -8,22 +8,7 @@
       padding-right="0"
       src="https://www.dev.notifichedigitali.it/static/generic_assets/aar-logo-short-small.png"
       alt="SEND - Servizio Notifiche Digitali"
-      fluid-on-mobile="true"
+      
     />
-    <mj-raw>
-      <div
-        class="dark-img"
-        style="mso-hide: all; display: none; padding: 10px 25px"
-      >
-        <img
-          src="https://www.dev.notifichedigitali.it/static/generic_assets/aar-logo-short-small.png"
-          width="116px"
-          class="dark-img"
-          style="display: none"
-          alt="SEND - Servizio Notifiche Digitali"
-          fluid-on-mobile="true"
-        />
-      </div>
-    </mj-raw>
   </mj-column>
 </mj-section>
