@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Avviso di avvenuta ricezione del ${gg/mm/aaaa}</mj-title>
+    <mj-title>Hai ricevuto una notifica - IUN: ${notification.iun}</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -18,7 +18,13 @@
     <mj-include path="../style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
-      <mj-include path="../partials/main-logo.mjml" />
+      <!-- <mj-include path="../partials/main-logo.mjml" /> -->
+      <mj-raw>
+        <div class="text" style="text-align: left; margin-bottom: 32px;">
+          <img alt="SEND - Servizio Notifiche Digitali" src="https://www.dev.notifichedigitali.it/static/generic_assets/aar-logo-short-small.png" style="display: block;width: 116px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;padding: 10px 25px"
+          width="116">
+        </div>
+      </mj-raw>
 
       <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
         <mj-column>
@@ -33,9 +39,8 @@
             font-size="32px"
             line-height="40px"
           >
-            <!-- H4 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px;
-                font-weight: 700; line-height: 40px; margin: 0;">
+            <!-- H1 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
               Hai ricevuto una notifica - IUN: ${notification.iun}
             </h1>
           </mj-text>
@@ -62,10 +67,10 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; font-size: 18px; line-height:28px">
+            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
               Hai ricevuto una notifica su SEND - Servizio Notifiche Digitali.
             </p>
-            <ul css-class="info-list" style="list-style-type:none; margin: 40px 0; padding-left:0">
+            <ul css-class="info-list" style="list-style-type:none; margin: 40px 0; padding-left:0; margin-left:0">
               <li style="padding-left:0; margin-left:0">
                 <strong>Mittente</strong>: ${notification.sender.paDenomination}
               </li>
@@ -76,7 +81,7 @@
                 <strong>Codice IUN</strong>: ${notification.iun}
               </li>
             </ul>
-            <p style="margin-top: 0px; font-size: 18px; line-height:28px">
+            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
               Una notifica è una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o più documenti.
             </p>
             <p style="margin-top: 20px; font-size: 18px; line-height:28px">

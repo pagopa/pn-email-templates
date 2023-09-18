@@ -1,5 +1,5 @@
 <mj-section css-class="header"  padding="0">
-  <mj-column padding="0" width="100%">
+  <mj-column padding="0" width="100px">
   <!-- old logo -> src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png" 
   
   

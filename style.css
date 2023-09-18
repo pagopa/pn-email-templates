@@ -4,6 +4,7 @@
 }
 p {
   font-size: 18px;
+  margin-top: 0px;
 }
 body,
 .mail-body {
@@ -39,6 +40,10 @@ body,
   line-height: 20px !important
 }
 
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
 .link {
   color: #0073E6 !important;
 }
@@ -48,9 +53,6 @@ body,
   color: #0073E6 !important;
 }
 
-p {
-  margin-top: 0px;
-}
 .info-list {
   list-style-type:none; 
   margin: 40px 0;
