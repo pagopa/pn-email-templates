@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Avviso di avvenuta ricezione del ${gg/mm/aaaa}</mj-title>
+    <mj-title>Hai ricevuto una notifica - IUN: ${notification.iun}</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -18,97 +18,88 @@
     <mj-include path="../style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
-      <mj-include path="../partials/main-logo.mjml" />
+      <!-- <mj-include path="../partials/main-logo.mjml" /> -->
+      <mj-raw>
+        <div class="text" style="text-align: left; margin-bottom: 32px;">
+          <img alt="SEND - Servizio Notifiche Digitali" src="data:image/png;base64, ${logoBase64}" style="display: block;width: 116px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;padding: 10px 25px"
+          width="116">
+        </div>
+      </mj-raw>
+
       <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
         <mj-column>
           <!-- Title -->
           <mj-text
             css-class="text"
-            font-weight="bold"
+            font-weight="700"
             align="left"
             padding-top="16px"
             padding-bottom="16px"
             color="#17324D"
+            font-size="32px"
+            line-height="40px"
           >
-            <!-- H4 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; line-height: 40px; margin: 0">
-              Avviso di avvenuta ricezione del ${gg/mm/aaaa}
+            <!-- H1 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
+              Hai ricevuto una notifica - IUN: ${notification.iun}
             </h1>
           </mj-text>
 
           <!-- Main Message -->
           <mj-text
             css-class="text"
-            font-size="16px"
-            line-height="24px"
-            font-weight="regular"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
             align="left"
             padding-top="16px"
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px">Gentile ${nome} ${cognome},</p>
+            <p style="margin-top: 0px">Ciao,</p>
           </mj-text>
           <mj-text
             css-class="text"
-            font-size="16px"
-            line-height="24px"
-            font-weight="regular"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
             align="left"
             padding-top="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px">
-              hai ricevuto una notifica da parte di
-              <strong>${Nome ente}</strong> con oggetto
-              <strong>${Oggetto della notifica}</strong> e Codice IUN
-              (Identificativo Univoco di Notifica)
-              <strong>${YYYYMM-1-ABCD-EFGH-X}</strong>.
+            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
+              Hai ricevuto una notifica su SEND - Servizio Notifiche Digitali.
             </p>
-            <p style="margin-top: 0px">
-              Per leggerla e scaricare i documenti allegati:
-            </p>
-            <ol style="margin-top: 0px">
-              <!-- Don't include https:// in the URL label -->
-              <li>
-                vai su
-                <a
-                  title="Continua su ${piattaformaNotificheURLLabel}"
-                  class="link"
-                  href="${piattaformaNotificheURL}"
-                  style="color: #0073e6"
-                  >${piattaformaNotificheURLLabel}</a
-                >;
+            <ul css-class="info-list" style="list-style-type:none; margin: 40px 0; padding-left:0; margin-left:0">
+              <li style="padding-left:0; margin-left:0">
+                <strong>Mittente</strong>: ${notification.sender.paDenomination}
               </li>
-              <li>
-                accedi con identità digitale SPID o Carta di Identità
-                Elettronica (CIE) 3.0;
+              <li style="padding-left:0; margin-left:0">
+                <strong>Oggetto</strong>: ${notification.subject}
               </li>
-              <li>seleziona “Notifiche” dal menu laterale.</li>
-            </ol>
-            <!-- Perfezionamento Notifica -->
-            <p style="margin-top: 0px">
-              Questa comunicazione non contiene allegati, poiché i documenti
-              sono disponibili online su Piattaforma Notifiche per 120 giorni
-              dal perfezionamento della notifica.
-              <!-- <a href="${PNFaqURL}" class="link" style="color: #0073E6">Quando si perfeziona una notifica?</a> -->
+              <li style="padding-left:0; margin-left:0">
+                <strong>Codice IUN</strong>: ${notification.iun}
+              </li>
+            </ul>
+            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
+              Una notifica è una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o più documenti.
             </p>
-            <!-- Maggiori informazioni -->
-            <p style="margin-top: 0px">
-              Per maggiori informazioni su Piattaforma Notifiche, visita
-              <a
-                title="Continua sul sito informativo di ${piattaformaNotificheLandingURLLabel}"
-                class="link"
-                href="${piattaformaNotificheLandingURL}"
-                style="color: #0073e6"
-                >${piattaformaNotificheLandingURLLabel}</a
-              >.
+            <p style="margin-top: 20px; font-size: 18px; line-height:28px">
+            Hai fino a 120 giorni dalla <a href="${perfezionamentoURL}" title="data di perfezionamento">data di perfezionamento</a> della notifica per <strong>visualizzare i documenti</strong>. Il termine per il pagamento, se previsto, e per eventuali impugnazioni è indicato nei documenti.</p>
+
+            <p style="margin: 40px 0px; font-size:14px; border-radius:4px;">
+              <a style="letter-spacing: 0.3px; background-color:#0073E6; color:#fff !important; padding: 8px 20px; border-radius:4px;text-decoration:none" title="Visualizza i documenti" class="button" href="${quickAccessLink}"><strong>Visualizza i documenti</strong></a>
+            </p>
+            
+            <!-- SEND -->
+            <p style="font-size: 14px; line-height:20px">
+              Ricevi questo avviso di avvenuta ricezione in qualità di ${recipientType} con Codice Fiscale ${recipient.taxId}. SEND e è uno strumento che rende l’invio di notifiche da parte della Pubblica Amministrazione più sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di più">Scopri di più</a>
             </p>
           </mj-text>
           <mj-text
             css-class="text"
-            font-size="16px"
-            line-height="24px"
+            font-size="14px"
+            line-height="20px"
             padding-bottom="0px"
             color="#17324D"
           >

@@ -1,23 +1,20 @@
-<mj-section css-class="header" padding-bottom="16px" padding-top="0px">
-  <mj-column>
+<mj-section css-class="header"  padding="0">
+  <mj-column padding="0" width="100px">
+  <!-- old logo -> src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png" 
+  
+  
+  
+  src="${sendLogoLink}"
+  
+  -->
     <mj-image
       css-class="light-img"
-      width="100px"
+      width="116px"
       align="left"
-      src="https://selfcare.pagopa.it/assets/logo_pagopacorp.png"
+      padding-right="0"
+      src="${sendLogoLink}"
+      alt="SEND - Servizio Notifiche Digitali"
+      
     />
-    <mj-raw>
-      <div
-        class="dark-img"
-        style="mso-hide: all; display: none; padding: 10px 25px"
-      >
-        <img
-          src="https://selfcare.pagopa.it/assets/logo_pagopa_white.png"
-          width="100px"
-          class="dark-img"
-          style="display: none"
-        />
-      </div>
-    </mj-raw>
   </mj-column>
 </mj-section>
