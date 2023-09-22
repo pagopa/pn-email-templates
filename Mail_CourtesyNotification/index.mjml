@@ -86,10 +86,10 @@
             color="#17324D"
           >
             <p style="margin-top: 10px">
-            Hai ricevuto su SEND - Servizio Notifiche Digitali una notifica da parte di <strong>${notification.sender.paDenomination}</strong>  con Codice IUN ${notification.iun}.  Una notifica è una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o più documenti.
+            Hai ricevuto su SEND - Servizio Notifiche Digitali una notifica da parte di <strong>${notification.sender.paDenomination}</strong>  con Codice IUN ${notification.iun}.  Una notifica &egrave; una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.
 
             <p style="margin-top: 20px">
-            Hai fino a 120 giorni dalla <a href="${perfezionamentoURL}" title="data di perfezionamento">data di perfezionamento</a> della notifica per <strong>visualizzare i documenti</strong>. Il termine per il pagamento, se previsto, e per eventuali impugnazioni è indicato nei documenti.</p>
+            Hai fino a 120 giorni dalla <a href="${perfezionamentoURL}" title="data di perfezionamento">data di perfezionamento</a> della notifica per <strong>visualizzare i documenti</strong>. Il termine per il pagamento, se previsto, e per eventuali impugnazioni &egrave; indicato nei documenti.</p>
             <!-- Don't include https:// in the URL label -->
             <p style="margin: 40px 0px; font-size:14px">
             <a style="letter-spacing: 0.3px; background-color:#0073E6; color:#fff !important; padding: 8px 20px; border-radius:4px;text-decoration:none" title="Visualizza i documenti" class="button" href="${quickAccessLink}"><strong>Visualizza i documenti</strong></a>
@@ -101,7 +101,7 @@
             Se non hai una PEC e visualizzi i documenti entro 5 giorni (120 ore) dall’invio del messaggio, non riceverai la notifica tramite raccomandata.
             </p>
             <p style="font-size:14px; line-height:22px">
-            SEND è uno strumento che rende l’invio di notifiche da parte della Pubblica Amministrazione più sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di più">Scopri di più</a>
+            SEND &egrave; uno strumento che rende l’invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;">Scopri di pi&ugrave;</a>
             </p>
           </mj-text>
           <mj-text
