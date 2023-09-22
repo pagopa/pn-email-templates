@@ -17,7 +17,6 @@
 
   <mj-body css-class="mail-body">
     <mj-include path="../style.css" type="css" />
-    
     <mj-wrapper>
       <!-- PagoPA Logo -->
       <mj-include text-align="left" padding="0" path="../partials/main-logo.mjml" /> 
@@ -77,7 +76,6 @@
           </mj-text>
         </mj-column>
       </mj-section>
-
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer/Disclaimer -->
