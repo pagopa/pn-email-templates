@@ -1,0 +1,114 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>La PEC che hai inserito &egrave; valida</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper>
+      <!-- PagoPA Logo -->
+      <mj-raw>
+        <div class="text" style="text-align: left; margin-bottom: 32px;">
+          <img alt="SEND - Servizio Notifiche Digitali" src="data:image/png;base64, ${logoBase64}" style="display: block;width: 116px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;padding: 10px 25px"
+          width="116">
+        </div>
+      </mj-raw>
+
+      <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+        <mj-column>
+          <!-- Title -->
+          <mj-text
+            css-class="text"
+            font-weight="700"
+            align="left"
+            padding-top="16px"
+            padding-bottom="16px"
+            color="#17324D"
+            font-size="32px"
+            line-height="40px"
+          >
+            <!-- H1 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
+              La PEC che hai inserito &egrave; valida
+            </h1>
+          </mj-text>
+
+          <!-- Main Message -->
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
+            align="left"
+            padding-top="16px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px">Ciao,</p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
+            align="left"
+            padding-top="0px"
+            color="#17324D"
+          >
+            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
+              l’indirizzo PEC che hai inserito come recapito legale su SEND &egrave; valido.
+            </p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
+            align="left"
+            color="#17324D"
+          >
+            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
+              A partire da questo momento, lo useremo come <strong>indirizzo principale</strong> per inviarti gli avvisi di avvenuta ricezione.
+            </p>
+            </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
+            align="left"
+            color="#17324D"
+          >
+            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">Per maggiori informazioni, <a href="https://notifichedigitali.pagopa.it/faq">leggi le FAQ</a>.</p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px">
+              A presto,<br aria-hidden="true" />Piattaforma Notifiche
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer/Disclaimer -->
+      <mj-include path="../partials/footer-pec-verification.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>
