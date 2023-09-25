@@ -11,7 +11,7 @@
         <a
           title="Continua su Piattaforma Notifiche"
           class="link"
-          href="https://portale.dev.pn.pagopa.it/recapiti"
+          href="${piattaformaNotificheURL}recapiti"
           style="color: #0073e6"
           >vai ai tuoi recapiti</a
         >.
