@@ -1,0 +1,21 @@
+<mj-section css-class="section" padding-bottom="16px" padding-top="0px">
+  <mj-column>
+    <mj-text
+      css-class="footer-text"
+      font-size="14px"
+      line-height="20px"
+      color="#17324D"
+    >
+      <p style="margin-top: 0px; font-size: 14px">
+        Ricevi questa comunicazione perch&eacute; hai inserito il tuo indirizzo PEC come recapito legale di SEND. Per modificare i recapiti o aggiungerne altri,
+        <a
+          title="Continua su Piattaforma Notifiche"
+          class="link"
+          href="https://portale.dev.pn.pagopa.it/recapiti"
+          style="color: #0073e6"
+          >vai ai tuoi recapiti</a
+        >.
+      </p>
+    </mj-text>
+  </mj-column>
+</mj-section>
