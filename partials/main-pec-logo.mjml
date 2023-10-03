@@ -1,0 +1,7 @@
+<!-- PagoPA Logo -->
+<mj-raw>
+  <div class="text" style="text-align: left; margin-bottom: 32px;">
+    <img alt="SEND - Servizio Notifiche Digitali" src="data:image/png;base64, ${logoBase64}" style="display: block;width: 116px;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;padding: 10px 25px"
+    width="116">
+  </div>
+</mj-raw>
