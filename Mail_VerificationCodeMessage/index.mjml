@@ -19,7 +19,7 @@
     <mj-include path="../style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
-      <mj-include text-align="left" padding="0" path="../partials/main-logo.mjml" /> 
+      <mj-include text-align="left" padding="0" path="../partials/main-logo-verification.mjml" /> 
       <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
         <mj-column>
           <!-- Title -->
