@@ -11,7 +11,7 @@
         <a
           title="Continua su Piattaforma Notifiche"
           class="link"
-          href="${piattaformaNotificheURL}recapiti"
+          href="https://cittadini.notifichedigitali.it/recapiti"
           style="color: #0073e6"
           >vai ai tuoi recapiti</a
         >.
