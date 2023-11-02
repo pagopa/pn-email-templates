@@ -98,10 +98,10 @@
 
             <!-- Perfezionamento Notifica -->
             <p style="margin-top: 0px">
-            Se non hai una PEC e visualizzi i documenti entro 5 giorni (120 ore) dall’invio del messaggio, non riceverai la notifica tramite raccomandata.
+            Se non hai una PEC e visualizzi i documenti entro 5 giorni (120 ore) dall&apos;invio del messaggio, non riceverai la notifica tramite raccomandata.
             </p>
             <p style="font-size:14px; line-height:22px">
-            SEND &egrave; uno strumento che rende l’invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;">Scopri di pi&ugrave;</a>
+            SEND &egrave; uno strumento che rende l&apos;invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;">Scopri di pi&ugrave;</a>
             </p>
           </mj-text>
           <mj-text
