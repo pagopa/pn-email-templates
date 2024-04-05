@@ -132,7 +132,7 @@
                 "
                 title="Visualizza i documenti"
                 class="button"
-                href="${quickloginAccessLink}"
+                href="${quickAccessLink}"
                 ><strong>Visualizza i documenti su SEND</strong></a
               >
             </p>
