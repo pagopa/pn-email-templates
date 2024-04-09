@@ -1,16 +1,16 @@
 <mj-section css-class="section" padding-bottom="16px" padding-top="0px">
   <mj-column>
-    <mj-text
-      css-class="footer-pec-text"
-      font-size="14px"
-      line-height="20px"
-    >
-      <p style="margin-top: 0px; font-size:14px">
-        L&apos;ente mittente conosce questo indirizzo PEC perch&eacute; l&apos;hai inserito nei tuoi recapiti di SEND, perch&eacute; fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perch&eacute; gliel&apos;hai comunicato in passato. Per modificare i recapiti o aggiungerne altri, 
+    <mj-text css-class="footer-pec-text" font-size="14px" line-height="20px">
+      <p style="margin-top: 0px; font-size: 14px">
+        L&apos;ente mittente conosce questo indirizzo PEC perch&eacute;
+        l&apos;hai inserito nei tuoi recapiti di SEND, perch&eacute; fa parte di
+        uno dei registri previsti dal Codice Amministrazione Digitale o
+        perch&eacute; gliel&apos;hai comunicato in passato. Per modificare i
+        recapiti o aggiungerne altri,
         <a
           title="vai ai tuoi recapiti"
           class="link"
-          href="${piattaformaNotificheURL}recapiti"
+          href="${piattaformaNotificheURL}auth/login"
           >vai ai tuoi recapiti</a
         >.
       </p>

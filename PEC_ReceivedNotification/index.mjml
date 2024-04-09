@@ -19,7 +19,6 @@
     <mj-wrapper>
       <!-- PagoPA Logo -->
       <mj-include path="../partials/main-pec-logo.mjml" />
-      
 
       <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
         <mj-column>
@@ -35,7 +34,15 @@
             line-height="40px"
           >
             <!-- H1 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
+            <h1
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              "
+            >
               Hai ricevuto una notifica - IUN: ${notification.iun}
             </h1>
           </mj-text>
@@ -62,33 +69,84 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
+            <p
+              style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
               Hai ricevuto una notifica su SEND - Servizio Notifiche Digitali.
             </p>
-            <ul css-class="info-list" style="list-style-type:none; margin: 40px 0; padding-left:0; margin-left:0">
-              <li style="padding-left:0; margin-left:0">
+            <ul
+              css-class="info-list"
+              style="
+                list-style-type: none;
+                margin: 40px 0;
+                padding-left: 0;
+                margin-left: 0;
+              "
+            >
+              <li style="padding-left: 0; margin-left: 0">
                 <strong>Mittente</strong>: ${notification.sender.paDenomination}
               </li>
-              <li style="padding-left:0; margin-left:0">
+              <li style="padding-left: 0; margin-left: 0">
                 <strong>Oggetto</strong>: ${notification.subject}
               </li>
-              <li style="padding-left:0; margin-left:0">
+              <li style="padding-left: 0; margin-left: 0">
                 <strong>Codice IUN</strong>: ${notification.iun}
               </li>
             </ul>
-            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
-              Una notifica &egrave; una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.
+            <p
+              style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              Una notifica &egrave; una
+              <strong>comunicazione a valore legale</strong> composta da un
+              avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.
             </p>
-            <p style="margin-top: 20px; font-size: 18px; line-height:28px">
-            Hai fino a 120 giorni dalla <a href="${perfezionamentoURL}" title="data di perfezionamento">data di perfezionamento</a> della notifica per <strong>visualizzare i documenti</strong>. Il termine per il pagamento, se previsto, e per eventuali impugnazioni &egrave; indicato nei documenti.</p>
+            <p style="margin-top: 20px; font-size: 18px; line-height: 28px">
+              Hai fino a 120 giorni dalla
+              <a href="${perfezionamentoURL}" title="data di perfezionamento"
+                >data di perfezionamento</a
+              >
+              della notifica per <strong>visualizzare i documenti</strong>. Il
+              termine per il pagamento, se previsto, e per eventuali
+              impugnazioni &egrave; indicato nei documenti.
+            </p>
 
-            <p style="margin: 40px 0px; font-size:14px; border-radius:4px;">
-              <a style="letter-spacing: 0.3px; background-color:#0073E6; color:#fff !important; padding: 8px 20px; border-radius:4px;text-decoration:none" title="Visualizza i documenti" class="button" href="${quickAccessLink}"><strong>Visualizza i documenti</strong></a>
+            <p style="margin: 40px 0px; font-size: 14px; border-radius: 4px">
+              <a
+                style="
+                  letter-spacing: 0.3px;
+                  background-color: #0073e6;
+                  color: #fff !important;
+                  padding: 8px 20px;
+                  border-radius: 4px;
+                  text-decoration: none;
+                "
+                title="Visualizza i documenti"
+                class="button"
+                href="${quickAccessLink}"
+                ><strong>Visualizza i documenti su SEND</strong></a
+              >
             </p>
-            
+
             <!-- SEND -->
-            <p style="font-size: 14px; line-height:20px">
-              Ricevi questo avviso di avvenuta ricezione in qualit&agrave; di persona ${recipientType} con Codice Fiscale ${recipient.taxId}. SEND &egrave; uno strumento che rende l&apos;invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;">Scopri di pi&ugrave;</a>
+            <p style="font-size: 14px; line-height: 20px">
+              Ricevi questo avviso di avvenuta ricezione in qualit&agrave; di
+              persona ${recipientType} con Codice Fiscale ${recipient.taxId}.
+              SEND &egrave; uno strumento che rende l&apos;invio di notifiche da
+              parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente
+              ed economico.
+              <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;"
+                >Scopri di pi&ugrave;</a
+              >
             </p>
           </mj-text>
           <mj-text
@@ -99,7 +157,8 @@
             color="#17324D"
           >
             <p style="margin-top: 0px">
-              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche Digitali
+              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche
+              Digitali
             </p>
           </mj-text>
         </mj-column>
