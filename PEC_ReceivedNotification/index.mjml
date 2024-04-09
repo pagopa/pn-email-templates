@@ -88,7 +88,7 @@
             
             <!-- SEND -->
             <p style="font-size: 14px; line-height:20px">
-              Ricevi questo avviso di avvenuta ricezione in qualit&agrave; di ${recipientType} con Codice Fiscale ${recipient.taxId}. SEND &egrave; uno strumento che rende l&apos;invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;">Scopri di pi&ugrave;</a>
+              Ricevi questo avviso di avvenuta ricezione in qualit&agrave; di persona ${recipientType} con Codice Fiscale ${recipient.taxId}. SEND &egrave; uno strumento che rende l&apos;invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;">Scopri di pi&ugrave;</a>
             </p>
           </mj-text>
           <mj-text
