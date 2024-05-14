@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Il tuo codice di verifica</mj-title>
+    <mj-title>SEND - Conferma il tuo indirizzo PEC</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -34,8 +34,16 @@
             line-height="40px"
           >
             <!-- H1 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
-              Il tuo codice di conferma
+            <h1
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              "
+            >
+              SEND - Conferma il tuo indirizzo PEC
             </h1>
           </mj-text>
 
@@ -61,9 +69,27 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
-              Per confermare questo indirizzo PEC come recapito legale, inserisci su SEND il codice</p>
-              <h5 style="font-size: 28px; line-heigth:42px; margin-top:0">${verificationCode}</h5>
+            <p
+              style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              Per confermare questo indirizzo PEC come recapito legale,
+              inserisci su
+              <a
+                title="Continua su Piattaforma Notifiche"
+                href="https://cittadini.notifichedigitali.it/recapiti"
+                style="color: #0073e6; text-decoration: none"
+                >SEND - Servizio Notifiche Digitali</a
+              >
+              il codice
+            </p>
+            <h5 style="font-size: 28px; line-heigth: 42px; margin-top: 0">
+              ${verificationCode}
+            </h5>
           </mj-text>
           <mj-text
             css-class="text"
@@ -73,7 +99,8 @@
             color="#17324D"
           >
             <p style="margin-top: 0px">
-              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche Digitali
+              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche
+              Digitali
             </p>
           </mj-text>
         </mj-column>
