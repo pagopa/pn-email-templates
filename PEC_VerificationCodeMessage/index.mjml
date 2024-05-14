@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>SEND - Conferma il tuo indirizzo PEC</mj-title>
+    <mj-title>SEND - Conferma la tua PEC</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -43,7 +43,7 @@
                 margin: 0;
               "
             >
-              SEND - Conferma il tuo indirizzo PEC
+              SEND - Conferma la tua PEC
             </h1>
           </mj-text>
 
