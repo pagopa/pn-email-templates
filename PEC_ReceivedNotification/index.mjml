@@ -1,6 +1,8 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>Hai ricevuto una notifica - IUN: ${notification.iun}</mj-title>
+    <mj-title
+      >SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title
+    >
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -43,7 +45,8 @@
                 margin: 0;
               "
             >
-              Hai ricevuto una notifica - IUN: ${notification.iun}
+              SEND - Nuova notifica da ${notification.sender.paDenomination} -
+              IUN: ${notification.iun}
             </h1>
           </mj-text>
 
@@ -115,7 +118,7 @@
               <a href="${perfezionamentoURL}" title="data di perfezionamento"
                 >data di perfezionamento</a
               >
-              della notifica per <strong>visualizzare i documenti</strong>. Il
+              della notifica per <strong>accedere ai documenti</strong>. Il
               termine per il pagamento, se previsto, e per eventuali
               impugnazioni &egrave; indicato nei documenti.
             </p>
@@ -133,7 +136,7 @@
                 title="Visualizza i documenti"
                 class="button"
                 href="${quickAccessLink}"
-                ><strong>Visualizza i documenti su SEND</strong></a
+                ><strong>Accedi ai documenti su SEND</strong></a
               >
             </p>
 
