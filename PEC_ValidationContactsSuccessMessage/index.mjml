@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>La PEC che hai inserito &egrave; valida</mj-title>
+    <mj-title>SEND - La PEC che hai inserito &egrave; valida</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -34,8 +34,16 @@
             line-height="40px"
           >
             <!-- H1 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
-              La PEC che hai inserito &egrave; valida
+            <h1
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              "
+            >
+              SEND - La PEC che hai inserito &egrave; valida
             </h1>
           </mj-text>
 
@@ -61,8 +69,15 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
-              l&apos;indirizzo PEC che hai inserito come recapito legale su SEND &egrave; valido.
+            <p
+              style="
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              L&apos;indirizzo PEC che hai indicato su SEND come recapito legale
+              <strong>&egrave; confermato</strong>.
             </p>
           </mj-text>
           <mj-text
@@ -73,20 +88,21 @@
             align="left"
             color="#17324D"
           >
-            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
-              A partire da questo momento, lo useremo come <strong>indirizzo principale</strong> per inviarti gli avvisi di avvenuta ricezione.
+            <p
+              style="
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              A partire da questo momento, lo useremo come
+              <strong>indirizzo principale</strong> per inviarti gli avvisi di
+              avvenuta ricezione. <br />Per maggiori informazioni,
+              <a href="https://notifichedigitali.pagopa.it/faq">leggi le FAQ</a
+              >.
             </p>
-            </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="18px"
-            line-height="28px"
-            font-weight="400"
-            align="left"
-            color="#17324D"
-          >
-            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">Per maggiori informazioni, <a href="https://notifichedigitali.pagopa.it/faq">leggi le FAQ</a>.</p>
           </mj-text>
+
           <mj-text
             css-class="text"
             font-size="14px"
@@ -95,7 +111,8 @@
             color="#17324D"
           >
             <p style="margin-top: 0px">
-              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche Digitali
+              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche
+              Digitali
             </p>
           </mj-text>
         </mj-column>

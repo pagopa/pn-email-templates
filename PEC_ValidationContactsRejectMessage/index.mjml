@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>La PEC che hai inserito non &egrave; valida</mj-title>
+    <mj-title>SEND - La PEC che hai inserito non &egrave; valida</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -18,7 +18,11 @@
     <mj-include path="../style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
-      <mj-include path="../partials/main-pec-logo.mjml" />
+      <mj-include
+        text-align="left"
+        padding="0"
+        path="../partials/main-logo-verification.mjml"
+      />
 
       <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
         <mj-column>
@@ -34,8 +38,16 @@
             line-height="40px"
           >
             <!-- H1 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; font-weight: 700; mso-line-height-rule: exactly; line-height: 40px; margin: 0;">
-              La PEC che hai inserito non &egrave; valida
+            <h1
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              "
+            >
+              SEND - La PEC che hai inserito non &egrave; valida
             </h1>
           </mj-text>
 
@@ -60,8 +72,15 @@
             align="left"
             color="#17324D"
           >
-            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
-              l&apos;indirizzo PEC che hai inserito come recapito legale su SEND non &egrave; valido.
+            <p
+              style="
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              L&apos;indirizzo PEC che hai inserito su SEND come recapito legale
+              <strong>non &egrave; formalmente valido</strong>.
             </p>
           </mj-text>
           <mj-text
@@ -73,10 +92,22 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="font-size: 18px; mso-line-height-rule: exactly; line-height:28px">
-              Per ricevere gli avvisi di avvenuta ricezione in digitale e risparmiare tempo e denaro, <a href="https://cittadini.notifichedigitali.it/recapiti">vai ai tuoi recapiti</a> e inserisci un indirizzo PEC diverso.
+            <p
+              style="
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              Per ricevere gli avvisi di avvenuta ricezione in digitale e
+              risparmiare tempo e denaro,
+              <a href="https://cittadini.notifichedigitali.it/recapiti"
+                >vai ai tuoi recapiti</a
+              >
+              e inserisci nuovamente l’indirizzo assicurandoti che si tratti di
+              una PEC e non di un indirizzo email ordinario e che non siano
+              presenti errori di digitazione.
             </p>
-            
           </mj-text>
           <mj-text
             css-class="text"
@@ -86,7 +117,8 @@
             color="#17324D"
           >
             <p style="margin-top: 0px">
-              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche Digitali
+              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche
+              Digitali
             </p>
           </mj-text>
         </mj-column>
@@ -94,7 +126,7 @@
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer/Disclaimer -->
-      <mj-include path="../partials/footer-pec-verification.mjml" />
+      <mj-include path="../partials/footer-mail-verification.mjml" />
     </mj-wrapper>
   </mj-body>
 </mjml>
