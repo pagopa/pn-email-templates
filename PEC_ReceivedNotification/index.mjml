@@ -91,10 +91,10 @@
                 margin-left: 0;
               "
             >
-              <li style="padding-left: 0; margin-left: 0">
+              <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
                 <strong>Mittente</strong>: ${notification.sender.paDenomination}
               </li>
-              <li style="padding-left: 0; margin-left: 0">
+              <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
                 <strong>Oggetto</strong>: ${notification.subject}
               </li>
               <li style="padding-left: 0; margin-left: 0">
