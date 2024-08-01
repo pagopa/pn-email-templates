@@ -65,8 +65,7 @@
           >
             <!-- H4 Desktop (from MUI Italia)-->
             <h1 style="font-size: 32px; line-height: 40px; margin: 0">
-              SEND - Nuova notifica da ${notification.sender.paDenomination} -
-              IUN: ${notification.iun}
+              SEND - Nuova notifica da ${notification.sender.paDenomination}
             </h1>
           </mj-text>
 
@@ -124,7 +123,7 @@
                 title="Accedi ai documenti"
                 class="button"
                 href="${quickAccessLink}"
-                ><strong>Accedi ai documenti</strong></a
+                ><strong>Accedi ai documenti su SEND</strong></a
               >
             </p>
 
