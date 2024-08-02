@@ -1,6 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title>SEND - La PEC che hai inserito &egrave; valida</mj-title>
+    <mj-title>SEND - Recapito legale PEC confermato</mj-title>
     <mj-font
       name="Titillium Web"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -43,7 +43,7 @@
                 margin: 0;
               "
             >
-              SEND - La PEC che hai inserito &egrave; valida
+              SEND - Recapito legale PEC confermato
             </h1>
           </mj-text>
 
@@ -110,10 +110,8 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px">
-              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche
-              Digitali
-            </p>
+            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
+            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
         </mj-column>
       </mj-section>

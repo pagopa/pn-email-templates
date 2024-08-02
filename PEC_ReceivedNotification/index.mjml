@@ -45,8 +45,7 @@
                 margin: 0;
               "
             >
-              SEND - Nuova notifica da ${notification.sender.paDenomination} -
-              IUN: ${notification.iun}
+              SEND - Nuova notifica da ${notification.sender.paDenomination}
             </h1>
           </mj-text>
 
@@ -91,10 +90,10 @@
                 margin-left: 0;
               "
             >
-              <li style="padding-left: 0; margin-left: 0">
+              <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
                 <strong>Mittente</strong>: ${notification.sender.paDenomination}
               </li>
-              <li style="padding-left: 0; margin-left: 0">
+              <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
                 <strong>Oggetto</strong>: ${notification.subject}
               </li>
               <li style="padding-left: 0; margin-left: 0">
@@ -159,10 +158,8 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px">
-              A presto,<br aria-hidden="true" />SEND - Servizio Notifiche
-              Digitali
-            </p>
+            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
+            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
         </mj-column>
       </mj-section>
