@@ -116,7 +116,7 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; margin-bottom: 14px">A presto,</p>
+            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
             <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
         </mj-column>
