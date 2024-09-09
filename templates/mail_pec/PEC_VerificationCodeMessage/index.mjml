@@ -1,0 +1,112 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>SEND - Conferma la tua PEC</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+    <mj-wrapper>
+      <!-- PagoPA Logo -->
+      <mj-include path="../partials/main-pec-logo.mjml" />
+
+      <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+        <mj-column>
+          <!-- Title -->
+          <mj-text
+            css-class="text"
+            font-weight="700"
+            align="left"
+            padding-top="16px"
+            padding-bottom="16px"
+            color="#17324D"
+            font-size="32px"
+            line-height="40px"
+          >
+            <!-- H1 Desktop (from MUI Italia)-->
+            <h1
+              style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              "
+            >
+              SEND - Conferma la tua PEC
+            </h1>
+          </mj-text>
+
+          <!-- Main Message -->
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
+            align="left"
+            padding-top="16px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px">Ciao,</p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="28px"
+            font-weight="400"
+            align="left"
+            padding-top="0px"
+            color="#17324D"
+          >
+            <p
+              style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              "
+            >
+              Per confermare questo indirizzo PEC come recapito legale,
+              inserisci su
+              <a
+                title="Continua su Piattaforma Notifiche"
+                href="https://cittadini.notifichedigitali.it/recapiti"
+                style="color: #0073e6; text-decoration: none"
+                >SEND - Servizio Notifiche Digitali</a
+              >
+              il codice
+            </p>
+            <h5 style="font-size: 28px; line-heigth: 42px; margin-top: 50px">
+              ${verificationCode}
+            </h5>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
+            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer/Disclaimer -->
+      <mj-include path="../partials/footer-pec-verification.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

@@ -1,0 +1,164 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title
+      >SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title
+    >
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+    <mj-style>
+      @media screen and (max-width: 600px) { .column-logo { min-width: 116px;
+      width: auto !important; } .column-text { width: auto !important; } }
+    </mj-style>
+  </mj-head>
+
+  <mj-body css-class="mail-body">
+    <mj-include path="../style.css" type="css" />
+
+    <mj-wrapper>
+      <!-- PagoPA Logo -->
+
+      <mj-section padding="0">
+        <mj-group vertical-align="middle">
+          <mj-column
+            width="20%"
+            css-class="column-logo"
+            padding="0"
+            vertical-align="middle"
+          >
+            <mj-include padding="0" path="../partials/main-logo.mjml" />
+          </mj-column>
+          <mj-column
+            width="75%"
+            css-class="column-text"
+            vertical-align="middle"
+            padding-left="0"
+          >
+            <mj-text padding-left="15px">
+              <p style="font-size: 10px; font-weight: 700">
+                AVVISO DI CORTESIA
+              </p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+        <mj-column>
+          <!-- Title -->
+          <mj-text
+            css-class="text"
+            font-weight="bold"
+            align="left"
+            padding-top="16px"
+            padding-bottom="16px"
+            color="#17324D"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 40px; margin: 0">
+              SEND - Nuova notifica da ${notification.sender.paDenomination}
+            </h1>
+          </mj-text>
+
+          <!-- Main Message -->
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            padding-top="16px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px">Ciao,</p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            padding-top="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 10px">
+              Hai ricevuto su SEND - Servizio Notifiche Digitali una notifica da
+              parte di
+              <strong>${notification.sender.paDenomination}</strong> con Codice
+              IUN ${notification.iun}. Una notifica &egrave; una
+              <strong>comunicazione a valore legale</strong> composta da un
+              avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.
+            </p>
+
+            <p style="margin-top: 20px">
+              Hai fino a 120 giorni dalla
+              <a href="${perfezionamentoURL}" title="data di perfezionamento"
+                >data di perfezionamento</a
+              >
+              della notifica per <strong>accedere ai documenti</strong>. Il
+              termine per il pagamento, se previsto, e per eventuali
+              impugnazioni &egrave; indicato nei documenti.
+            </p>
+            <!-- Don't include https:// in the URL label -->
+            <p style="margin: 40px 0px; font-size: 14px">
+              <a
+                style="
+                  letter-spacing: 0.3px;
+                  background-color: #0073e6;
+                  color: #fff !important;
+                  padding: 8px 20px;
+                  border-radius: 4px;
+                  text-decoration: none;
+                "
+                title="Accedi ai documenti"
+                class="button"
+                href="${quickAccessLink}"
+                ><strong>Accedi ai documenti su SEND</strong></a
+              >
+            </p>
+
+            <!-- Perfezionamento Notifica -->
+            <p style="margin-top: 0px">
+              Se non hai una PEC e visualizzi i documenti entro 5 giorni (120
+              ore) dall&apos;invio del messaggio, non riceverai la notifica
+              tramite raccomandata.
+            </p>
+            <p style="font-size: 14px; line-height: 22px">
+              SEND &egrave; uno strumento che rende l&apos;invio di notifiche da
+              parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente
+              ed economico.
+              <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;"
+                >Scopri di pi&ugrave;</a
+              >
+            </p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
+            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer/Disclaimer -->
+      <mj-include path="../partials/footer-mail.mjml" />
+    </mj-wrapper>
+  </mj-body>
+</mjml>

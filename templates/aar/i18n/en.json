@@ -1,0 +1,7 @@
+{
+  "language": "de",
+  "notification_subject": "Empfangsbescheid (AAR):",
+  "aar_subtitles": "Sie haben eine rechtliche Mitteilung von [Name des Absenders] erhalten: Lesen Sie die übermittelten Dokumente. Wenn sie nicht in dieser Mitteilung enthalten sind, greifen Sie online auf SEND auf die Dokumente zu oder fordern Sie eine Kopie bei den SEND-Sammelstellen an, die gerade aktiviert werden. Wenn eine Zahlung erwartet wird, finden Sie in den Unterlagen das Ablaufdatum und das Datum für etwaige Einsprüche.",
+  "access_to_document_title": "ZUGRIFF AUF DOKUMENTE ONLINE – KOSTENLOS",
+  "access_to_document_1": "Scannen Sie den QR-Code oder gehen Sie zu [cittadini.notifichedigitali.it]"
+}
