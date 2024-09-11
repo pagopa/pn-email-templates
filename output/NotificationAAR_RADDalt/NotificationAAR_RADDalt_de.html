@@ -518,7 +518,7 @@
           <p class="language-margin"><b>Avviso di Avvenuta Ricezione (AAR): ${notification.subject}</b></p>
         </div>
         <div id="main__disclaimer" class="eleven-px sixteen-lh">
-          <p>Sie haben eine rechtliche Mitteilung von ${notification.sender.paDenomination} erhalten: <b>Lesen Sie die übermittelten Dokumente</b>. Wenn sie nicht in dieser Mitteilung enthalten sind, <b>greifen Sie online auf SEND auf die Dokumente zu oder fordern Sie eine Kopie bei den SEND-Sammelstellen an</b>, die gerade aktiviert werden. Wenn eine Zahlung erwartet wird, finden Sie in den Unterlagen das Ablaufdatum und das Datum für etwaige Einsprüche. </p>
+          <p>Sie haben eine rechtliche Mitteilung von ${notification.sender.paDenomination} erhalten: <b>Lesen Sie die übermittelten Dokumente</b>. Wenn sie nicht in dieser Mitteilung enthalten sind, <b>greifen Sie online auf SEND auf die Dokumente zu oder fordern Sie eine Kopie bei den SEND-Sammelstellen an</b>, die gerade aktiviert werden. Wenn eine Zahlung erwartet wird, finden Sie in den Unterlagen das Ablaufdatum und das Datum für etwaige Einsprüche.</p>
           <p class="language-margin">Hai ricevuto una comunicazione a valore legale da ${notification.sender.paDenomination}: <b>prendi visione dei documenti notificati</b>. Se non sono inclusi in questo avviso, <b>accedi ai documenti online su SEND o richiedine una copia presso i Punti di ritiro SEND</b>, in corso di attivazione. Se è previsto un pagamento, nei documenti troverai la data di scadenza e quella per eventuali ricorsi.</p>
         </div>
         
@@ -553,7 +553,7 @@
       </div>
       <div class="row">
         <div id="send-perfezionamento" class="eight-px" style="padding-left: 2.5mm; line-height: normal;">
-          <p>Die Dokumente sind auf SEND 120 Tage lang ab dem Datum der Fertigstellung der Benachrichtigung auf der Empfängerseite (dem Datum, an dem sie für alle verschiedenen Zwecke Rechtskraft erlangt) verfügbar. Weitere Informationen finden Sie unter <b><a href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b></p>
+          <p>Die Dokumente sind auf SEND 120 Tage lang ab dem Datum der Fertigstellung der Benachrichtigung auf der Empfängerseite (dem Datum, an dem sie für alle verschiedenen Zwecke Rechtskraft erlangt) verfügbar. Weitere Informationen finden Sie unter <b><a href='${perfezionamentoURL}'>${perfezionamentoURLLabel}</a></b></p>
           <p class="language-margin">I documenti sono disponibili online e presso i Punti di ritiro SEND per 120 giorni dalla data di perfezionamento della notifica (data in cui assume valore di legge per tutte le diverse finalità). Scopri di più su <b><a href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b></p>
         </div>
         <div id="read-more">
@@ -569,22 +569,16 @@
 
     <div id="main-page2">
       <div class="row">
-          <div class="heading ten-px" style="padding-right: 0;">
-            SAMMELN SIE EIN Exemplar IM GEBIET - ZUR BEZAHLUNGRITIRA &middot; RITIRA una copia SUL TERRITORIO - A PAGAMENTO
+          <div class="heading ten-px" style="padding-right: 0;">SAMMELN SIE EIN Exemplar IM GEBIET - ZUR BEZAHLUNGRITIRA &middot; RITIRA una copia SUL TERRITORIO - A PAGAMENTO
           </div>
           <div class="section-list nine-px eleven-lh">
             <ol>
               <li>
-                <p>Fordern Sie die avisierten Dokumente auch ohne SPID oder CIE bei den SEND-Abholstellen (CAF und andere angeschlossene Händler) an. Suchen Sie auf ordinidigitali.pagopa.it/punti-di-ritiro nach den nächstgelegenen Sammelstellen oder rufen Sie die Nummer 06.4520.2323 an</p>
+                <p>Fordern Sie die avisierten Dokumente auch ohne SPID oder CIE bei den SEND-Abholstellen (CAF und andere angeschlossene Händler) an. Suchen Sie auf ordinidigitali.pagopa.it/punti-di-ritiro nach den nächstgelegenen Sammelstellen oder rufen Sie die Nummer ${raddPhoneNumber} an</p>
                 <p class="language-less-margin">Richiedi i documenti notificati anche senza SPID o CIE presso i Punti di ritiro SEND (CAF e altri esercenti convenzionati). Cerca i punti di ritiro più vicini a te su <b><a href="${sendURL}punti-di-ritiro">${sendURLLAbel}/punti-di-ritiro</a></b> oppure <b>chiama il numero ${raddPhoneNumber}</b></p>
               </li>
               <li>
-                <p>Bringen Sie Folgendes mit:
-                  <ul id="square-list">
-                    <li>diesen Hinweis;</li>
-                    <li>Ihr Ausweisdokument;</li>
-                    <li>Ihre Steuernummer.</li>
-                  </ul>
+                <p>Bringen Sie Folgendes mit:<ul id='square-list'><li>diesen Hinweis;</li><li>Ihr Ausweisdokument;</li><li>Ihre Steuernummer.</li></ul>
                 </p>
                 <p class="language-less-margin">Porta con te:
                   <ul id="square-list">
@@ -601,8 +595,7 @@
             </ol>
           </div>
           <div id="mandate-box">
-            <div class="heading ten-px">
-              Möchten Sie jemanden delegieren? &middot; VUOI DELEGARE QUALCUNO?
+            <div class="heading ten-px">Möchten Sie jemanden delegieren? &middot; VUOI DELEGARE QUALCUNO?
             </div>
             <div id="mandate-box__form" class="nine-px">
               Ich &middot; Io, ${recipient.denomination} ${recipient.taxId}, delegiere &middot; delego
@@ -630,9 +623,7 @@
                 <li>Ihre Steuernummer;</li>
                 <li>eine Kopie oder ein Original der Abgabenordnung und ein Ausweisdokument der delegierenden Partei.<#if recipient.recipientType=="PF">.</li>
                     <#else>;</li>
-                      <li>un documento che attesti il tuo ruolo
-                        di
-                        legale rappresentante.</li>
+                      <li>un documento che attesti il tuo ruolo di legale rappresentante.</li>
                   </#if>
               </ul>
               </div>

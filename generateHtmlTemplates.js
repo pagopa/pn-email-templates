@@ -13,7 +13,7 @@ async function loadTranslations(language, template) {
 }
 
 async function generateHtmlTemplates() {
-  const languages = ["en"]; // Elenca le lingue supportate
+  const languages = ["de"]; // Elenca le lingue supportate
   const templates = [
     "NotificationAAR_RADDalt",
     "NotificationReceivedLegalFact",
