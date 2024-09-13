@@ -12,10 +12,18 @@
       <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
       <meta name="color-scheme" content="light dark" />
       <meta name="supported-color-schemes" content="light dark" />
+      <!-- MSO fallback per compatibilità con Outlook -->
+      <!--[if mso | IE]>
+        <style type="text/css">
+          body {
+            background-color: #ffffff;
+            color: #17324d;
+          }
+        </style>
+      <![endif]-->
     </mj-raw>
   </mj-head>
   <mj-body css-class="mail-body">
-    <mj-include path="../style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
       <mj-include
@@ -33,7 +41,6 @@
             align="left"
             padding-top="16px"
             padding-bottom="16px"
-            color="#17324D"
             font-size="32px"
             line-height="40px"
           >
@@ -60,7 +67,6 @@
             align="left"
             padding-top="16px"
             padding-bottom="0px"
-            color="#17324D"
           >
             <p style="margin-top: 0px">Ciao,</p>
           </mj-text>
@@ -70,7 +76,6 @@
             line-height="28px"
             font-weight="400"
             align="left"
-            color="#17324D"
           >
             <p
               style="
@@ -101,7 +106,9 @@
             >
               Per ricevere gli avvisi di avvenuta ricezione in digitale e
               risparmiare tempo e denaro,
-              <a href="https://cittadini.notifichedigitali.it/recapiti"
+              <a
+                style="color: #0073e6; text-decoration: none"
+                href="https://cittadini.notifichedigitali.it/recapiti"
                 >vai ai tuoi recapiti</a
               >
               e inserisci nuovamente l’indirizzo assicurandoti che si tratti di
@@ -114,16 +121,14 @@
             font-size="14px"
             line-height="20px"
             padding-bottom="0px"
-            color="#17324D"
           >
             <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
             <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
         </mj-column>
       </mj-section>
-      <!-- Divider -->
+      <!-- Divider e footer-->
       <mj-include path="../partials/divider.mjml" />
-      <!-- Footer/Disclaimer -->
       <mj-include path="../partials/footer-mail-verification.mjml" />
     </mj-wrapper>
   </mj-body>

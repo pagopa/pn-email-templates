@@ -12,10 +12,18 @@
       <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
       <meta name="color-scheme" content="light dark" />
       <meta name="supported-color-schemes" content="light dark" />
+      <!-- MSO fallback per compatibilità con Outlook -->
+      <!--[if mso | IE]>
+        <style type="text/css">
+          body {
+            background-color: #ffffff;
+            color: #17324d;
+          }
+        </style>
+      <![endif]-->
     </mj-raw>
   </mj-head>
   <mj-body css-class="mail-body">
-    <mj-include path="../style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
       <mj-include path="../partials/main-pec-logo.mjml" />
@@ -29,7 +37,6 @@
             align="left"
             padding-top="16px"
             padding-bottom="16px"
-            color="#17324D"
             font-size="32px"
             line-height="40px"
           >
@@ -56,7 +63,6 @@
             align="left"
             padding-top="16px"
             padding-bottom="0px"
-            color="#17324D"
           >
             <p style="margin-top: 0px">Ciao,</p>
           </mj-text>
@@ -67,7 +73,6 @@
             font-weight="400"
             align="left"
             padding-top="0px"
-            color="#17324D"
           >
             <p
               style="
@@ -86,7 +91,6 @@
             line-height="28px"
             font-weight="400"
             align="left"
-            color="#17324D"
           >
             <p
               style="
@@ -98,7 +102,10 @@
               A partire da questo momento, lo useremo come
               <strong>indirizzo principale</strong> per inviarti gli avvisi di
               avvenuta ricezione. <br />Per maggiori informazioni,
-              <a href="https://notifichedigitali.pagopa.it/faq">leggi le FAQ</a
+              <a
+                style="color: #0073e6; text-decoration: none"
+                href="https://notifichedigitali.pagopa.it/faq"
+                >leggi le FAQ</a
               >.
             </p>
           </mj-text>
@@ -108,16 +115,14 @@
             font-size="14px"
             line-height="20px"
             padding-bottom="0px"
-            color="#17324D"
           >
             <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
             <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
         </mj-column>
       </mj-section>
-      <!-- Divider -->
+      <!-- Divider e disclaimer-->
       <mj-include path="../partials/divider.mjml" />
-      <!-- Footer/Disclaimer -->
       <mj-include path="../partials/footer-pec-verification.mjml" />
     </mj-wrapper>
   </mj-body>
