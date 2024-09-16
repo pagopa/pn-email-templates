@@ -61,19 +61,11 @@
             line-height="28px"
             font-weight="400"
             align="left"
-            padding-top="16px"
-            padding-bottom="0px"
-          >
-            <p style="margin-top: 0px; padding-bottom: 0">Ciao,</p>
-          </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="18px"
-            line-height="28px"
-            font-weight="400"
-            align="left"
             padding-top="0px"
           >
+            <p style="margin-top: 0px; padding-bottom: 0; padding-top: 16px">
+              Ciao,
+            </p>
             <p
               style="
                 font-size: 18px;
@@ -84,19 +76,12 @@
               L&apos;indirizzo PEC che hai indicato su SEND come recapito legale
               <strong>&egrave; confermato</strong>.
             </p>
-          </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="18px"
-            line-height="28px"
-            font-weight="400"
-            align="left"
-          >
             <p
               style="
                 font-size: 18px;
                 mso-line-height-rule: exactly;
                 line-height: 28px;
+                padding-bottom: 0;
               "
             >
               A partire da questo momento, lo useremo come

@@ -56,17 +56,7 @@
           </mj-text>
 
           <!-- Main message -->
-          <mj-text
-            css-class="text"
-            font-size="18px"
-            line-height="28px"
-            font-weight="400"
-            align="left"
-            padding-top="16px"
-            padding-bottom="0px"
-          >
-            <p style="margin-top: 0px; padding-bottom: 0">Ciao,</p>
-          </mj-text>
+
           <mj-text
             css-class="text"
             font-size="18px"
@@ -75,6 +65,10 @@
             align="left"
             padding-top="0px"
           >
+            <p style="margin-top: 0px; padding-bottom: 0; padding-top: 16px">
+              Ciao,
+            </p>
+
             <p
               style="
                 margin-top: 0px;

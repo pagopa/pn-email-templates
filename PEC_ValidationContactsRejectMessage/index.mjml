@@ -59,7 +59,6 @@
           </mj-text>
 
           <!-- Main Message -->
-
           <mj-text
             css-class="text"
             font-size="18px"
@@ -69,13 +68,15 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; padding-bottom: 0">Ciao,</p>
-
+            <p style="margin-top: 0px; padding-bottom: 0; padding-top: 16px">
+              Ciao,
+            </p>
             <p
               style="
                 font-size: 18px;
                 mso-line-height-rule: exactly;
                 line-height: 28px;
+                padding-bottom: 0;
               "
             >
               L&apos;indirizzo PEC che hai inserito su SEND come recapito legale
@@ -86,6 +87,7 @@
                 font-size: 18px;
                 mso-line-height-rule: exactly;
                 line-height: 28px;
+                padding-bottom: 0;
               "
             >
               Per ricevere gli avvisi di avvenuta ricezione in digitale e
