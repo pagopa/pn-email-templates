@@ -66,7 +66,7 @@
             padding-top="16px"
             padding-bottom="0px"
           >
-            <p style="margin-top: 0px">Ciao,</p>
+            <p style="margin-top: 0px; padding-bottom: 0">Ciao,</p>
           </mj-text>
           <mj-text
             css-class="text"
@@ -120,7 +120,7 @@
             <p style="margin-top: 20px; font-size: 18px; line-height: 28px">
               Hai fino a 120 giorni dalla
               <a
-                style="color: #0073e6; text-decoration: none"
+                style="color: #0073e6; text-decoration: underline"
                 href="${perfezionamentoURL}"
                 title="data di perfezionamento"
                 >data di perfezionamento</a
@@ -155,22 +155,14 @@
               parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente
               ed economico.
               <a
-                style="color: #0073e6; text-decoration: none"
+                style="color: #0073e6; text-decoration: underline"
                 href="${PNFaqSendURL}"
                 title="Scopri di pi&ugrave;"
                 >Scopri di pi&ugrave;</a
               >
             </p>
           </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="14px"
-            line-height="20px"
-            padding-bottom="0px"
-          >
-            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
-            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
-          </mj-text>
+          <mj-include path="../partials/signature.mjml" />
         </mj-column>
       </mj-section>
       <!-- Divider -->

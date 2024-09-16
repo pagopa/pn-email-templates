@@ -59,24 +59,18 @@
           </mj-text>
 
           <!-- Main Message -->
+
           <mj-text
             css-class="text"
             font-size="18px"
             line-height="28px"
             font-weight="400"
             align="left"
-            padding-top="16px"
-            padding-bottom="0px"
+            padding-top="0px"
+            color="#17324D"
           >
-            <p style="margin-top: 0px">Ciao,</p>
-          </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="18px"
-            line-height="28px"
-            font-weight="400"
-            align="left"
-          >
+            <p style="margin-top: 0px; padding-bottom: 0">Ciao,</p>
+
             <p
               style="
                 font-size: 18px;
@@ -87,16 +81,6 @@
               L&apos;indirizzo PEC che hai inserito su SEND come recapito legale
               <strong>non &egrave; formalmente valido</strong>.
             </p>
-          </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="18px"
-            line-height="28px"
-            font-weight="400"
-            align="left"
-            padding-top="0px"
-            color="#17324D"
-          >
             <p
               style="
                 font-size: 18px;
@@ -107,7 +91,7 @@
               Per ricevere gli avvisi di avvenuta ricezione in digitale e
               risparmiare tempo e denaro,
               <a
-                style="color: #0073e6; text-decoration: none"
+                style="color: #0073e6; text-decoration: underline"
                 href="https://cittadini.notifichedigitali.it/recapiti"
                 >vai ai tuoi recapiti</a
               >
@@ -116,15 +100,7 @@
               presenti errori di digitazione.
             </p>
           </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="14px"
-            line-height="20px"
-            padding-bottom="0px"
-          >
-            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
-            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
-          </mj-text>
+          <mj-include path="../partials/signature.mjml" />
         </mj-column>
       </mj-section>
       <!-- Divider e footer-->

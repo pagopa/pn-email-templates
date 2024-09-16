@@ -65,7 +65,7 @@
             padding-top="16px"
             padding-bottom="0px"
           >
-            <p style="margin-top: 0px">Ciao,</p>
+            <p style="margin-top: 0px; padding-bottom: 0">Ciao,</p>
           </mj-text>
           <mj-text
             css-class="text"
@@ -88,7 +88,7 @@
               <a
                 title="Continua su Piattaforma Notifiche"
                 href="https://cittadini.notifichedigitali.it/recapiti"
-                style="color: #0073e6; text-decoration: none"
+                style="color: #0073e6; text-decoration: underline"
                 >SEND - Servizio Notifiche Digitali</a
               >
               il codice
@@ -97,15 +97,7 @@
               ${verificationCode}
             </h5>
           </mj-text>
-          <mj-text
-            css-class="text"
-            font-size="14px"
-            line-height="20px"
-            padding-bottom="0px"
-          >
-            <p style="margin-top: 0px; margin-bottom: 14px">A presto,</p>
-            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
-          </mj-text>
+          <mj-include path="../partials/signature.mjml" />
         </mj-column>
       </mj-section>
 
