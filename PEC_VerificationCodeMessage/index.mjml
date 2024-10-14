@@ -77,10 +77,11 @@
                 line-height: 28px;
               "
             >
-              Per confermare questo indirizzo PEC come recapito legale,
-              inserisci su
+              Per confermare la volontà di registrare questo indirizzo PEC, come
+              recapito legale utilizzato da SEND quale indirizzo principale per
+              l’invio di avvisi di avvenuta ricezione, inserisci su
               <a
-                title="Continua su Piattaforma Notifiche"
+                title="Continua su SEND"
                 href="https://cittadini.notifichedigitali.it/recapiti"
                 style="color: #0073e6; text-decoration: underline"
                 >SEND - Servizio Notifiche Digitali</a
