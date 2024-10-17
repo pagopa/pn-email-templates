@@ -8,6 +8,7 @@
         perch&eacute; gliel&apos;hai comunicato in passato. Per modificare i
         recapiti o aggiungerne altri,
         <a
+          style="color: #0073e6; text-decoration: underline"
           title="vai ai tuoi recapiti"
           class="link"
           href="${piattaformaNotificheURL}auth/login"

@@ -1,0 +1,11 @@
+<mj-text
+  css-class="text"
+  font-size="18px"
+  line-height="20px"
+  padding-bottom="0px"
+>
+  <p style="margin-top: 0px; margin-bottom: 14px; padding-bottom: 0px">
+    A presto,
+  </p>
+  <p style="margin: 0px; padding: 0px">SEND - Servizio Notifiche Digitali</p>
+</mj-text>
