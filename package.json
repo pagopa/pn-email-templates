@@ -1,16 +1,16 @@
 {
   "name": "pn-email-templates",
   "version": "1.0.0",
-  "description": "This repo contains the mail templates used by Piattaforma Notifiche, created using [MJML](https://mjml.io/) markup language.",
+  "description": "This repo contains the templates used by SEND - Servizio Notifiche Digitali, created using [MJML](https://mjml.io/) markup language.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "node generateHtmlTemplates.js"
+    "generate": "node generateHtmlTemplates.js "
   },
   "keywords": [],
   "author": "",
   "license": "SEE LICENSE IN LICENSE",
-  "dependencies": {
+  "devDependencies": {
     "ejs": "^3.1.10",
     "fs-extra": "^11.2.0"
   }
