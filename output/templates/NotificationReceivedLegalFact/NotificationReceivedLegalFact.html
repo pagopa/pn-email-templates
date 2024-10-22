@@ -133,7 +133,7 @@
 
       .document-type {
         margin: 0 0 7mm 0;
-        font-size: 11px;
+        font-size: 18.667px;
       }
 
       .hash-list li {
@@ -142,6 +142,9 @@
       }
       .pb-0 {
         padding-bottom: 0;
+      }
+      .pb-16 {
+        padding-bottom: 21.333px;
       }
 
     </style>
@@ -174,7 +177,14 @@
     <h3 class="document-type subject">Attestazione opponibile a terzi: notifica presa in carico</h3>
 
     <!-- additional language -->
-
+      
+      
+      
+            </li>
+          </#list>
+        </ul>
+      </p>
+      
       
     <!-- fine altra lingua -->
 
@@ -218,7 +228,7 @@
 
         <div class="row">
             <div class="left-col col-5-10">
-              <p> &middot; Codice Fiscale</p>
+              <p>Codice Fiscale</p>
             </div>
             <div class="left-col col-5-10">
                 <p><strong>${recipient.taxId}</strong></p>
@@ -282,12 +292,21 @@
 </#list>
 
 <div class="row margin-top-large">
-    <div class="left-col col-5-10">
+    <div class="left-col col-1-10">
         <p>&nbsp;</p>
     </div>
-    <div class="left-col col-5-10">
-        <p class="right">Firmato digitalmente da PagoPA S.p.A.</p>
+    <div class="left-col col-9-10">
+        <p class="right pb-16">Firmato digitalmente da PagoPA S.p.A.</p>
     </div>
+</div>
+<div class="row margin-top-large">
+  <div class="left-col col-4-10">
+      <p>&nbsp;</p>
+  </div>
+  <div class="left-col col-6-10">
+      
+      
+  </div>
 </div>
 </div>
 </body>
