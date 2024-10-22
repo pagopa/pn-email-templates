@@ -4,13 +4,13 @@
     <style type="text/css" media="all">
       @font-face {
         font-family: "Montserrat";
-        src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+        src: url('../../fonts/Montserrat/static/Montserrat-Regular.ttf');
         font-weight: normal;
         font-style: normal;
       }
       @font-face {
         font-family: "Montserrat";
-        src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
+        src: url('../../fonts/Montserrat/static/Montserrat-Bold.ttf');
         font-weight: bold;
         font-style: normal;
       }
@@ -172,13 +172,13 @@
       <div id="header" class="row">
         <div class="left-col">
           <img
-            src="images/pn-logo-header.png"
+            src="../../images/pn-logo-header.png"
             style="width: 126px; height: 35px"
           />
         </div>
         <div class="right-col">
           <img
-            src="images/send-logo.png"
+            src="../../images/send-logo.png"
             style="width: 81px; height: 26.24px"
           />
         </div>
@@ -195,16 +195,39 @@
           </p>
         </div>
         <div class="right-col">
-          <img src="images/pn-logo-footer.png" />
+          <img src="../../images/pn-logo-footer.png" />
         </div>
       </div>
 
       <h3 class="subject" data-hide-on-it="true"><%=subject%></h3>
       <h3 class="subject"><%=it_subject%></h3>
 
-      <p class="paragraph"><%=it_message_1%></p>
+      <p class="paragraph"><%-it_body_1%></p>
 
-      <p class="paragraph"><%=it_message_2%></p>
+      <#list notification.recipients as recipient>
+        <div class="margin-y-small">
+          <div class="row">
+              <div class="left-col col-5-10">
+                  <p><%=it_denomination%></p>
+              </div>
+              <div class="left-col col-5-10">
+                  <p><strong>${recipient.denomination}</strong></p>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="left-col col-5-10">
+                      <p><%=it_fiscalcode%></p>
+              </div>
+              <div class="left-col col-5-10">
+                  <p><strong>${recipient.taxId}</strong></p>
+              </div>
+          </div>
+        </div>
+      </#list>
+
+
+      <p class="paragraph"><%-it_body_2%></p>
 
       <p class="paragraph">
         <span data-hide-on-it="true"> <%=disclaimer_1%><br /></span>
@@ -220,7 +243,7 @@
           <p>&nbsp;</p>
         </div>
         <div class="left-col col-5-10">
-          <p class="right">PagoPA S.p.A.</p>
+          <p class="right"><%=it_signature%></p>
         </div>
       </div>
     </div>
