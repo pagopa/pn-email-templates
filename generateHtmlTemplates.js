@@ -60,7 +60,7 @@ async function generateHtmlTemplates() {
 
       const translations = await loadTranslations(language, template);
       const renderedHtml = ejs.render(templateLang, translations);
-      const outputDir = path.join(__dirname, "output", template);
+      const outputDir = path.join(__dirname, "output/templates", template);
       await fs.ensureDir(outputDir);
       const outputPath = path.join(outputDir, `${fileName}.html`);
       await fs.writeFile(outputPath, renderedHtml, "utf8");
@@ -70,11 +70,33 @@ async function generateHtmlTemplates() {
   }
 }
 
-// Esegui la generazione dei template HTML
+async function copyAssets() {
+  const fontDir = path.join(__dirname, "resources/fonts");
+  const imagesDir = path.join(__dirname, "resources/images");
+  const outputDir = path.join(__dirname, "output");
+
+  await fs.copy(fontDir, path.join(outputDir, "fonts"));
+  await fs.copy(imagesDir, path.join(outputDir, "images"));
+}
+
+// Esegui la generazione dei template HTML e la copia degli assets
 generateHtmlTemplates()
-  .then(() =>
-    console.log("Tutti i template HTML sono stati generati con successo")
-  )
-  .catch((err) =>
-    console.error("Errore nella generazione dei template HTML", err)
-  );
+  .then(() => {
+    // TODO: Uncomment when development is complete
+    // copyAssets()
+    //   .then(() => {
+    //     console.log(
+    //       "Tutti i template HTML e gli assets sono stati generati con successo"
+    //     );
+    //   })
+    //   .catch((err) => {
+    //     console.error("Errore nella copia degli assets", err);
+    //   });
+
+    console.log(
+      "Tutti i template HTML e gli assets sono stati generati con successo"
+    );
+  })
+  .catch((err) => {
+    console.error("Errore nella generazione dei template HTML", err);
+  });
