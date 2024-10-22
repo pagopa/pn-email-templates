@@ -170,40 +170,21 @@
         </div>
     </div>
 
-    <h3 class="document-type subject pb-0" data-hide-on-it="true"><%=subject%></h3>
-    <h3 class="document-type subject"><%=it_subject%></h3>
+    
+    <h3 class="document-type subject">Attestazione opponibile a terzi: notifica presa in carico</h3>
 
     <!-- additional language -->
-      <p class="paragraph" data-hide-on-it="true">
-        <%=body1%>
-      </p>
-      <p class="paragraph" data-hide-on-it="true">
-        <%-body2%>
-      </p>
-      <p class="paragraph" data-hide-on-it="true">
-        <ul class="hash-list" data-hide-on-it="true">
-          <#list digests as digest>
-            <li data-hide-on-it="true">
-              <strong data-hide-on-it="true">${digest}</strong>
-            </li>
-          </#list>
-        </ul>
-      </p>
-      <p class="paragraph" data-hide-on-it="true">
-        <%-body3%>
-      </p>
-      <p data-hide-on-it="true">        
-        <%-body4%>
-      </p>
+
+      
     <!-- fine altra lingua -->
 
 
     <!-- italiano -->
     <p class="paragraph">
-      <%=it_body1%>
+      Ai sensi dell’art. 26, comma 11, del decreto-legge 76/2020 s.m.i., la PagoPA S.p.A. nella sua qualità di gestore ex lege della Piattaforma Notifiche Digitali di cui allo stesso art. 26 (anche nota come SEND - Servizio Notifiche Digitali), con ogni valore legale per l&#39;opponibilità a terzi, ATTESTA CHE:
     </p>
     <p class="paragraph">
-      <%-it_body2%>
+      in data <b>${sendDate}</b> il soggetto mittente <b>${notification.getSender().getPaDenomination()}</b>, C.F. <b>${notification.getSender().getPaTaxId()}</b> ha messo a disposizione del gestore i documenti informatici di cui allo IUN <b>${notification.getIun()}</b> e identificati in modo univoco con i seguenti hash:
     </p>
 
     <p class="paragraph">
@@ -215,10 +196,10 @@
     </p>
 
     <p class="paragraph">
-      <%-it_body3%>
+      il soggetto mittente ha richiesto che la notificazione di tali documenti riporti come oggetto ${subject} e che venga eseguita nei confronti dei destinatari che si riportano di seguito unitamente all'eventuale domicilio digitale speciale e al loro indirizzo fisico, come forniti dal soggetto mittente stesso.
     </p>
     <p>        
-      <%-it_body4%>
+      Si attesta, altresì, che ai fini dell'individuazione del domicilio digitale da utilizzare in via prioritaria per la notificazione, restano ferme le risultanze delle verifiche di cui all'art. 7, commi 1 e 2, del Decreto del Ministro per la Trasformazione Digitale 58/2022.
     </p>
     <!-- fine italiano -->
 
@@ -228,7 +209,7 @@
 
         <div class="row">
             <div class="left-col col-5-10">
-                <p><span data-hide-on-it="true"><%-denomination%> &middot; </span><%-it_denomination%></p>
+                <p>Nome e Cognome / Ragione Sociale</p>
             </div>
             <div class="left-col col-5-10">
                 <p><strong>${recipient.denomination}</strong></p>
@@ -237,7 +218,7 @@
 
         <div class="row">
             <div class="left-col col-5-10">
-              <p><span data-hide-on-it="true"><%-it_fiscalcode%></span> &middot; <%-it_fiscalcode%></p>
+              <p> &middot; Codice Fiscale</p>
             </div>
             <div class="left-col col-5-10">
                 <p><strong>${recipient.taxId}</strong></p>
