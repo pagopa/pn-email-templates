@@ -28,14 +28,15 @@ async function loadTranslations(language, template) {
 async function generateHtmlTemplates() {
   const languages = ["it", "de", "fr", "sl"]; // Elenca le lingue supportate
   const templates = [
-    //   "NotificationAAR_RADDalt",
-    //   "NotificationAAR",
-    //   "NotificationAAR_RADD",
-    //   "NotificationReceivedLegalFact",
-    //   "PecDeliveryWorkflowLegalFact",
-    //   "NotificationViewedLegalFact",
-    //   "PdfLegalFact",
-    "AnalogDeliveryWorkflowFailureLegalFact",
+    // "NotificationAAR_RADDalt",
+    // "NotificationAAR",
+    // "NotificationAAR_RADD",
+    // "NotificationReceivedLegalFact",
+    // "PecDeliveryWorkflowLegalFact",
+    // "NotificationViewedLegalFact",
+    // "PdfLegalFact",
+    // "AnalogDeliveryWorkflowFailureLegalFact",
+    "NotificationCancelledLegalFact",
   ];
 
   for (const template of templates) {
@@ -48,10 +49,11 @@ async function generateHtmlTemplates() {
     const templateContent = await fs.readFile(templatePath, "utf8");
 
     for (const language of languages) {
+      const fileName = language === "it" ? template : `${template}_${language}`;
       const templateLang =
         language === "it"
-          ? templateContent.replace(
-              /<[^>]*data-hide-on-it="true"[^>]*>.*?<\/[^>]*>/g,
+          ? templateContent.replaceAll(
+              /<[^>]*data-hide-on-it="true"[^>]*>[\s\S]*?<\/[^>]*>/g,
               ""
             )
           : templateContent;
@@ -60,7 +62,7 @@ async function generateHtmlTemplates() {
       const renderedHtml = ejs.render(templateLang, translations);
       const outputDir = path.join(__dirname, "output", template);
       await fs.ensureDir(outputDir);
-      const outputPath = path.join(outputDir, `${template}_${language}.html`);
+      const outputPath = path.join(outputDir, `${fileName}.html`);
       await fs.writeFile(outputPath, renderedHtml, "utf8");
 
       console.log(`Template HTML generato per la lingua: ${language}`);
