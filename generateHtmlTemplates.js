@@ -26,17 +26,17 @@ async function loadTranslations(language, template) {
 
 // generazione template BILINGUA
 async function generateHtmlTemplates() {
-  const languages = ["it", "de", "fr", "sl"]; // Elenca le lingue supportate
+  const languages = ["it", "fr", "sl"]; // Elenca le lingue supportate
   const templates = [
     // "NotificationAAR_RADDalt",
     // "NotificationAAR",
     // "NotificationAAR_RADD",
-    // "NotificationReceivedLegalFact",
+    "NotificationReceivedLegalFact",
     // "PecDeliveryWorkflowLegalFact",
     // "NotificationViewedLegalFact",
     // "PdfLegalFact",
     // "AnalogDeliveryWorkflowFailureLegalFact",
-    "NotificationCancelledLegalFact",
+    // "NotificationCancelledLegalFact",
   ];
 
   for (const template of templates) {
