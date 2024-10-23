@@ -31,12 +31,12 @@ async function generateHtmlTemplates() {
     // "NotificationAAR_RADDalt",
     // "NotificationAAR",
     // "NotificationAAR_RADD",
-    "NotificationReceivedLegalFact",
+    // "NotificationReceivedLegalFact",
     // "PecDeliveryWorkflowLegalFact",
     // "NotificationViewedLegalFact",
     // "PdfLegalFact",
     // "AnalogDeliveryWorkflowFailureLegalFact",
-    // "NotificationCancelledLegalFact",
+    "NotificationCancelledLegalFact",
   ];
 
   for (const template of templates) {
