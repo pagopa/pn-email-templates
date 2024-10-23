@@ -86,6 +86,7 @@
       .row {
         width: 100%;
       }
+      
       .row::after {
         content: "";
         display: block;
@@ -120,15 +121,8 @@
         text-align: right;
       }
 
-      #subject {
-        font-size: 14px;
-        margin-bottom: 7mm;
-      }
-
       .paragraph {
         margin: 21.333px 0;
-        /* text-align: justify;
-        text-justify: inter-word; */
       }
 
       .document-type {
@@ -187,8 +181,8 @@
         </div>
       </div>
 
-      <h3 class="document-type subject mb-0" data-hide-on-it="true">Déclaration d&#39;annulation de la notification sur la plateforme SEND</h3>
-      <h3 class="document-type subject">Dichiarazione annullamento notifica sulla piattaforma SEND</h3>
+      <h3 class="document-type mb-0" data-hide-on-it="true">Déclaration d&#39;annulation de la notification sur la plateforme SEND</h3>
+      <h3 class="document-type">Dichiarazione annullamento notifica sulla piattaforma SEND</h3>
 
       <p class="paragraph mb-0" data-hide-on-it="true">Par le présent document, mis à disposition du destinataire exclusivement sur la plateforme SEND, il est déclaré que la notification ayant IUN <b>${notification.getIun()}</b>, effectuée à l'encontre de :</p>
       <p class="paragraph">Con il presente documento, reso disponibile al destinatario esclusivamente sulla Piattaforma SEND, si dichiara che la notifica avente IUN <b>${notification.getIun()}</b>, eseguita nei confronti di:</p>

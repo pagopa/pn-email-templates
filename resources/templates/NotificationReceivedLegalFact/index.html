@@ -1,203 +1,243 @@
 <html>
+
 <head>
-    <meta name="author" content="SEND - Servizio Notifiche Digitali" />
-    <style type="text/css" media="all">
-      @font-face {
-        font-family: 'Montserrat';
-        src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
-        font-weight: normal;
-        font-style: normal;
-      }
-      @font-face {
-        font-family: 'Montserrat';
-        src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
-        font-weight: bold;
-        font-style: normal;
-      }
+  <meta name="author" content="SEND - Servizio Notifiche Digitali" />
+  <style type="text/css" media="all">
+    @font-face {
+      font-family: 'Montserrat';
+      src: url(fonts/Montserrat/static/Montserrat-Regular.ttf);
+      font-weight: normal;
+      font-style: normal;
+    }
 
-      @page {
-        size: A4;
-        margin: 36mm 10mm 32mm 10mm;
+    @font-face {
+      font-family: 'Montserrat';
+      src: url(fonts/Montserrat/static/Montserrat-Bold.ttf);
+      font-weight: bold;
+      font-style: normal;
+    }
 
-        @top-left {
-          content: element(header);
-          vertical-align: top;
-        }
+    @page {
+      size: A4;
+      margin: 36mm 10mm 32mm 10mm;
 
-        @bottom-center {
-          content: element(footer);
-        }
+      @top-left {
+        content: element(header);
+        vertical-align: top;
       }
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      @bottom-center {
+        content: element(footer);
       }
+    }
 
-      body {
-        font-size: 12px;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 400;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-      p {
-        margin: 0;
-        padding: 0;
-        line-height: 1.5em;
-      }
+    body {
+      font-size: 12px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+    }
 
-      a {
-        color: inherit;
-      }
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.5em;
+    }
 
-      #header {
-        position: running(header);
-        font-size: 14px;
-      }
+    a {
+      color: inherit;
+    }
 
-      #header img {
-        margin-top: 15mm;
-        width: 119px;
-        height: 35px;
-        /* 85x25 */
-      }
+    #header {
+      position: running(header);
+      font-size: 14px;
+    }
 
-      #footer {
-        position: running(footer);
-        font-size: 8px;
-        color: #475A6D;
-        border-top: 1px solid #E3E7EB;
-        padding-top: 3mm;
-        margin-bottom: 10mm;
-      }
+    #header img {
+      margin-top: 15mm;
+      width: 119px;
+      height: 35px;
+      /* 85x25 */
+    }
 
-      #footer p {
-        margin: 0;
-        padding: 0;
-        line-height: 1.2em;
-      }
+    #footer {
+      position: running(footer);
+      font-size: 8px;
+      color: #475A6D;
+      border-top: 1px solid #E3E7EB;
+      padding-top: 3mm;
+      margin-bottom: 10mm;
+    }
 
-      #footer img {
-        width: 45px;
-        height: 45px;
-      }
+    #footer p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.2em;
+    }
 
-      .row {
-        width: 100%;
-      }
-      .row::after {
-        content: "";
-        display: block;
-        clear: both;
-      }
+    #footer img {
+      width: 45px;
+      height: 45px;
+    }
 
-      .left-col {
-        float: left;
-      }
+    .row {
+      width: 100%;
+    }
 
-      .right-col {
-        float: right;
-      }
+    .row::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
 
-      .col-1-10 { width: 10%; }
-      .col-2-10 { width: 20%; }
-      .col-3-10 { width: 30%; }
-      .col-4-10 { width: 40%; }
-      .col-5-10 { width: 50%; }
-      .col-6-10 { width: 60%; }
-      .col-7-10 { width: 70%; }
-      .col-8-10 { width: 80%; }
-      .col-9-10 { width: 90%; }
+    .left-col {
+      float: left;
+    }
 
-      .margin-top-medium { margin-top: 10mm; }
-      .margin-top-large { margin-top: 15mm; }
+    .right-col {
+      float: right;
+    }
 
-      .margin-y-small { margin: 5mm 0; }
-      .margin-y-medium { margin: 10mm 0; }
+    .col-1-10 {
+      width: 10%;
+    }
 
-      .right {
-        text-align: right;
-      }
+    .col-2-10 {
+      width: 20%;
+    }
 
-      #subject {
-        font-size: 14px;
-        margin-bottom: 7mm;
-      }
+    .col-3-10 {
+      width: 30%;
+    }
 
-      .paragraph {
-        margin: 7mm 0;
-        /* text-align: justify;
+    .col-4-10 {
+      width: 40%;
+    }
+
+    .col-5-10 {
+      width: 50%;
+    }
+
+    .col-6-10 {
+      width: 60%;
+    }
+
+    .col-7-10 {
+      width: 70%;
+    }
+
+    .col-8-10 {
+      width: 80%;
+    }
+
+    .col-9-10 {
+      width: 90%;
+    }
+
+    .margin-top-medium {
+      margin-top: 10mm;
+    }
+
+    .margin-top-large {
+      margin-top: 15mm;
+    }
+
+    .margin-y-small {
+      margin: 5mm 0;
+    }
+
+    .margin-y-medium {
+      margin: 10mm 0;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .paragraph {
+      margin: 7mm 0;
+      /* text-align: justify;
         text-justify: inter-word; */
-      }
+    }
 
-      .document-type {
-        margin: 0 0 7mm 0;
-        font-size: 18.667px;
-      }
+    .document-type {
+      margin: 0 0 7mm 0;
+      font-size: 18.667px;
+    }
 
-      .hash-list li {
-        list-style-type: disc;
-        list-style-position: inside;
-      }
-      .mb-0 {
-        margin-bottom: 0;
-      }
-      .pb-16 {
-        padding-bottom: 21.333px;
-      }
+    .hash-list li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
 
-    </style>
+    .mb-0 {
+      margin-bottom: 0;
+    }
+
+    .pb-16 {
+      padding-bottom: 21.333px;
+    }
+  </style>
 </head>
+
 <body>
-<div class="container">
+  <div class="container">
     <div id="header" class="row">
-        <div class="left-col">
-            <img src="images/pn-logo-header.png" style="width:126px; height:35px" />
-        </div>
-        <div class="right-col">
-            <img src="images/send-logo.png"  style="width:81px; height:26.24px;"/>
-        </div>
+      <div class="left-col">
+        <img src="images/pn-logo-header.png" style="width:126px; height:35px" />
+      </div>
+      <div class="right-col">
+        <img src="images/send-logo.png" style="width:81px; height:26.24px;" />
+      </div>
     </div>
     <!-- Se il footer viene messo in fondo al documento compare solo nell'ultima pagina -->
     <div id="footer" class="row">
-        <div class="left-col">
-            <p>PagoPA S.p.A.</p>
-            <p>società per azioni con socio unico</p>
-            <p>capitale sociale di euro 1,000,000 interamente versato</p>
-            <p>sede legale in Roma, Piazza Colonna 370, CAP 00187</p>
-            <p>n. di iscrizione a Registro Imprese di Roma, CF e P.IVA 15376371009</p>
-        </div>
-        <div class="right-col">
-            <img src="images/pn-logo-footer.png"/>
-        </div>
+      <div class="left-col">
+        <p>PagoPA S.p.A.</p>
+        <p>società per azioni con socio unico</p>
+        <p>capitale sociale di euro 1,000,000 interamente versato</p>
+        <p>sede legale in Roma, Piazza Colonna 370, CAP 00187</p>
+        <p>n. di iscrizione a Registro Imprese di Roma, CF e P.IVA 15376371009</p>
+      </div>
+      <div class="right-col">
+        <img src="images/pn-logo-footer.png" />
+      </div>
     </div>
 
-    <h3 class="document-type subject mb-0" data-hide-on-it="true"><%=subject%></h3>
-    <h3 class="document-type subject"><%=it_subject%></h3>
+    <h3 class="document-type subject mb-0" data-hide-on-it="true">
+      <%=subject%>
+    </h3>
+    <h3 class="document-type subject">
+      <%=it_subject%>
+    </h3>
 
     <!-- additional language -->
-      <p class="paragraph" data-hide-on-it="true">
-        <%=body1%>
-      </p>
-      <p class="paragraph" data-hide-on-it="true">
-        <%-body2%>
-      </p>
-      <p class="paragraph" data-hide-on-it="true">
-        <ul class="hash-list" data-hide-on-it="true">
-          <#list digests as digest>
-            <li data-hide-on-it="true">
-              <strong data-hide-on-it="true">${digest}</strong>
-            </li>
-          </#list>
-        </ul>
-      </p>
-      <p class="paragraph" data-hide-on-it="true">
-        <%-body3%>
-      </p>
-      <p data-hide-on-it="true">        
-        <%-body4%>
-      </p>
+    <p class="paragraph" data-hide-on-it="true">
+      <%=body1%>
+    </p>
+    <p class="paragraph" data-hide-on-it="true">
+      <%-body2%>
+    </p>
+    <p class="paragraph" data-hide-on-it="true">
+    <ul class="hash-list" data-hide-on-it="true">
+      <#list digests as digest>
+        <li data-hide-on-it="true">
+          <strong data-hide-on-it="true">${digest}</strong>
+        </li>
+      </#list>
+    </ul>
+    </p>
+    <p class="paragraph" data-hide-on-it="true">
+      <%-body3%>
+    </p>
+    <p data-hide-on-it="true">
+      <%-body4%>
+    </p>
     <!-- fine altra lingua -->
 
 
@@ -210,116 +250,118 @@
     </p>
 
     <p class="paragraph">
-      <ul class="hash-list">
-          <#list digests as digest>
-          <li><strong>${digest}</strong></li>
-          </#list>
-      </ul>
+    <ul class="hash-list">
+      <#list digests as digest>
+        <li><strong>${digest}</strong></li>
+      </#list>
+    </ul>
     </p>
 
     <p class="paragraph">
       <%-it_body3%>
     </p>
-    <p>        
+    <p>
       <%-it_body4%>
     </p>
     <!-- fine italiano -->
 
 
     <#list notification.recipients as recipient>
-    <div class="margin-y-small">
+      <div class="margin-y-small">
 
         <div class="row">
-            <div class="left-col col-5-10">
-                <p><span data-hide-on-it="true"><%-denomination%> &bull; </span><%-it_denomination%></p>
-            </div>
-            <div class="left-col col-5-10">
-                <p><strong>${recipient.denomination}</strong></p>
-            </div>
+          <div class="left-col col-5-10">
+            <p><span data-hide-on-it="true"><%-denomination%> &bull; </span><%-it_denomination%></p>
+          </div>
+          <div class="left-col col-5-10">
+            <p><strong>${recipient.denomination}</strong></p>
+          </div>
         </div>
 
         <div class="row">
-            <div class="left-col col-5-10">
-              <p><span data-hide-on-it="true"><%-it_fiscalcode%> &bull; </span><%-it_fiscalcode%></p>
-            </div>
-            <div class="left-col col-5-10">
-                <p><strong>${recipient.taxId}</strong></p>
-            </div>
+          <div class="left-col col-5-10">
+            <p><span data-hide-on-it="true"><%-it_fiscalcode%> &bull; </span><%-it_fiscalcode%></p>
+          </div>
+          <div class="left-col col-5-10">
+            <p><strong>${recipient.taxId}</strong></p>
+          </div>
         </div>
 
         <div class="row">
-            <div class="left-col col-5-10">
-                <p><span data-hide-on-it="true"><%-digitaldomicile%> &bull; </span><%-it_digitaldomicile%></p>
-            </div>
-            <div class="left-col col-5-10">
-                <p>
-                    <strong>
-                        <#if (recipient.getDigitalDomicile().getAddress())??>
-                        ${recipient.getDigitalDomicile().getAddress()}
-                        <#else>
-                        non fornito dalla PA
-                        </#if>
-                    </strong>
-                </p>
-            </div>
+          <div class="left-col col-5-10">
+            <p><span data-hide-on-it="true"><%-digitaldomicile%> &bull; </span><%-it_digitaldomicile%></p>
+          </div>
+          <div class="left-col col-5-10">
+            <p>
+              <strong>
+                <#if (recipient.getDigitalDomicile().getAddress())??>
+                  ${recipient.getDigitalDomicile().getAddress()}
+                  <#else>
+                    non fornito dalla PA
+                </#if>
+              </strong>
+            </p>
+          </div>
         </div>
 
         <div class="row">
-            <div class="left-col col-5-10">
-                <p><span data-hide-on-it="true"><%-digitaldomicile_type%> &bull; </span><%-it_digitaldomicile_type%></p>
-            </div>
-            <div class="left-col col-5-10">
-                <p>
-                    <strong>
-                        <#if (recipient.getDigitalDomicile().getAddress())??>
-                        Domicilio eletto presso la Pubblica Amministrazione mittente ex art.26, comma 5 lettera b del D.L. 76/2020
-                        <#else>
-                        non fornito dalla PA
-                    </#if>
-                    </strong>
-                </p>
-            </div>
+          <div class="left-col col-5-10">
+            <p><span data-hide-on-it="true"><%-digitaldomicile_type%> &bull; </span><%-it_digitaldomicile_type%></p>
+          </div>
+          <div class="left-col col-5-10">
+            <p>
+              <strong>
+                <#if (recipient.getDigitalDomicile().getAddress())??>
+                  Domicilio eletto presso la Pubblica Amministrazione mittente ex art.26, comma 5 lettera b del D.L.
+                  76/2020
+                  <#else>
+                    non fornito dalla PA
+                </#if>
+              </strong>
+            </p>
+          </div>
         </div>
 
         <div class="row">
-            <div class="left-col col-5-10">
-                <p><span data-hide-on-it="true"><%-address%> &bull; </span><%-it_address%></p>
-            </div>
-            <div class="left-col col-5-10">
-                <p>
-                    <strong>
-                        <#if addressWriter.nullSafePhysicalAddressToString(
-                        recipient.physicalAddress, recipient.denomination, '<br/>')??>
-                        ${addressWriter.nullSafePhysicalAddressToString( recipient.physicalAddress,
-                        recipient.denomination, '<br/>')}
-                        <#else>
-                        non presente
-                    </#if>
-                    </strong>
-                </p>
-            </div>
+          <div class="left-col col-5-10">
+            <p><span data-hide-on-it="true"><%-address%> &bull; </span><%-it_address%></p>
+          </div>
+          <div class="left-col col-5-10">
+            <p>
+              <strong>
+                <#if addressWriter.nullSafePhysicalAddressToString( recipient.physicalAddress,
+                  recipient.denomination, '<br/>' )??>
+                  ${addressWriter.nullSafePhysicalAddressToString( recipient.physicalAddress,
+                  recipient.denomination, '<br />')}
+                  <#else>
+                    non presente
+                </#if>
+              </strong>
+            </p>
+          </div>
         </div>
 
-    </div>
-</#list>
+      </div>
+    </#list>
 
-<div class="row margin-top-large">
-    <div class="left-col col-1-10">
+    <div class="row margin-top-large">
+      <div class="left-col col-1-10">
         <p>&nbsp;</p>
-    </div>
-    <div class="left-col col-9-10">
+      </div>
+      <div class="left-col col-9-10">
         <p class="right pb-16"><span data-hide-on-it="true"><%-signature%> &bull; </span><%-it_signature%></p>
+      </div>
     </div>
-</div>
-<div class="row margin-top-large">
-  <div class="left-col col-4-10">
-      <p>&nbsp;</p>
+    <div class="row margin-top-large">
+      <div class="left-col col-4-10">
+        <p>&nbsp;</p>
+      </div>
+      <div class="left-col col-6-10">
+        <p class="right pb-16" data-hide-on-it="true"><%-disclaimer_lang%></p>
+        <p class="right" data-hide-on-it="true"><%-it_disclaimer_lang%></p>
+      </div>
+    </div>
   </div>
-  <div class="left-col col-6-10">
-      <p class="right pb-16" data-hide-on-it="true"><%-disclaimer%></p>
-      <p class="right" data-hide-on-it="true"><%-it_disclaimer%></p>
-  </div>
-</div>
-</div>
 </body>
+
 </html>

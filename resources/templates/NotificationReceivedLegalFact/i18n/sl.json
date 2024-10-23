@@ -11,5 +11,5 @@
   "digitaldomicile_type":"Vrsta digitalnega naslova",
   "address":"Fizični naslov",
   "signature":"Digitalno podpisano s strani PagoPA S.p.A.",
-  "disclaimer":"Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
+  "disclaimer_lang":"Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
 }
