@@ -52,6 +52,13 @@
             <%-body2%>
         </p>
 
+        <p class="paragraph mb-0">
+            <%=it_body1%>
+        </p>
+        <p class="paragraph my-8">
+            <%-it_body2%>
+        </p>
+
         <#list deliveries as delivery>
             <div class="margin-y-small">
                 <div class="row">
@@ -135,9 +142,12 @@
         </#list>
 
         <#if endWorkflowStatus !="SUCCESS">
-            <div class="paragraph">
+            <p class="paragraph my-8" data-hide-on-it="true">
+                <%-body4_failure%>
+            </p>
+            <p class="paragraph my-8">
                 <%-it_body4_failure%>
-            </div>
+            </p>
         </#if>
 
         <div class="py-16">

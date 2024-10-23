@@ -44,6 +44,13 @@
         
         
 
+        <p class="paragraph mb-0">
+            Ai sensi dell’art. 26, comma 11, del decreto-legge 76/2020 s.m.i., la PagoPA S.p.A. nella sua qualità di gestore ex lege della Piattaforma Notifiche Digitali di cui allo stesso art. 26 (anche nota come SEND - Servizio Notifiche Digitali), con ogni valore legale per l&#39;opponibilità a terzi, ATTESTA CHE:
+        </p>
+        <p class="paragraph my-8">
+            gli atti di cui alla notifica identificata con IUN <b>${iun}</b> sono stati gestiti come segue:
+        </p>
+
         <#list deliveries as delivery>
             <div class="margin-y-small">
                 <div class="row">
@@ -123,9 +130,10 @@
         </#list>
 
         <#if endWorkflowStatus !="SUCCESS">
-            <div class="paragraph">
+            
+            <p class="paragraph my-8">
                 In data <strong>${endWorkflowDate}</strong> il gestore della piattaforma ha reso disponibile l’avviso di mancato recapito del messaggio ai sensi dell’art. 26, comma 6 del D.L. 76 del 16 luglio 2020.
-            </div>
+            </p>
         </#if>
 
         <div class="py-16">
