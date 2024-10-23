@@ -36,7 +36,6 @@
       <%=it_subject%>
     </h3>
 
-    <!-- additional language -->
     <p class="paragraph" data-hide-on-it="true">
       <%=body1%>
     </p>
@@ -58,10 +57,7 @@
     <p data-hide-on-it="true">
       <%-body4%>
     </p>
-    <!-- fine altra lingua -->
 
-
-    <!-- italiano -->
     <p class="paragraph">
       <%=it_body1%>
     </p>
@@ -83,8 +79,6 @@
     <p>
       <%-it_body4%>
     </p>
-    <!-- fine italiano -->
-
 
     <#list notification.recipients as recipient>
       <div class="margin-y-medium">
@@ -169,7 +163,7 @@
         <p>&nbsp;</p>
       </div>
       <div class="left-col col-9-10">
-        <p class="right pb-16"><span data-hide-on-it="true"><%-signature%> &bull; </span><%-it_signature%></p>
+        <p class="right py-16"><span data-hide-on-it="true"><%-signature%> &bull; </span><%-it_signature%></p>
       </div>
     </div>
     <div class="row margin-top-large">
@@ -177,7 +171,7 @@
         <p>&nbsp;</p>
       </div>
       <div class="left-col col-6-10">
-        <p class="pb-16" data-hide-on-it="true"><%-disclaimer_lang%></p>
+        <p class="py-16" data-hide-on-it="true"><%-disclaimer_lang%></p>
         <p data-hide-on-it="true"><%-it_disclaimer_lang%></p>
       </div>
     </div>

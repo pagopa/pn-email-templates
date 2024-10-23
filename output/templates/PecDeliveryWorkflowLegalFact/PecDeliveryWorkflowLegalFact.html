@@ -30,33 +30,25 @@
         </div>
 
         <#if endWorkflowStatus=="SUCCESS">
-        <h3 class="document-type mb-0" data-hide-on-it="true">
-            <%=subject_success%>
-        </h3>
+        
         <h3 class="document-type">
-            <%=it_subject_success%>
+            Attestazione opponibile a terzi: notifica digitale
         </h3>
             <#else>
-            <h3 class="document-type mb-0" data-hide-on-it="true">
-                <%=subject_failure%>
-            </h3>
+            
             <h3 class="document-type">
-                <%=it_subject_failure%>
+                Attestazione opponibile a terzi: mancato recapito digitale
             </h3>
         </#if>
 
-        <p class="paragraph my-8" data-hide-on-it="true">
-            <%=body1%>
-        </p>
-        <p class="paragraph my-8" data-hide-on-it="true">
-            <%-body2%>
-        </p>
+        
+        
 
         <#list deliveries as delivery>
             <div class="margin-y-small">
                 <div class="row">
                     <div class="left-col col-5-10">
-                        <p><span data-hide-on-it="true"><%-denomination%> &bull; </span><%-it_denomination%></p>
+                        <p>Nome e Cognome / Ragione Sociale</p>
                     </div>
                     <div class="left-col col-5-10">
                         <p><strong>${delivery.denomination}</strong></p>
@@ -65,7 +57,7 @@
 
                 <div class="row">
                     <div class="left-col col-5-10">
-                        <p><span data-hide-on-it="true"><%-fiscalcode%> &bull; </span><%-it_fiscalcode%></p>
+                        <p>Codice Fiscale</p>
                     </div>
                     <div class="left-col col-5-10">
                         <p><strong>${delivery.taxId}</strong></p>
@@ -74,7 +66,7 @@
 
                 <div class="row">
                     <div class="left-col col-5-10">
-                        <p><span data-hide-on-it="true"><%-digitaldomicile%> &bull; </span><%-it_digitaldomicile%></p>
+                        <p>Domicilio digitale</p>
                     </div>
                     <div class="left-col col-5-10">
                         <p>
@@ -93,7 +85,7 @@
 
                 <div class="row">
                     <div class="left-col col-5-10">
-                        <p><span data-hide-on-it="true"><%-digitaldomicile_type%> &bull; </span><%-it_digitaldomicile_type%></p>
+                        <p>Tipologia di domicilio digitale</p>
                     </div>
                     <div class="left-col col-5-10">
                         <p>
@@ -117,18 +109,14 @@
 
             </div>
             <#if delivery.ok>
-                <p class="paragraph my-8" data-hide-on-it="true">
-                    <%-body3_success%>
-                </p>
+                
                 <p class="paragraph my-8">
-                    <%-it_body3_success%>
+                    il relativo avviso di avvenuta ricezione in formato elettronico è stato consegnato in data <strong>${delivery.responseDate}</strong> al domicilio digitale indicato immediatamente sopra la presente data.
                 </p>
                 <#else>
-                    <p class="paragraph my-8" data-hide-on-it="true">
-                        <%-body3_failure%>
-                    </p>
+                    
                     <p class="paragraph my-8">
-                        <%-it_body3_failure%>
+                        in data <strong>${delivery.responseDate}</strong> è stato ricevuto il relativo messaggio di mancato recapito al domicilio digitale indicato immediatamente sopra la presente data.
                     </p>
             </#if>
 
@@ -136,20 +124,20 @@
 
         <#if endWorkflowStatus !="SUCCESS">
             <div class="paragraph">
-                <%-it_body4_failure%>
+                In data <strong>${endWorkflowDate}</strong> il gestore della piattaforma ha reso disponibile l’avviso di mancato recapito del messaggio ai sensi dell’art. 26, comma 6 del D.L. 76 del 16 luglio 2020.
             </div>
         </#if>
 
         <div class="py-16">
-            <p class="right"><span data-hide-on-it="true"><%-signature%> &bull; </span><%-it_signature%></p>
+            <p class="right">Firmato digitalmente da PagoPA S.p.A.</p>
         </div>
         <div class="row margin-top-small">
             <div class="left-col col-4-10">
                 <p>&nbsp;</p>
             </div>
             <div class="left-col col-6-10">
-                <p class="py-16" data-hide-on-it="true"><%-disclaimer_lang%></p>
-                <p data-hide-on-it="true"><%-it_disclaimer_lang%></p>
+                
+                
             </div>
         </div>
 
