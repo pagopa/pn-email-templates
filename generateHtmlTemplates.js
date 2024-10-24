@@ -65,8 +65,9 @@ async function generateHtmlTemplates() {
       const outputPath = path.join(outputDir, `${fileName}.html`);
       await fs.writeFile(outputPath, renderedHtml, "utf8");
 
-      console.log(`Template HTML generato per la lingua: ${language}`);
+      console.log(`Template ${template} generato per la lingua: ${language}`);
     }
+    console.log("--------------------------------------------------");
   }
 }
 
