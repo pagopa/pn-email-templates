@@ -1,0 +1,8 @@
+{
+  "it_language": "it",
+  "it_subject":"Deposito di avvenuta ricezione",
+  "it_body1":"Con riferimento alla notifica avente IUN ${iun}, ai sensi dell’art. 26, comma 7, del D.L. 76/2020, essendo risultato il destinatario ${recipient.denomination} <br>CF: ${recipient.taxId}, irreperibile per cause diverse dalla temporanea assenza o dal rifiuto proprio o delle altre persone alle quali può essere consegnato il plico contenente <br>l’avviso di avvenuta ricezione della relativa notifica, in data ${endWorkflowDate} alle ore ${endWorkflowTime} <br> l’avviso di avvenuta ricezione è stato depositato dal Gestore sulla Piattaforma e reso disponibile al destinatario.",
+  "it_body2":"Ai sensi dell’art. 26, comma 7, del D.L. 76/2020 la notifica si perfeziona nel decimo giorno successivo alla data del deposito sulla piattaforma come sopra riportata, salvo che il destinatario o suo delegato abbia acceduto alla notifica tramite la piattaforma in data e ora antecedente rispetto alla scadenza di tale termine.",
+  "it_signature":"Firmato digitalmente da PagoPA S.p.A.",
+  "it_disclaimer_lang":"Il testo originario di questi documenti è in lingua italiana. In caso di contrasto tra la versione italiana e le traduzioni in altre lingue, prevarranno il significato e le condizioni della lingua italiana."
+}

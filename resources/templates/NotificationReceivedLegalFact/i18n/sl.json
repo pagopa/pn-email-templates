@@ -1,0 +1,15 @@
+{
+  "language": "sl",
+  "subject":"Zavezujoče potrdilo za tretje osebe: prevzem obvestila",
+  "body1":"V skladu z 11. odstavkom 26. člena zakonskega odloka 76/2020 s spremembami, družba PagoPA S.p.A. kot zakoniti upravljavec Platforme za digitalno obveščanje, opredeljene v istem 26. členu (znana tudi kot SEND - Servizio Notifiche Digitali), z vsemi pravnimi učinki za veljavnost do tretjih oseb, POTRJUJE, DA:",
+  "body2":"je <b>${notification.getSender().getPaDenomination()}</b>, davčna številka <b>${notification.getSender().getPaTaxId()}</b>, dne <b>${sendDate}</b> dal upravljavcu na voljo elektronske dokumente, navedene v IUN <b>${notification.getIun()}</b>, ki so identificirani z naslednjimi zgoščenimi vrednostmi (hash):",
+  "body3":"Pošiljatelj je zahteval, da obvestilo o teh dokumentih vsebuje zadevo ${subject} in da se pošlje spodaj navedenim prejemnikom skupaj z morebitnim posebnim digitalnim naslovom in njihovim fizičnim naslovom, kot jih je posredoval pošiljatelj.",
+  "body4":"Prav tako se potrjuje, da v zvezi z določanjem digitalnega naslova, ki se bo uporabljal prednostno za obvestila, ostajajo v veljavi ugotovitve iz preverjanj v skladu z odstavki 1 in 2 7. člena uredbe ministra za digitalno preobrazbo št. 58/2022.",
+  "denomination":"Ime in priimek / Pravna oseba",
+  "fiscalcode":"Davčna številka",
+  "digitaldomicile":"Digitalni naslov",
+  "digitaldomicile_type":"Vrsta digitalnega naslova",
+  "address":"Fizični naslov",
+  "signature":"Digitalno podpisano s strani PagoPA S.p.A.",
+  "disclaimer_lang":"Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
+}

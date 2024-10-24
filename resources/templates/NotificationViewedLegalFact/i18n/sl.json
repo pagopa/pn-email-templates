@@ -1,0 +1,14 @@
+{
+  "language": "sl",
+  "subject":"Zavezujoče potrdilo za tretje osebe: opravljen dostop",
+  "body1":"V skladu z 11. odstavkom 26. člena zakonskega odloka 76/2020 s spremembami, družba PagoPA S.p.A. kot zakoniti upravljavec Platforme za digitalno obveščanje, opredeljene v istem 26. členu (znana tudi kot SEND – Servizio Notifiche Digitali), z vsemi pravnimi učinki za veljavnost do tretjih oseb, POTRJUJE, DA:",
+  "body2":"les actes visés à la notification identifiée par IUN <b>${iun}</b> ont été traités comme suit:",
+  "recipient":"Prejemnik",
+  "delegate":"Delegat",
+  "denomination":"Ime in priimek / Pravna oseba",
+  "fiscalcode":"Davčna številka",
+  "body3":"dne <strong>${when}</strong>, le <#if delegate??> délégué <#else> prejemnik </#if> je pooblaščenec dostopal do zadevnih elektronskih dokumentov, povezanih z zgoraj navedenim IUN.",
+  "signature":"Digitalno podpisano s strani PagoPA S.p.A.",
+  "disclaimer_lang":"Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi.",
+  "disclaimer":"L’attestation indique la date à laquelle le destinataire (ou son délégué) a eu accès pour la première fois, via la plateforme, à l’acte à notifier. Cette date ne correspond pas nécessairement à la date de finalisation de la notification, qui peut également être antérieure en raison de l'expiration du délai. Afin d’identifier la date correcte de réception de la notification, le destinataire (ou son délégué) est invité à vérifier <strong><a class=\"faq-link-perfezionamento\" href=\"https://notifichedigitali.pagopa.it/sl/faq/#perfezionamento-come-posso-sapere\">dans cette FAQ</a></strong> comment doit être calculée la date de réception."
+}

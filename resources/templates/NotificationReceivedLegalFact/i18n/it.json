@@ -1,0 +1,15 @@
+{
+  "it_language": "it",
+  "it_subject":"Attestazione opponibile a terzi: notifica presa in carico",
+  "it_body1":"Ai sensi dell’art. 26, comma 11, del decreto-legge 76/2020 s.m.i., la PagoPA S.p.A. nella sua qualità di gestore ex lege della Piattaforma Notifiche Digitali di cui allo stesso art. 26 (anche nota come SEND - Servizio Notifiche Digitali), con ogni valore legale per l'opponibilità a terzi, ATTESTA CHE:",
+  "it_body2":"in data <b>${sendDate}</b> il soggetto mittente <b>${notification.getSender().getPaDenomination()}</b>, C.F. <b>${notification.getSender().getPaTaxId()}</b> ha messo a disposizione del gestore i documenti informatici di cui allo IUN <b>${notification.getIun()}</b> e identificati in modo univoco con i seguenti hash:",
+  "it_body3":"il soggetto mittente ha richiesto che la notificazione di tali documenti riporti come oggetto ${subject} e che venga eseguita nei confronti dei destinatari che si riportano di seguito unitamente all'eventuale domicilio digitale speciale e al loro indirizzo fisico, come forniti dal soggetto mittente stesso.",
+  "it_body4":"Si attesta, altresì, che ai fini dell'individuazione del domicilio digitale da utilizzare in via prioritaria per la notificazione, restano ferme le risultanze delle verifiche di cui all'art. 7, commi 1 e 2, del Decreto del Ministro per la Trasformazione Digitale 58/2022.",
+  "it_denomination":"Nome e Cognome / Ragione Sociale",
+  "it_fiscalcode":"Codice Fiscale",
+  "it_digitaldomicile":"Domicilio digitale",
+  "it_digitaldomicile_type":"Tipologia di domicilio digitale",
+  "it_address":"Indirizzo fisico",
+  "it_signature":"Firmato digitalmente da PagoPA S.p.A.",
+  "it_disclaimer_lang":"Il testo originario di questi documenti è in lingua italiana. In caso di contrasto tra la versione italiana e le traduzioni in altre lingue, prevarranno il significato e le condizioni della lingua italiana."
+}
