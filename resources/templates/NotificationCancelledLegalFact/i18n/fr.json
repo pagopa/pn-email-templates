@@ -1,7 +1,7 @@
 {
   "language": "fr",
   "subject": "Déclaration d'annulation de la notification sur la plateforme SEND",
-  "body1": "Par le présent document, mis à disposition du destinataire exclusivement sur la plateforme SEND, il est déclaré que la notification ayant IUN <b>${notification.getIun()}</b>, effectuée à l'encontre de :",
+  "body1": "Par le présent document, mis à disposition du destinataire exclusivement sur la plateforme SEND, il est déclaré que la notification ayant IUN <b>${notification.getIun()}</b>, effectuée à l'encontre de:",
   "denomination": "Nom et Prénom / Dénomination sociale",
   "fiscalcode": "Numéro fiscal",
   "body2": "a été annulée à la demande spécifique de l'expéditeur <b>${notification.sender.paDenomination}</b> à la date du <b>${notificationCancelledDate}</b>.",
