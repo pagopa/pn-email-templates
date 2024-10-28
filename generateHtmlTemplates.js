@@ -10,6 +10,7 @@ async function loadTranslations(language, template) {
     "/i18n",
     `${language}.json`
   );
+  console.log('.....language.....', filePath)
   const result = await fs.readJson(filePath);
 
   const itaText = path.join(
@@ -19,6 +20,7 @@ async function loadTranslations(language, template) {
     `it.json`
   );
   const itaResult = await fs.readJson(itaText);
+  console.log('.....italian.....', itaText)
 
   const mergedJSON = Object.assign({}, result, itaResult);
   return mergedJSON;
@@ -31,12 +33,14 @@ async function generateHtmlTemplates() {
     // "NotificationAAR_RADDalt",
     // "NotificationAAR",
     // "NotificationAAR_RADD",
-    "NotificationReceivedLegalFact",
-    "PecDeliveryWorkflowLegalFact",
-    "NotificationViewedLegalFact",
+    // "NotificationReceivedLegalFact",
+    // "PecDeliveryWorkflowLegalFact",
+    // "NotificationViewedLegalFact",
     // "PdfLegalFact",
-    "AnalogDeliveryWorkflowFailureLegalFact",
+    // "AnalogDeliveryWorkflowFailureLegalFact",
     "NotificationCancelledLegalFact",
+    "Mail_CourtesyNotification",
+    //"PEC_ReceivedNotification"
   ];
 
   for (const template of templates) {

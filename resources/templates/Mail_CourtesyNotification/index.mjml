@@ -44,8 +44,11 @@
             padding-left="0"
           >
             <mj-text padding-left="15px">
+              <p style="font-size: 10px; font-weight: 700" data-hide-on-it="true">
+                <%-avviso_cortesia%>
+              </p>
               <p style="font-size: 10px; font-weight: 700">
-                AVVISO DI CORTESIA
+                <%-it_avviso_cortesia%>
               </p>
             </mj-text>
           </mj-column>
