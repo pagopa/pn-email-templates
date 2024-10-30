@@ -1,0 +1,15 @@
+{
+    "language": "de",
+    "subject": "Die Bescheinigung kann von Dritten beanstandet werden: Übernahme der Zustellung",
+    "body1": "Gemäß Artikel 26, Absatz 11 des Gesetzesdekrets 76/2020 in seiner geänderten und ergänzten Fassung BESCHEINIGT PagoPA S.p.A. als rechtmäßiger Verwalter der im selben Artikel 26 genannten Plattform für digitale Zustellungen (auch bekannt als SEND - Servizio Notifiche Digitali), mit aller rechtlichen Befugnis, diese Dritten gegenüber zu vertreten, HIERMIT, dass:",
+    "body2": "am <b>${sendDate}</b> die sendende Person <b>${notification.getSender().getPaDenomination()}</b>, Steuernummer <b>${notification.getSender().getPaTaxId()}</b> dem Betreiber die in IUN <b>${notification.getIun()}</b> genannten und mit den folgenden Hashes eindeutig identifizierten IT-Dokumente zur Verfügung gestellt hat:",
+    "body3": "die sendende Person beantragt hat, dass die Zustellung dieser Dokumente mit dem Betreff ${subject} an die nachstehend aufgeführten Empfänger mit ihrem etwaigen speziellen digitalen Domizil und ihrer von der sendenden Person angegebenen physischen Adresse erfolgt.",
+    "body4": "Es wird auch bescheinigt, dass für die Zwecke der Identifizierung des digitalen Domizils, das vorrangig für die Zustellung zu verwenden ist, die Ergebnisse der Überprüfungen laut Art. 7 Abs. 1 und 2 des Dekrets des Ministers für die Digitalisierung digitale Transformation 58/2022 gelten.",
+    "denomination": "Vor- und Nachname / Firmenbezeichnung",
+    "fiscalcode": "Steuernummer",
+    "digitaldomicile": "Digitales Domizil",
+    "digitaldomicile_type": "Art des digitalen Domizils",
+    "address": "Physische Adresse",
+    "signature": "Von PagoPA S.p.A. digital signiert",
+    "disclaimer_lang": "Der Originaltext dieser Dokumente ist auf Italienisch. Bei Abweichungen zwischen der italienischen Fassung und den Übersetzungen in andere Sprachen sind die Bedeutung und die Bestimmungen der italienischen Sprache maßgebend."
+}

@@ -33,17 +33,17 @@
     </div>
 
     <h3 class="document-type subject mb-0" data-hide-on-it="true">
-      Attestation opposable aux tiers : notification prise en charge
+      Die Bescheinigung kann von Dritten beanstandet werden: Übernahme der Zustellung
     </h3>
     <h3 class="document-type subject">
       Attestazione opponibile a terzi: notifica presa in carico
     </h3>
 
     <p class="paragraph" data-hide-on-it="true">
-      Conformément à l’art. 26, paragraphe 11, du décret-loi italien 76/2020 tel que modifié et complété, la société PagoPA S.p.A., en sa qualité d’opérateur ex lege de la Plateforme Notifications Numériques visée audit article 26 (également connue sous le nom de SEND - Servizio Notifiche Digitali), avec plein effet juridique quant à l’opposabilité aux tiers, CERTIFIE QUE:
+      Gemäß Artikel 26, Absatz 11 des Gesetzesdekrets 76/2020 in seiner geänderten und ergänzten Fassung BESCHEINIGT PagoPA S.p.A. als rechtmäßiger Verwalter der im selben Artikel 26 genannten Plattform für digitale Zustellungen (auch bekannt als SEND - Servizio Notifiche Digitali), mit aller rechtlichen Befugnis, diese Dritten gegenüber zu vertreten, HIERMIT, dass:
     </p>
     <p class="paragraph" data-hide-on-it="true">
-      le 10/10/202112:00, l’expéditeur [Nom organisme], C.F. [12345678901] a mis à la disposition de l’opérateur les documents informatiques visés à l’IUN [202110- aaaa- dddd-ffff-ghilkm] et identifiés de manière univoque par les hachs suivants:
+      am <b>${sendDate}</b> die sendende Person <b>${notification.getSender().getPaDenomination()}</b>, Steuernummer <b>${notification.getSender().getPaTaxId()}</b> dem Betreiber die in IUN <b>${notification.getIun()}</b> genannten und mit den folgenden Hashes eindeutig identifizierten IT-Dokumente zur Verfügung gestellt hat:
     </p>
     <p class="paragraph" data-hide-on-it="true">
     <ul class="hash-list" data-hide-on-it="true">
@@ -55,10 +55,10 @@
     </ul>
     </p>
     <p class="paragraph" data-hide-on-it="true">
-      l’expéditeur a demandé que la notification de ces documents ait pour objet [objet variable] et qu’elle soit signifiée aux destinataires énumérés ci-dessous, ainsi qu’à leur éventuel domicile numérique spécial et à leur adresse physique, tels qu’ils ont été fournis par l’expéditeur lui-même.
+      die sendende Person beantragt hat, dass die Zustellung dieser Dokumente mit dem Betreff ${subject} an die nachstehend aufgeführten Empfänger mit ihrem etwaigen speziellen digitalen Domizil und ihrer von der sendenden Person angegebenen physischen Adresse erfolgt.
     </p>
     <p data-hide-on-it="true">
-      Il est également certifié qu’aux fins de l’identification du domicile numérique à utiliser en premier pour la notification, les résultats des vérifications visées à l’article 7, paragraphes 1 et 2, du décret du ministre italien chargé de la transformation numérique 58/2022, restent inchangés.
+      Es wird auch bescheinigt, dass für die Zwecke der Identifizierung des digitalen Domizils, das vorrangig für die Zustellung zu verwenden ist, die Ergebnisse der Überprüfungen laut Art. 7 Abs. 1 und 2 des Dekrets des Ministers für die Digitalisierung digitale Transformation 58/2022 gelten.
     </p>
 
     <p class="paragraph">
@@ -88,7 +88,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true">Prénom et Nom / Raison Sociale &bull; </span>Nome e Cognome / Ragione Sociale</p>
+            <p><span data-hide-on-it="true">Vor- und Nachname / Firmenbezeichnung &bull; </span>Nome e Cognome / Ragione Sociale</p>
           </div>
           <div class="left-col col-5-10">
             <p><strong>${recipient.denomination}</strong></p>
@@ -97,7 +97,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true">Code Fiscal &bull; </span>Codice Fiscale</p>
+            <p><span data-hide-on-it="true">Steuernummer &bull; </span>Codice Fiscale</p>
           </div>
           <div class="left-col col-5-10">
             <p><strong>${recipient.taxId}</strong></p>
@@ -106,7 +106,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true">Domicile numérique &bull; </span>Domicilio digitale</p>
+            <p><span data-hide-on-it="true">Digitales Domizil &bull; </span>Domicilio digitale</p>
           </div>
           <div class="left-col col-5-10">
             <p>
@@ -123,7 +123,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true">Type de domicile numérique &bull; </span>Tipologia di domicilio digitale</p>
+            <p><span data-hide-on-it="true">Art des digitalen Domizils &bull; </span>Tipologia di domicilio digitale</p>
           </div>
           <div class="left-col col-5-10">
             <p>
@@ -141,7 +141,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true">Adresse physique &bull; </span>Indirizzo fisico</p>
+            <p><span data-hide-on-it="true">Physische Adresse &bull; </span>Indirizzo fisico</p>
           </div>
           <div class="left-col col-5-10">
             <p>
@@ -166,7 +166,7 @@
         <p>&nbsp;</p>
       </div>
       <div class="left-col col-9-10">
-        <p class="right py-16"><span data-hide-on-it="true">Signé numériquement par PagoPA S.p.A. &bull; </span>Firmato digitalmente da PagoPA S.p.A.</p>
+        <p class="right py-16"><span data-hide-on-it="true">Von PagoPA S.p.A. digital signiert &bull; </span>Firmato digitalmente da PagoPA S.p.A.</p>
       </div>
     </div>
     <div class="row margin-top-large">
@@ -174,7 +174,7 @@
         <p>&nbsp;</p>
       </div>
       <div class="left-col col-6-10">
-        <p class="py-16" data-hide-on-it="true">Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi.</p>
+        <p class="py-16" data-hide-on-it="true">Der Originaltext dieser Dokumente ist auf Italienisch. Bei Abweichungen zwischen der italienischen Fassung und den Übersetzungen in andere Sprachen sind die Bedeutung und die Bestimmungen der italienischen Sprache maßgebend.</p>
         <p data-hide-on-it="true">Il testo originario di questi documenti è in lingua italiana. In caso di contrasto tra la versione italiana e le traduzioni in altre lingue, prevarranno il significato e le condizioni della lingua italiana.</p>
       </div>
     </div>

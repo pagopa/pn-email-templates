@@ -26,9 +26,9 @@ async function loadTranslations(language, template) {
 
 // generazione template BILINGUA
 async function generateHtmlTemplates() {
-  const languages = ["it", "fr", "sl"]; // Elenca le lingue supportate
+  const languages = ["it", "de", "fr", "sl"]; // Elenca le lingue supportate
   const templates = [
-    "NotificationAAR_RADDalt_bilingual",
+    // "NotificationAAR_RADDalt_bilingual",
     "NotificationReceivedLegalFact",
     "PecDeliveryWorkflowLegalFact",
     "NotificationViewedLegalFact",
