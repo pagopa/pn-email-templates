@@ -1,7 +1,7 @@
 {
   "language": "de",
   "aar_label": "Empfangsbescheid",
-  "notification_subject": "Empfangsbescheid (AAR)",
+  "notification_subject": "Avviso di avvenuta ricezione TEDESCO",
   "aar_subtitles_1": "Sie haben eine rechtliche Mitteilung von ${notification.sender.paDenomination} erhalten: <b>Lesen Sie die übermittelten Dokumente</b>. Wenn sie nicht in dieser Mitteilung enthalten sind, <b>greifen Sie online auf SEND auf die Dokumente zu oder fordern Sie eine Kopie bei den SEND-Sammelstellen an</b>, die gerade aktiviert werden. Wenn eine Zahlung erwartet wird, finden Sie in den Unterlagen das Ablaufdatum und das Datum für etwaige Einsprüche.",
   "access_to_document_title": "ZUGRIFF AUF DOKUMENTE ONLINE - KOSTENLOS",
   "access_to_document_1": "Scannen Sie den QR-Code oder gehen Sie zu",
