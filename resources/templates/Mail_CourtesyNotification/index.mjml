@@ -26,11 +26,7 @@
 
     <mj-wrapper>
       <!-- PagoPA Logo -->
-      <mj-include
-              text-align="left"
-              padding="0"
-              path="../partials/main-logo-verification.mjml"
-            />
+      
       <mj-section padding="0">
         <mj-group vertical-align="middle">
           <mj-column
@@ -155,7 +151,10 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; margin-bottom: 14 px"><span data-hide-on-it="true"><%-greetings%> &bull; </span><%-it_greetings%>,</p> <p style=\"margin: 0px\">SEND - Servizio Notifiche Digitali</p>            
+            <p style="margin-top: 0px; margin-bottom: 14px">
+            <span data-hide-on-it="true"><%-greetings%> &bull; </span> <%-it_greetings%>,</p>
+            
+            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
         </mj-column>
       </mj-section>
