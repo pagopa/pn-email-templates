@@ -4,14 +4,9 @@
   "it_hello":"Ciao,",
   "it_body1":"Hai ricevuto su SEND - Servizio Notifiche Digitali una notifica da parte di <strong>${notification.sender.paDenomination}</strong> con Codice IUN ${notification.iun}. Una notifica &egrave; una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.",
   "it_body2":"Hai fino a 120 giorni dalla <a href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">data di perfezionamento</a> della notifica per <strong>accedere ai documenti</strong>. Il termine per il pagamento, se previsto, e per eventuali impugnazioni &egrave; indicato nei documenti.",
-  "it_perfection":"",
+  "it_perfection":"Se non hai una PEC e visualizzi i documenti entro 5 giorni (120 ore) dall&apos;invio del messaggio, non riceverai la notifica tramite raccomandata.",
+  "it_read_more":"SEND &egrave; uno strumento che rende l&apos;invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">Scopri di pi&ugrave;</a>",
   "it_button":"Accedi ai documenti su SEND",
-  "it_denomination":"Nome e Cognome / Ragione Sociale",
-  "it_fiscalcode":"Codice Fiscale",
-  "it_digitaldomicile":"Domicilio digitale",
-  "it_digitaldomicile_type":"Tipologia di domicilio digitale",
-  "it_address":"Indirizzo fisico",
-  "it_signature":"Firmato digitalmente da PagoPA S.p.A.",
-  "it_disclaimer_lang":"Il testo originario di questi documenti è in lingua italiana. In caso di contrasto tra la versione italiana e le traduzioni in altre lingue, prevarranno il significato e le condizioni della lingua italiana.",
+  "it_greetings":"A presto",
   "it_avviso_cortesia":"AVVISO DI CORTESIA"
 }

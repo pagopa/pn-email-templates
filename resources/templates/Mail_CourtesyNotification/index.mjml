@@ -26,7 +26,11 @@
 
     <mj-wrapper>
       <!-- PagoPA Logo -->
-
+      <mj-include
+              text-align="left"
+              padding="0"
+              path="../partials/main-logo-verification.mjml"
+            />
       <mj-section padding="0">
         <mj-group vertical-align="middle">
           <mj-column
@@ -67,8 +71,11 @@
             color="#17324D"
           >
             <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 40px; margin: 0"  data-hide-on-it="true">
+              <%-subject%>
+            </h1>
             <h1 style="font-size: 32px; line-height: 40px; margin: 0">
-              SEND - Nuova notifica da ${notification.sender.paDenomination}
+              <%-it_subject%>
             </h1>
           </mj-text>
 
@@ -83,7 +90,7 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px">Ciao,</p>
+            <p style="margin-top: 0px"><span data-hide-on-it="true"><%-hello%></span> &bull; <%-it_hello%>,</p>
           </mj-text>
           <mj-text
             css-class="text"
@@ -94,23 +101,20 @@
             padding-top="0px"
             color="#17324D"
           >
+            <p style="margin-top: 10px" data-hide-on-it="true">
+              <%-body1%>
+            </p>
+
+            <p style="margin-top: 20px" data-hide-on-it="true">
+              <%-body2%>
+            </p>
+
             <p style="margin-top: 10px">
-              Hai ricevuto su SEND - Servizio Notifiche Digitali una notifica da
-              parte di
-              <strong>${notification.sender.paDenomination}</strong> con Codice
-              IUN ${notification.iun}. Una notifica &egrave; una
-              <strong>comunicazione a valore legale</strong> composta da un
-              avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.
+              <%-it_body1%>
             </p>
 
             <p style="margin-top: 20px">
-              Hai fino a 120 giorni dalla
-              <a href="${perfezionamentoURL}" title="data di perfezionamento"
-                >data di perfezionamento</a
-              >
-              della notifica per <strong>accedere ai documenti</strong>. Il
-              termine per il pagamento, se previsto, e per eventuali
-              impugnazioni &egrave; indicato nei documenti.
+              <%-it_body2%>
             </p>
             <!-- Don't include https:// in the URL label -->
             <p style="margin: 40px 0px; font-size: 14px">
@@ -126,23 +130,22 @@
                 title="Accedi ai documenti"
                 class="button"
                 href="${quickAccessLink}"
-                ><strong>Accedi ai documenti su SEND</strong></a
+                ><strong><span data-hide-on-it="true"><%-button%> &bull; </span><%-it_button%></strong></a
               >
             </p>
 
             <!-- Perfezionamento Notifica -->
-            <p style="margin-top: 0px">
-              Se non hai una PEC e visualizzi i documenti entro 5 giorni (120
-              ore) dall&apos;invio del messaggio, non riceverai la notifica
-              tramite raccomandata.
+            <p style="margin-top: 0px" data-hide-on-it="true">
+              <%-perfection%>
             </p>
-            <p style="font-size: 14px; line-height: 22px">
-              SEND &egrave; uno strumento che rende l&apos;invio di notifiche da
-              parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente
-              ed economico.
-              <a href="${PNFaqSendURL}" title="Scopri di pi&ugrave;"
-                >Scopri di pi&ugrave;</a
-              >
+            <p style="font-size: 14px; line-height: 22px" data-hide-on-it="true">
+              <%-read_more%>
+            </p>
+            <p style="margin-top: 0px" data-hide-on-it="true">
+              <%-it_perfection%>
+            </p>
+            <p style="font-size: 14px; line-height: 22px" data-hide-on-it="true">
+              <%-it_read_more%>
             </p>
           </mj-text>
           <mj-text
@@ -152,8 +155,7 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px; margin-bottom: 14 px">A presto,</p>
-            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
+            <p style="margin-top: 0px; margin-bottom: 14 px"><span data-hide-on-it="true"><%-greetings%> &bull; </span><%-it_greetings%>,</p> <p style=\"margin: 0px\">SEND - Servizio Notifiche Digitali</p>            
           </mj-text>
         </mj-column>
       </mj-section>

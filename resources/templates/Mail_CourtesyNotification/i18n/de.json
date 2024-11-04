@@ -1,18 +1,12 @@
 {
-  "language": "fr",
-  "subject_success":"Attestation opposable aux tiers: notification numérique",
-  "subject_failure":"",
-  "body1":"Conformément à l’art. 26, paragraphe 11, du décret-loi italien 76/2020 tel que modifié et complété, la société PagoPA S.p.A., en sa qualité d’opérateur ex lege de la Plateforme Notifications Numériques visée audit article 26 (également connue sous le nom de SEND - Servizio Notifiche Digitali), avec plein effet juridique quant à l’opposabilité aux tiers, CERTIFIE QUE:",
-  "body2":"les actes visés à la notification identifiée par IUN <b>${iun}</b> ont été traités comme suit:",
-  "body3_success":"l’accusé de réception au format électronique a été délivré le <strong>${delivery.responseDate}</strong> au domicile numérique indiqué immédiatement au-dessus de cette date.",
-  "body3_failure":"Le <strong>${delivery.responseDate}</strong>, le message d’échec de remise a été reçu à l’adresse numérique indiquée.",
-  "body4_failure":"Le <strong>${endWorkflowDate}</strong>, l’opérateur de la plateforme a mis à disposition la notification d’échec de remise du message conformément à l’article 26, paragraphe 6 du décret-loi italien 76 du 16 juillet 2020.",
-  "denomination":"Prénom et Nom / Raison Sociale",
-  "fiscalcode":"Code Fiscal",
-  "digitaldomicile":"Domicile numérique",
-  "digitaldomicile_type":"Type de domicile numérique",
-  "address":"Adresse physique",
-  "signature":"Signé numériquement par PagoPA S.p.A.",
-  "disclaimer_lang":"Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi.",
-  "avviso_cortesia":"AVVISO DI CORTESIA IN FRANCESE"
+  "language": "de",
+  "subject":"SEND - Nuova notifica da ${notification.sender.paDenomination}",
+  "hello":"Ciao,",
+  "body1":"Hai ricevuto su SEND - Servizio Notifiche Digitali una notifica da parte di <strong>${notification.sender.paDenomination}</strong> con Codice IUN ${notification.iun}. Una notifica &egrave; una <strong>comunicazione a valore legale</strong> composta da un avviso di avvenuta ricezione e da uno o pi&ugrave; documenti.",
+  "body2":"Hai fino a 120 giorni dalla <a href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">data di perfezionamento</a> della notifica per <strong>accedere ai documenti</strong>. Il termine per il pagamento, se previsto, e per eventuali impugnazioni &egrave; indicato nei documenti.",
+  "perfection":"Se non hai una PEC e visualizzi i documenti entro 5 giorni (120 ore) dall&apos;invio del messaggio, non riceverai la notifica tramite raccomandata.",
+  "read_more":"SEND &egrave; uno strumento che rende l&apos;invio di notifiche da parte della Pubblica Amministrazione pi&ugrave; sicuro, efficiente ed economico. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">Scopri di pi&ugrave;</a>",
+  "button":"Accedi ai documenti su SEND",
+  "greetings":"A presto",
+  "avviso_cortesia":"AVVISO DI CORTESIA"
 }
