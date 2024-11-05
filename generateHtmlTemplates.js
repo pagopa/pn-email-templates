@@ -33,7 +33,7 @@ async function generateHtmlTemplates() {
     "PecDeliveryWorkflowLegalFact",
     "NotificationViewedLegalFact",
     "PdfLegalFact",
-    // "AnalogDeliveryWorkflowFailureLegalFact",
+    "AnalogDeliveryWorkflowFailureLegalFact",
     "NotificationCancelledLegalFact",
     "Mail_CourtesyNotification",
     "PEC_ReceivedNotification"
