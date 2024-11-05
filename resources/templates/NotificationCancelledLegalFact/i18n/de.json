@@ -1,12 +1,12 @@
 {
     "language": "de",
-    "subject": "Izjava o preklicu obvestila na platformi SEND",
-    "body1": "S tem dokumentom, ki je prejemniku na voljo izključno na platformi SEND, se izjavlja, da je bilo obvestilo z IUN <b>${notification.getIun()}</b>, izvedeno v zvezi z:",
-    "denomination": "Ime in Priimek / Poslovno ime",
-    "fiscalcode": "Davčna številka",
-    "body2": "preklicano na zahtevo pošiljatelja <b>${notification.sender.paDenomination}</b> dne <b>${notificationCancelledDate}</b>.",
-    "disclaimer1": "Preklic na SEND, ki je predmet te izjave, ne pomeni nujno, da je prenehal razlog za obvestilo ali da so bila enako preklicana obvestila, ki se nanašajo na iste postopke, izvedene prek drugih kanalov kot platforme SEND.",
-    "disclaimer2": "Za vse informacije v zvezi z razlogi za preklic iz te izjave in za upravljanje morebitnega povračila, če je bilo to izvedeno pred preklicem, se mora prejemnik obrniti izključno na pošiljatelja.",
-    "signature": "Digitalno podpisano s strani PagoPA S.p.A.",
-    "disclaimer_lang": "Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
+    "subject": "ERKLÄRUNG ZUR STORNIERUNG DER ZUSTELLUNG AUF DER PLATTFORM SEND",
+    "body1": "Mit diesem Dokument, das dem Empfänger ausschließlich auf der Plattform SEND zur Verfügung steht, wird erklärt, dass die Zustellung mit IUN <b>${notification.getIun()}</b>an den Empfänger:",
+    "denomination": "Vor- und Nachname / Firmenbezeichnung",
+    "fiscalcode": "Steuernummer",
+    "body2": ", auf ausdrückliches Ersuchen des Absenders <b>${notification.sender.paDenomination}</b> am <b>${notificationCancelledDate}</b>.",
+    "disclaimer1": "Die Stornierung auf SEND, die Gegenstand dieser Erklärung ist, bedeutet nicht notwendigerweise, dass die Voraussetzung für die Zustellung nicht eingetreten ist oder dass Zustellungen hinsichtlich der gleichen Dokumenten, die auf anderen Kanälen als der Plattform SEND ausgeführt werden, ebenfalls storniert werden.",
+    "disclaimer2": "Für Informationen über die Gründe für die Stornierung, auf die in dieser Erklärung Bezug genommen wird, und über die Abwicklung von Zahlungen, die bereits vor der Stornierung erfolgt sind, hat sich der Empfänger ausschließlich an den Absender zu wenden.",
+    "signature": "Von PagoPA S.p.A. digital signiert",
+    "disclaimer_lang": "Der Originaltext dieser Dokumente ist auf Italienisch. Bei Abweichungen zwischen der italienischen Fassung und den Übersetzungen in andere Sprachen sind die Bedeutung und die Bestimmungen der italienischen Sprache maßgebend."
 }
