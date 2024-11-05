@@ -86,7 +86,7 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px"><span data-hide-on-it="true"><%-hello%></span> &bull; <%-it_hello%>,</p>
+            <p style="margin-top: 0px"><span data-hide-on-it="true"><%-hello%> &bull; </span><%-it_hello%>,</p>
           </mj-text>
           <mj-text
             css-class="text"
@@ -162,7 +162,23 @@
       <!-- Divider -->
       <mj-include path="../partials/divider.mjml" />
       <!-- Footer/Disclaimer -->
-      <mj-include path="../partials/footer-mail.mjml" />
+      <mj-section css-class="section" padding-bottom="16px" padding-top="0px">
+        <mj-column>
+          <mj-text
+            css-class="footer-text"
+            font-size="14px"
+            line-height="20px"
+            color="#5C6F82"
+          >
+            <p style="margin-top: 0px; font-size: 14px" data-hide-on-it="true">
+              <%-footer%>
+            </p>
+            <p style="margin-top: 0px; font-size: 14px">
+              <%-it_footer%>
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
     </mj-wrapper>
   </mj-body>
 </mjml>
