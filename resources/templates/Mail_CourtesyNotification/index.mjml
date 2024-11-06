@@ -137,10 +137,10 @@
             <p style="font-size: 14px; line-height: 22px" data-hide-on-it="true">
               <%-read_more%>
             </p>
-            <p style="margin-top: 0px" data-hide-on-it="true">
+            <p style="margin-top: 0px">
               <%-it_perfection%>
             </p>
-            <p style="font-size: 14px; line-height: 22px" data-hide-on-it="true">
+            <p style="font-size: 14px; line-height: 22px">
               <%-it_read_more%>
             </p>
           </mj-text>
