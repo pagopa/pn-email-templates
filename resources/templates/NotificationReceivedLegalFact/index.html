@@ -39,28 +39,14 @@
       <%=it_subject%>
     </h3>
 
+
+
     <p class="paragraph" data-hide-on-it="true">
       <%=body1%>
     </p>
     <p class="paragraph" data-hide-on-it="true">
       <%-body2%>
     </p>
-    <p class="paragraph" data-hide-on-it="true">
-    <ul class="hash-list" data-hide-on-it="true">
-      <#list digests as digest>
-        <li data-hide-on-it="true">
-          <strong data-hide-on-it="true">${digest}</strong>
-        </li>
-      </#list>
-    </ul>
-    </p>
-    <p class="paragraph" data-hide-on-it="true">
-      <%-body3%>
-    </p>
-    <p data-hide-on-it="true">
-      <%-body4%>
-    </p>
-
     <p class="paragraph">
       <%=it_body1%>
     </p>
@@ -69,19 +55,27 @@
     </p>
 
     <p class="paragraph">
-    <ul class="hash-list">
-      <#list digests as digest>
-        <li><strong>${digest}</strong></li>
-      </#list>
-    </ul>
+      <ul class="hash-list">
+        <#list digests as digest>
+          <li>
+            <strong>${digest}</strong>
+          </li>
+        </#list>
+      </ul>
     </p>
-
+    <p class="paragraph" data-hide-on-it="true">
+      <%-body3%>
+    </p>
+    <p data-hide-on-it="true">
+      <%-body4%>
+    </p>
     <p class="paragraph">
       <%-it_body3%>
     </p>
     <p>
       <%-it_body4%>
     </p>
+        
 
     <#list notification.recipients as recipient>
       <div class="margin-y-medium">
