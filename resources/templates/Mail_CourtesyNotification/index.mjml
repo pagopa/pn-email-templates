@@ -4,11 +4,11 @@
       >SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title
     >
     <mj-font
-      name="Titillium Web"
+      name="Titillium Sans Pro"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
     />
     <mj-attributes>
-      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+      <mj-all font-family="Titillium Sans Pro, system-ui, sans-serif" />
     </mj-attributes>
     <mj-raw>
       <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
