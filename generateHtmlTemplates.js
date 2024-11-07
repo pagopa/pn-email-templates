@@ -35,8 +35,8 @@ async function generateHtmlTemplates() {
     "LegalFactMalfuction",
     "AnalogDeliveryWorkflowFailureLegalFact",
     "NotificationCancelledLegalFact",
-    "Mail_CourtesyNotification",
-    "PEC_ReceivedNotification"
+    "NotificationAARForEMAIL",
+    "NotificationAARForPEC"
   ];
 
   for (const template of templates) {
