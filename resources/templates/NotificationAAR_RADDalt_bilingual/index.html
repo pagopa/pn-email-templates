@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="SEND - Servizio Notifiche Digitali">
-    <title>Avviso di Avvenuta Ricezione</title>
+    <title><span data-hide-on-it="true"><%-aar_label%> &bull; </span><%-it_aar_label%></title>
     <style type="text/css" media="all">
         @font-face {
             font-family: "Titillium Pro";
@@ -571,19 +571,12 @@
         <div id="center-section" class="relative-box" style="height: 99mm;">
             <div class="absolute-box">
                 <div id="main__subject" class="twelve-px sixteen-lh">
-                    <p><b>Empfangsbescheid (AAR): ${notification.subject} &bull; Avviso di Avvenuta Ricezione (AAR): ${notification.subject}</b></p>
+                    <p><b><span data-hide-on-it="true"><%-aar_label%> &bull; </span><%-it_aar_label%> (AAR):
+                                ${notification.subject}</b></p>
                 </div>
                 <div id="main__disclaimer" class="eleven-px sixteen-lh">
-                    <p>Sie haben eine rechtliche Mitteilung von ${notification.sender.paDenomination} erhalten: <b>Lesen
-                            Sie die übermittelten Dokumente</b>. Wenn sie nicht in dieser Mitteilung enthalten sind,
-                        <b>greifen Sie online auf SEND auf die Dokumente zu oder fordern Sie eine Kopie bei den
-                            SEND-Sammelstellen an</b>, die gerade aktiviert werden. Wenn eine Zahlung erwartet wird,
-                        finden Sie in den Unterlagen das Ablaufdatum und das Datum für etwaige Einsprüche. </p>
-                    <p class="language-margin">Hai ricevuto una comunicazione a valore legale da
-                        ${notification.sender.paDenomination}: <b>prendi visione dei documenti notificati</b>. Se non
-                        sono inclusi in questo avviso, <b>accedi ai documenti online su SEND o richiedine una copia
-                            presso i Punti di ritiro SEND</b>, in corso di attivazione. Se è previsto un pagamento, nei
-                        documenti troverai la data di scadenza e quella per eventuali ricorsi.</p>
+                    <p><span data-hide-on-it="true"><%-aar_subtitles_1%></span></p>
+                    <p class="language-margin"><%-it_aar_subtitles_1%></p>
                 </div>
 
             </div>
@@ -592,26 +585,26 @@
 
         <div id="lower-section" style="height: 99mm; position: relative;">
             <div class="row" style="height: 48mm;">
-                <div class="heading ten-px">ZUGRIFF AUF DOKUMENTE ONLINE - KOSTENLOS &middot; Accedi ai documenti online
-                    - gratis</div>
+                <div class="heading ten-px"><span data-hide-on-it="true"><%-access_to_document_title%> &bull;
+                    </span><%-it_access_to_document_title%></div>
                 <div id="view-online-box-description">
                     <div class="section-list nine-px eleven-lh">
                         <ol>
                             <li>
-                                <p>Scannen Sie den QR-Code oder gehen Sie zu <b><a
-                                            href="${piattaformaNotificheURL}auth/login">${piattaformaNotificheURLLabel}</a></b>;
+                                <p data-hide-on-it="true"><%-access_to_document_1%>
+                                        <b><%-access_to_document_1_link%></b>
                                 </p>
-                                <p class="language-less-margin">Inquadra il codice QR o vai su <b><a
-                                            href="${piattaformaNotificheURL}auth/login">${piattaformaNotificheURLLabel}</a></b>
+                                <p class="language-less-margin"><%-it_access_to_document_1%>
+                                        <b><%-it_access_to_document_1_link%></b>
                                 </p>
                             </li>
                             <li>
-                                <p>Geben Sie mit SPID oder CIE (elektronischer Personalausweis) ein;</p>
-                                <p class="language-less-margin">Entra con SPID o CIE (Carta d'Identità Elettronica);</p>
+                                <p data-hide-on-it="true"><%-access_to_document_2%></p>
+                                <p class="language-less-margin"><%-it_access_to_document_2%></p>
                             </li>
                             <li>
-                                <p>Greifen Sie auf die benachrichtigten Dokumente zu.</p>
-                                <p class="language-less-margin">Accedi ai documenti notificati.</p>
+                                <p data-hide-on-it="true"><%-access_to_document_3%></p>
+                                <p class="language-less-margin"><%-it_access_to_document_3%></p>
                             </li>
                         </ol>
                     </div>
@@ -622,17 +615,11 @@
             </div>
             <div class="row">
                 <div id="send-perfezionamento" class="eight-px" style="padding-left: 2.5mm; line-height: normal;">
-                    <p>Die Dokumente sind auf SEND 120 Tage lang ab dem Datum der Fertigstellung der Benachrichtigung
-                        auf der Empfängerseite (dem Datum, an dem sie für alle verschiedenen Zwecke Rechtskraft erlangt)
-                        verfügbar. Weitere Informationen finden Sie unter <b><a
-                                href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b></p>
-                    <p class="language-margin">I documenti sono disponibili online e presso i Punti di ritiro SEND per
-                        120 giorni dalla data di perfezionamento della notifica (data in cui assume valore di legge per
-                        tutte le diverse finalità). Scopri di più su <b><a
-                                href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b></p>
+                    <p data-hide-on-it="true"><%-send_refinement%> <b><%-send_refinement_link%></b></p>
+                    <p class="language-margin"><%-it_send_refinement%> <b><%-it_send_refinement_link%></b></p>
                 </div>
                 <div id="read-more">
-                    <p><b>geht weiter &middot; Continua</b></p>
+                    <p><b><span data-hide-on-it="true"><%-read_more%> &bull; </span><%-it_read_more%></b></p>
                     <img id="arrow_image" src="images/arrow.jpg" />
                 </div>
             </div>
@@ -645,99 +632,90 @@
         <div id="main-page2">
             <div class="row">
                 <div class="heading ten-px" style="padding-right: 0;">
-                    SAMMELN SIE EIN Exemplar IM GEBIET - ZUR BEZAHLUNGRITIRA &middot; RITIRA una copia SUL TERRITORIO -
-                    A PAGAMENTO
+                    <span data-hide-on-it="true"><%-retrieve_copy%> &bull; </span><%-it_retrieve_copy%></b>
                 </div>
                 <div class="section-list nine-px eleven-lh">
                     <ol>
                         <li>
-                            <p>Fordern Sie die avisierten Dokumente auch ohne SPID oder CIE bei den SEND-Abholstellen
-                                (CAF und andere angeschlossene Händler) an. Suchen Sie auf
-                                ordinidigitali.pagopa.it/punti-di-ritiro nach den nächstgelegenen Sammelstellen oder
-                                rufen Sie die Nummer 06.4520.2323 an</p>
-                            <p class="language-less-margin">Richiedi i documenti notificati anche senza SPID o CIE
-                                presso i Punti di ritiro SEND (CAF e altri esercenti convenzionati). Cerca i punti di
-                                ritiro più vicini a te su <b><a
-                                        href="${sendURL}punti-di-ritiro">${sendURLLAbel}/punti-di-ritiro</a></b> oppure
-                                <b>chiama il numero ${raddPhoneNumber}</b></p>
+                            <p data-hide-on-it="true"><%-retrieve_copy_1%> <b><%-retrieve_copy_1_link%></b>
+                                    <span data-hide-on-it="true"><%-retrieve_copy_2%></span></p>
+                            <p class="language-less-margin"><%-it_retrieve_copy_1%> <b><%-it_retrieve_copy_1_link%></b>
+                                    <%-it_retrieve_copy_2%></p>
                         </li>
                         <li>
-                            <p>Bringen Sie Folgendes mit:
-                            <ul id="square-list">
-                                <li>diesen Hinweis;</li>
-                                <li>Ihr Ausweisdokument;</li>
-                                <li>Ihre Steuernummer.</li>
-                            </ul>
+                            <p data-hide-on-it="true"><%-retrieve_copy_title_list%>
+                                    <ul id="square-list" data-hide-on-it="true">
+                                        <li data-hide-on-it="true"><%-retrieve_copy_list_1%></li>
+                                        <li data-hide-on-it="true"><%-retrieve_copy_list_2%></li>
+                                        <li data-hide-on-it="true"><%-retrieve_copy_list_3%></li>
+                                    </ul>
                             </p>
-                            <p class="language-less-margin">Porta con te:
-                            <ul id="square-list">
-                                <li>questo avviso;</li>
-                                <li>un tuo documento di riconoscimento;</li>
-                                <li>il tuo codice fiscale.</li>
-                            </ul>
+                            <p class="language-less-margin"><%-it_retrieve_copy_title_list%>
+                                    <ul id="square-list">
+                                        <li><%-it_retrieve_copy_list_1%></li>
+                                        <li><%-it_retrieve_copy_list_2%></li>
+                                        <li><%-it_retrieve_copy_list_3%></li>
+                                    </ul>
                             </p>
                         </li>
                         <li>
-                            <p>Bezahlen Sie die Kosten für die Dienstleistung und holen Sie die avisierten Dokumente ab.
+                            <p data-hide-on-it="true"><%-retrieve_copy_3%>
                             </p>
-                            <p class="language-less-margin">Paga il costo del servizio e ritira i documenti notificati.
+                            <p class="language-less-margin"><%-it_retrieve_copy_3%>
                             </p>
                         </li>
                     </ol>
                 </div>
                 <div id="mandate-box">
                     <div class="heading ten-px">
-                        Möchten Sie jemanden delegieren? &middot; VUOI DELEGARE QUALCUNO?
+                        <span data-hide-on-it="true"><%-delegate_title%> &bull; </span><%-it_delegate_title%>
                     </div>
                     <div id="mandate-box__form" class="nine-px">
-                        Ich &middot; Io, ${recipient.denomination} ${recipient.taxId}, delegiere &middot; delego
-                        <div class="nine-px eleven-lh border-bottom mb-form">
-                            <p>Name und Nachname</p>
-                            <p>Nome e Cognome</p>
-                        </div>
-                        <div class="nine-px eleven-lh border-bottom mb-form">
-                            <p>Steuer-ID-Code</p>
-                            <p>Codice Fiscale</p>
-                        </div>
-                        <p>die avisierten Unterlagen abzuholen.</p>
-                        <p>a ritirare i documenti notificati.</p>
-                        <div class="nine-px eleven-lh border-bottom mb-form">
-                            <p>Unterschrift</p>
-                            <p>Firma</p>
-                        </div>
+                        <span data-hide-on-it="true"><%-io%> &bull; </span><%-it_io%>, ${recipient.denomination}
+                            ${recipient.taxId}, <span data-hide-on-it="true"><%-delego%> &bull; </span><%-it_delego%>
+                                <div class="nine-px eleven-lh border-bottom mb-form">
+                                    <p data-hide-on-it="true"><%-name%></p>
+                                    <p><%-it_name%></p>
+                                </div>
+                                <div class="nine-px eleven-lh border-bottom mb-form">
+                                    <p data-hide-on-it="true"><%-fiscalcode%></p>
+                                    <p><%-it_fiscalcode%></p>
+                                </div>
+                                <p data-hide-on-it="true"><%-delegate_body%></p>
+                                <p><%-it_delegate_body%></p>
+                                <div class="nine-px eleven-lh border-bottom mb-form">
+                                    <p data-hide-on-it="true"><%-signature%></p>
+                                    <p><%-it_signature%></p>
+                                </div>
                     </div>
                     <div id="mandate-box__list" class="section-list nine-px eleven-lh">
-                        <div>
-                            Bringen Sie als delegierte Person Folgendes mit:
+                        <div data-hide-on-it="true">
+                            <%-delegate_title_list%>
                             <ul id="square-list-mandate">
-                                <li>diese Mitteilung mit der ausgefüllten und unterschriebenen Delegation;</li>
-                                <li>Ihr Ausweisdokument;</li>
-                                <li>Ihre Steuernummer;</li>
-                                <li>eine Kopie oder ein Original der Abgabenordnung und ein Ausweisdokument der
-                                    delegierenden Partei.<#if recipient.recipientType=="PF">.</li>
+                                <li data-hide-on-it="true"><%-delegate_list_1%></li>
+                                <li data-hide-on-it="true"><%-delegate_list_2%></li>
+                                <li data-hide-on-it="true"><%-delegate_list_3%></li>
+                                <li data-hide-on-it="true"><%-delegate_list_4%>
+                                        <#if recipient.recipientType=="PF">.</li>
                                 <#else>;</li>
-                                    <li>un documento che attesti il tuo ruolo
-                                        di
-                                        legale rappresentante.</li>
-    </#if>
-    </ul>
-    </div>
+                                <li data-hide-on-it="true"><%-delegate_list_5%></li>
+                                    </#if>
+                            </ul>
+                        </div>
 
-    <div class="language-margin">
-        La persona delegata dovrà portare con sé:
-        <ul id="square-list-mandate">
-            <li>questo avviso con la delega compilata e firmata;</li>
-            <li>un suo documento di riconoscimento;</li>
-            <li>il suo codice fiscale;</li>
-            <li>una copia o l’originale del tuo codice fiscale e di un tuo documento di riconoscimento del delegante<#if
-                    recipient.recipientType=="PF">.</li>
-            <#else>;</li>
-                <li>un documento che attesti il tuo ruolo
-                    di
-                    legale rappresentante.</li>
-                </#if>
-        </ul>
-    </div>
+                    <div class="language-margin">
+                        <%-it_delegate_title_list%>
+                            <ul id="square-list-mandate">
+                                <li><%-it_delegate_list_1%></li>
+                                <li><%-it_delegate_list_2%></li>
+                                <li><%-it_delegate_list_3%></li>
+                                <li><%-it_delegate_list_4%>
+                                        <#if recipient.recipientType=="PF">.</li>
+                                <#else>;</li>
+                                    <li><%-it_delegate_list_5%></li>
+                                    </#if>
+                            </ul>
+                    </div>
 
     </div>
     </div>
