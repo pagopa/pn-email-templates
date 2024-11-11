@@ -198,10 +198,6 @@
             margin: 2mm 0;
         }
 
-        .section-list ol li {
-            margin-top: 4mm;
-        }
-
         .section-list li {
             margin-top: 1.5mm;
         }
@@ -216,12 +212,12 @@
         }
 
         #view-online-box {
-            float: right;
+            float: left;
+            width: 93mm;
         }
 
         #view-online-box-description {
-            float: left;
-            width: 147mm;
+            width: 93mm;
         }
 
         #payment-box {
@@ -291,7 +287,6 @@
 
         #send-perfezionamento {
             top: 10mm;
-            margin-top: 3.88mm;
         }
 
         #mandate-box {
@@ -360,7 +355,6 @@
             border-radius: 5px;
             padding: 4.23mm 2.7mm;
             float: left;
-            background-color: #ECECEC;
             height: 76mm;
         }
 
@@ -373,6 +367,7 @@
             float: right;
             width: 94mm;
             border: solid #ECECEC 0.66px;
+            background-color: #ECECEC;
             border-radius: 5px;
             padding: 5.6mm 5.8mm 0 4.2mm;
             text-align: center;
@@ -406,7 +401,7 @@
 
         #read-more {
             position: absolute;
-            right: 5mm;
+            right: 1cm;
             bottom: 1.7cm;
             width: 100%;
         }
@@ -497,11 +492,11 @@
         }
 
         #icon-io_explanation {
-            width: 32mm;
+            width: 40mm;
             padding: 0 2mm;
             position: absolute;
             bottom: 0;
-            left: 40%;
+            left: 33%;
         }
 
         #icon-io_logo {
@@ -514,20 +509,6 @@
             height: 34px;
             margin: 3mm;
             margin-bottom: 1mm;
-        }
-
-        .language-margin {
-            margin-top: 2mm;
-        }
-
-        .language-less-margin {
-            margin-top: 1.4mm;
-        }
-
-        #footer-iun {
-            position: absolute;
-            right: 10mm;
-            bottom: 1.7cm;
         }
     </style>
 </head>
@@ -571,55 +552,188 @@
         <div id="center-section" class="relative-box" style="height: 99mm;">
             <div class="absolute-box">
                 <div id="main__subject" class="twelve-px sixteen-lh">
-                    <p><b><span data-hide-on-it="true">EMPFANGSBESTÄTIGUNG &bull; </span>Avviso di avvenuta ricezione (AAR): ${notification.subject}</b></p>
+                    <b>Avviso di Avvenuta Ricezione: ${notification.subject}</b>
                 </div>
                 <div id="main__disclaimer" class="eleven-px sixteen-lh">
-                    <p><span data-hide-on-it="true">Du hast eine rechtsgültige Mitteilung von ${notification.sender.paDenomination}: <b>siehe die zugestellten Dokumente</b>. Wenn sie nicht in diesem Bescheid enthalten sind, <b>kannst du die Dokumente online auf SEND</b>. Ist eine Zahlung vorgesehen, so findest du das Fälligkeitsdatum und den Termin für etwaige Einsprüche in den Dokumenten.</span></p>
-                    <p class="language-margin">Hai ricevuto una comunicazione a valore legale da ${notification.sender.paDenomination}: <b>prendi visione dei documenti notificati</b>. Se non sono inclusi in questo avviso, <b>accedi ai documenti online su SEND</b>. Se è previsto un pagamento, nei documenti troverai la data di scadenza e quella per eventuali ricorsi.</p>
+                    <p>Hai ricevuto una comunicazione a valore legale da ${notification.sender.paDenomination}:
+                        <b>prendi visione dei documenti notificati</b>. Se non sono inclusi in questo avviso, <b>accedi
+                            ai documenti online su SEND</b>. Se è previsto un pagamento, nei documenti troverai la data di scadenza e quella per eventuali ricorsi.</p>
                 </div>
-
+                <div class="row">
+                    <div id="view-online-box">
+                        <div class="heading ten-px">Accedi ai documenti online - gratis</div>
+                        <img alt="qr-code" id="qr-code" src="${qrCodeQuickAccessLink}" />
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <div id="lower-section" style="height: 99mm; position: relative;">
-            <div class="row" style="height: 48mm;">
-                <div class="heading ten-px"><span data-hide-on-it="true">GREIFE AUF DIE ONLINE-DOKUMENTE ZU - KOSTENLOS &bull; </span>Accedi ai documenti online - gratis</div>
-                <div id="view-online-box-description">
-                    <div class="section-list nine-px eleven-lh">
-                        <ol>
-                            <li>
-                                <p data-hide-on-it="true">Scanne den QR-Code oder öffne <b><a href="${piattaformaNotificheURL}auth/login">${piattaformaNotificheURLLabel}</a></b>
-                                </p>
-                                <p class="language-less-margin">Inquadra il codice QR o vai su
-                                        <b><a href="${piattaformaNotificheURL}auth/login">${piattaformaNotificheURLLabel}</a></b>
-                                </p>
-                            </li>
-                            <li>
-                                <p data-hide-on-it="true">Melde dich mit SPID oder CIE an (elektronischer Personalausweis)</p>
-                                <p class="language-less-margin">Entra con SPID o CIE (Carta d'Identità Elettronica);</p>
-                            </li>
-                            <li>
-                                <p data-hide-on-it="true">Ruf die zugestellten Dokumente ab</p>
-                                <p class="language-less-margin">Accedi ai documenti notificati.</p>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <div id="view-online-box">
-                    <img alt="qr-code" id="qr-code" src="${qrCodeQuickAccessLink}" />
+            <div id="view-online-box-description">
+                <div class="section-list nine-px eleven-lh">
+                    <ol>
+                        <li>Inquadra il codice QR o vai su <b><a
+                                    href="${piattaformaNotificheURL}auth/login">${piattaformaNotificheURLLabel}</a></b>
+                        </li>
+                        <li>Entra con SPID o CIE (Carta d'Identità Elettronica);</li>
+                        <li>Accedi ai documenti notificati.</li>
+                    </ol>
                 </div>
             </div>
-            <div class="row">
-                <div id="send-perfezionamento" class="eight-px" style="padding-left: 2.5mm; line-height: normal;">
-                    <p data-hide-on-it="true">Die Dokumente sind online und an den Abholstellen SEND für 120 Tage ab dem Vervollständigungsdatum der Zustellung (dem Datum, an dem sie für alle Zwecke rechtsgültig wird) verfügbar. Mehr hierzu auf <b><a href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b></p>
-                    <p class="language-margin">I documenti sono disponibili online e presso i Punti di ritiro SEND per 120 giorni dalla data di perfezionamento della notifica (data in cui assume valore di legge per tutte le diverse finalità). Scopri di più su <b><a href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b></p>
+            <div id="send-perfezionamento" class="eight-px" style="padding-left: 2.5mm; line-height: normal;">
+                I documenti sono disponibili online e presso i Punti di ritiro SEND per 120 giorni dalla data di
+                perfezionamento della notifica (data in cui assume valore di legge per tutte le diverse finalità).
+                Scopri di più su <b><a href="${perfezionamentoURL}">${perfezionamentoURLLabel}</a></b>
+            </div>
+            <div id="mandate-box">
+                <div class="heading ten-px">
+                    Vuoi delegare qualcuno al ritiro?
                 </div>
-
+                <div id="mandate-box__form" class="nine-px">
+                    <#if recipient.recipientType=="PF">
+                        Io, ${recipient.denomination} ${recipient.taxId}, delego
+                        <#else>
+                            <div>
+                                Io,
+                                <span style="width: 86mm; display: inline-block;"
+                                    class="nine-px eleven-lh border-bottom mb-form">
+                                    Nome e Cognome
+                                </span>
+                                in qualità di legale rappresentante di ${recipient.denomination} ${recipient.taxId},
+                                delego
+                            </div>
+                    </#if>
+                    <div class="nine-px eleven-lh border-bottom mb-form">
+                        Nome e Cognome
+                    </div>
+                    <div class="nine-px eleven-lh border-bottom mb-form">
+                        Codice Fiscale
+                    </div>
+                    a ritirare i documenti notificati.
+                    <div class="nine-px eleven-lh border-bottom mb-form">
+                        Firma
+                    </div>
+                </div>
+                <div id="mandate-box__list" class="section-list nine-px eleven-lh">
+                    La persona delegata dovrà portare con sé:
+                    <ul id="square-list-mandate">
+                        <li>questo avviso con la delega compilata e firmata;</li>
+                        <li>un suo documento di riconoscimento;</li>
+                        <li>il suo codice fiscale;</li>
+                        <li>una copia o l’originale del tuo codice fiscale e di un tuo documento di riconoscimento del
+                            delegante<#if recipient.recipientType=="PF">.</li>
+                        <#else>;</li>
+                            <li>un documento che attesti il tuo ruolo
+                                di
+                                legale rappresentante.</li>
+                            </#if>
+                    </ul>
+                    <#if recipient.recipientType=="PF">
+                        <div id="read-more">
+                            <p><b>Scopri di più</b></p>
+                            <img id="arrow_image" src="images/arrow.jpg" />
+                        </div>
+                    </#if>
+                </div>
             </div>
         </div>
     </div>
 
+    <#if recipient.recipientType=="PF">
+        <!--------------------------- PAGE 2 --------------------------->
+        <div>
+            <div id="main-page2">
+                <h2 class="sixteen-lh twelve-px">Con SEND - Servizio notifiche digitali ricevi le comunicazioni a valore
+                    legale della Pubblica Amministrazione in digitale, dove ti è più comodo e senza raccomandata
+                    cartacea</h2>
+                <div id="advantages">
+                    <div id="advantages-explanation">
+                        <h3 class="ten-px">I VANTAGGI DELLE NOTIFICHE DIGITALI</h3>
+                        <div class="advantages-row">
+                            <div class="advantage-col">
+                                <img class="message-advantages_explanation" src="./images/moneypig.jpg" />
+                                <div class="advantages-explanation__content">
+                                    <b>Ti costa meno</b>:<br>
+                                    diminuiscono i costi di notificazione
+                                </div>
+                            </div>
+                            <div class="advantage-col" style="left: 25%;">
+                                <img class="message-advantages_explanation" src="./images/time.jpg" />
+                                <div class="advantages-explanation__content">
+                                    <b>Risparmi tempo</b>:<br>
+                                    niente più attese per il ritiro della raccomandata
+                                </div>
+                            </div>
+                            <div class="advantage-col" style="left: 50%;">
+                                <img class="message-advantages_explanation" src="./images/world.jpg" />
+                                <div class="advantages-explanation__content">
+                                    <b>Non importa dove sei</b>:<br>
+                                    trovi le tue notifiche e documenti online o su IO
+                                </div>
+                            </div>
+                            <div class="advantage-col" style="left: 75%;">
+                                <img class="message-advantages_explanation" src="./images/sustainable.jpg" />
+                                <div class="advantages-explanation__content">
+                                    <b>Proteggi l'ambiente</b>:<br>
+                                    meno emissioni per il trasporto e meno carta
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative-box" style="height: 76mm;">
+                    <div id="howto-explanation">
+                        <div class="explanation-title">
+                            <h4>COSA CAMBIA PER TE</h4>
+                            <img id="icon-howto_explanation" src="./images/veloce.jpg" />
+                        </div>
+                        <div id="howto-explanation__content" class="nine-px eleven-lh">
+                            <p>Quando un ente ti invia una comunicazione a valore legale tramite SEND, puoi venirne a
+                                conoscenza:</p>
+                            <ul id="square-list">
+                                <li>con un <b>messaggio sull'app IO</b>, se attivi il servizio SEND - Notifiche digitali
+                                    in app;</li>
+                                <li>con una <b>PEC</b>, se la inserisci su SEND, se l’hai comunicata all’ente in
+                                    precedenza o se è presente nei registri pubblici;</li>
+                                <li>con una <b>e-mail</b> o un <b>SMS</b>, se inserisci i recapiti su SEND.</li>
+                            </ul>
+                            <p>Se SEND non riesce a raggiungerti via PEC o se non apri la notifica online o sull’app IO
+                                entro i termini previsti dal servizio, continuerai a ricevere la raccomandata cartacea.
+                            </p>
+                            <p>Poiché SEND è in corso di adozione da parte degli enti sul territorio nazionale, potresti
+                                ricevere ancora alcune comunicazioni a valore legale com'è avvenuto finora.</p>
+                        </div>
+                    </div>
+                    <div id="io-box_explanation">
+                        <div id="io-explanation">
+                            <div class="explanation-title">
+                                <h4 class="ten-px">CON L'APP IO CONVIENE</h4>
+                            </div>
+                            <div id="io-explanation__content" class="nine-px eleven-lh">
+                                <p><b>Attiva il servizio SEND - Notifiche digitali su app IO</b> per ricevere le
+                                    <b>prossime</b> comunicazioni a valore legale direttamente sul tuo dispositivo.</p>
+                                <p>Se non hai IO, scaricala gratuitamente dallo store.</p>
+                            </div>
+                        </div>
+                        <img id="icon-io_explanation" src="./images/io-sfondo-grigio.jpg" />
+                    </div>
+                </div>
+                <div id="print-explanation">
+                    <div class="explanation-title">
+                        <h4 class="ten-px">VUOI UNA COPIA DEI DOCUMENTI?</h4>
+                    </div>
+                    <div id="print-explanation__content">
+                        <p class="nine-px eleven-lh">Se non hai SPID o CIE o non hai accesso a internet, puoi<b>
+                                richiedere una copia dei documenti presso un Punto di ritiro SEND</b> vicino a te.
+                            <br>Scopri come funziona su <b><a
+                                    href="${sendURL}punti-di-ritiro/come-funziona">${sendURLLAbel}/punti-di-ritiro/come-funziona</a></b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </#if>
 
 </body>
 
