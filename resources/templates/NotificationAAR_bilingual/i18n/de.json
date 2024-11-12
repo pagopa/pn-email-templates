@@ -8,6 +8,6 @@
   "access_to_document_1_link":"<a href=\"${piattaformaNotificheURL}auth/login\">${piattaformaNotificheURLLabel}</a>",
   "access_to_document_2": "Melde dich mit SPID oder CIE an (elektronischer Personalausweis)",
   "access_to_document_3": "Ruf die zugestellten Dokumente ab",
-  "send_refinement": "Die Dokumente sind online und an den Abholstellen SEND für 120 Tage ab dem Vervollständigungsdatum der Zustellung (dem Datum, an dem sie für alle Zwecke rechtsgültig wird) verfügbar. Mehr hierzu auf",
+  "send_refinement": "Die zugestellten Dokumente sind 120 Tage nach dem Vervollständigungsdatum der Zustellung (dem Datum, an dem sie für alle Zwecke rechtsgültig wird) online einsehbar. Mehr hierzu auf",
   "send_refinement_link": "<a href=\"${perfezionamentoURL}\">${perfezionamentoURLLabel}</a>"
 }

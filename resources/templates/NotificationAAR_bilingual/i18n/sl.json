@@ -8,6 +8,6 @@
   "access_to_document_1_link": "<a href=\"${piattaformaNotificheURL}auth/login\">${piattaformaNotificheURLLabel}</a>",
   "access_to_document_2": "Vstopite s SPID ali CIE (elektronska osebna izkaznica)",
   "access_to_document_3": "Dostop do vročenih dokumentov",
-  "send_refinement": "Dokumenti so na voljo na spletu in na točkah prevzema SEND 120 dni od datuma zaključka obvestila (datum, ko začne pravno veljati za vse različne namene). Izvedite več na",
+  "send_refinement": "Priglašeni dokumenti so na voljo na spletu 120 dni od datuma zaključka obvestila (datum, ko začne pravno veljati za vse različne namene). Izvedite več na",
   "send_refinement_link": "<a href=\"${perfezionamentoURL}\">${perfezionamentoURLLabel}</a>"
 }

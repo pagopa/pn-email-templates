@@ -8,6 +8,6 @@
   "access_to_document_1_link":"<a href=\"${piattaformaNotificheURL}auth/login\">${piattaformaNotificheURLLabel}</a>",
   "access_to_document_2": "Accédez avec SPID ou CIE (carte d'identité électronique)",
   "access_to_document_3": "Accédez aux documents notifiés",
-  "send_refinement": "Les documents sont disponibles en ligne et dans les Points de retrait SEND pendant 120 jours à compter de la date de prise d’effet de la notification (date à laquelle elle devient légalement valide à toutes fins). Pour en savoir plus, consultez le site",
+  "send_refinement": "Les documents notifiés peuvent être consultés en ligne pendant 120 jours à compter de la date de prise d’effet de la notification (date à laquelle elle devient légalement valide à toutes fins). Pour en savoir plus, consultez le site",
   "send_refinement_link": "<a href=\"${perfezionamentoURL}\">${perfezionamentoURLLabel}</a>"
 }
