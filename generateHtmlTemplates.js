@@ -37,7 +37,7 @@ async function generateHtmlTemplates() {
     "AnalogDeliveryWorkflowFailureLegalFact",
     "NotificationCancelledLegalFact",
     "NotificationAARForEMAIL",
-    "NotificationAARForPEC"
+    "NotificationAARForPEC",
   ];
 
   for (const template of templates) {
@@ -60,7 +60,10 @@ async function generateHtmlTemplates() {
           : templateContent;
 
       const translations = await loadTranslations(language, template);
-      const renderedHtml = ejs.render(templateLang, translations);
+      const renderedHtml = ejs.render(templateLang, {
+        ...translations,
+        noIta: language !== "it",
+      });
       const outputDir = path.join(__dirname, "output/templates", template);
       await fs.ensureDir(outputDir);
       const outputPath = path.join(outputDir, `${fileName}.html`);
