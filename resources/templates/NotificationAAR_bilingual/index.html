@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="SEND - Servizio Notifiche Digitali">
-    <title><span data-hide-on-it="true"><%-aar_label%> &bull; </span><%-it_aar_label%></title>
+    <title><% if (noIta) { %><span><%-aar_label%> &bull; </span><% } %><%-it_aar_label%></title>
     <style type="text/css" media="all">
         @font-face {
             font-family: "Titillium Pro";
@@ -572,10 +572,10 @@
         <div id="center-section" class="relative-box" style="height: 99mm;">
             <div class="absolute-box">
                 <div id="main__subject" class="twelve-px sixteen-lh">
-                    <p><b><span data-hide-on-it="true"><%-notification_subject%> &bull; </span><%-it_notification_subject%> (AAR): ${notification.subject}</b></p>
+                    <p><b><% if (noIta) { %><span><%-notification_subject%> &bull; </span><% } %><%-it_notification_subject%> (AAR): ${notification.subject}</b></p>
                 </div>
                 <div id="main__disclaimer" class="eleven-px sixteen-lh">
-                    <p><span data-hide-on-it="true"><%-aar_subtitles_1%></span></p>
+                    <p><% if (noIta) { %><span><%-aar_subtitles_1%></span><% } %></p>
                     <p class="language-margin"><%-it_aar_subtitles_1%></p>
                 </div>
 
@@ -585,23 +585,22 @@
 
         <div id="lower-section" style="height: 99mm; position: relative;">
             <div class="row" style="height: 48mm;">
-                <div class="heading ten-px"><span data-hide-on-it="true"><%-access_to_document_title%> &bull; </span><%-it_access_to_document_title%></div>
+                <div class="heading ten-px"><% if (noIta) { %><span><%-access_to_document_title%> &bull; </span><% } %><%-it_access_to_document_title%></div>
                 <div id="view-online-box-description">
                     <div class="section-list nine-px eleven-lh">
                         <ol>
                             <li>
-                                <p data-hide-on-it="true"><%-access_to_document_1%> <b><%-access_to_document_1_link%></b>
-                                </p>
+                                <% if (noIta) { %><p><%-access_to_document_1%> <b><%-access_to_document_1_link%></b></p><% } %>
                                 <p class="language-less-margin"><%-it_access_to_document_1%>
                                         <b><%-it_access_to_document_1_link%></b>
                                 </p>
                             </li>
                             <li>
-                                <p data-hide-on-it="true"><%-access_to_document_2%></p>
+                                <% if (noIta) { %><p><%-access_to_document_2%></p><% } %>
                                 <p class="language-less-margin"><%-it_access_to_document_2%></p>
                             </li>
                             <li>
-                                <p data-hide-on-it="true"><%-access_to_document_3%></p>
+                                <% if (noIta) { %><p><%-access_to_document_3%></p><% } %>
                                 <p class="language-less-margin"><%-it_access_to_document_3%></p>
                             </li>
                         </ol>
@@ -613,7 +612,7 @@
             </div>
             <div class="row">
                 <div id="send-perfezionamento" class="eight-px" style="padding-left: 2.5mm; line-height: normal;">
-                    <p data-hide-on-it="true"><%-send_refinement%> <b><%-send_refinement_link%></b></p>
+                    <% if (noIta) { %><p><%-send_refinement%> <b><%-send_refinement_link%></b></p><% } %>
                     <p class="language-margin"><%-it_send_refinement%> <b><%-it_send_refinement_link%></b></p>
                 </div>
 

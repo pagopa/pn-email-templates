@@ -1,8 +1,6 @@
 <mjml lang="it">
   <mj-head>
-    <mj-title
-      >SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title
-    >
+    <mj-title>SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title>
     <mj-font
       name="Titillium Sans Pro"
       href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
@@ -22,7 +20,7 @@
   </mj-head>
 
   <mj-body css-class="mail-body">
-    <mj-include path="../style.css" type="css" />
+    <mj-include path="../../styles/style.css" type="css" />
 
     <mj-wrapper>
       <!-- PagoPA Logo -->
@@ -44,9 +42,9 @@
             padding-left="0"
           >
             <mj-text padding-left="15px">
-              <p style="font-size: 10px; font-weight: 700" data-hide-on-it="true">
+              <% if (noIta) { %><p style="font-size: 10px; font-weight: 700">
                 <%-avviso_cortesia%>
-              </p>
+              </p><% } %>
               <p style="font-size: 10px; font-weight: 700">
                 <%-it_avviso_cortesia%>
               </p>
@@ -67,9 +65,9 @@
             color="#17324D"
           >
             <!-- H4 Desktop (from MUI Italia)-->
-            <h1 style="font-size: 32px; line-height: 40px; margin: 0"  data-hide-on-it="true">
+            <% if (noIta) { %><h1 style="font-size: 32px; line-height: 40px; margin: 0">
               <%-subject%>
-            </h1>
+            </h1><% } %>
             <h1 style="font-size: 32px; line-height: 40px; margin: 0">
               <%-it_subject%>
             </h1>
@@ -86,7 +84,7 @@
             padding-bottom="0px"
             color="#17324D"
           >
-            <p style="margin-top: 0px"><span data-hide-on-it="true"><%-hello%> &bull; </span><%-it_hello%>,</p>
+            <p style="margin-top: 0px"><% if (noIta) { %><span><%-hello%> &bull; </span><% } %><%-it_hello%>,</p>
           </mj-text>
           <mj-text
             css-class="text"
@@ -97,13 +95,13 @@
             padding-top="0px"
             color="#17324D"
           >
-            <p style="margin-top: 10px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="margin-top: 10px">
               <%-body1%>
-            </p>
+            </p><% } %>
 
-            <p style="margin-top: 20px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="margin-top: 20px">
               <%-body2%>
-            </p>
+            </p><% } %>
 
             <p style="margin-top: 10px">
               <%-it_body1%>
@@ -126,17 +124,17 @@
                 title="Accedi ai documenti"
                 class="button"
                 href="${quickAccessLink}"
-                ><strong><span data-hide-on-it="true"><%-button%> &bull; </span><%-it_button%></strong></a
+                ><strong><% if (noIta) { %><span><%-button%> &bull; </span><% } %><%-it_button%></strong></a
               >
             </p>
 
             <!-- Perfezionamento Notifica -->
-            <p style="margin-top: 0px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="margin-top: 0px">
               <%-perfection%>
-            </p>
-            <p style="font-size: 14px; line-height: 22px" data-hide-on-it="true">
+            </p><% } %>
+            <% if (noIta) { %><p style="font-size: 14px; line-height: 22px">
               <%-read_more%>
-            </p>
+            </p><% } %>
             <p style="margin-top: 0px">
               <%-it_perfection%>
             </p>
@@ -152,7 +150,7 @@
             color="#17324D"
           >
             <p style="margin-top: 0px; margin-bottom: 14px">
-            <span data-hide-on-it="true"><%-greetings%> &bull; </span> <%-it_greetings%>,</p>
+            <% if (noIta) { %><span><%-greetings%> &bull; </span><% } %> <%-it_greetings%>,</p>
             
             <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
           </mj-text>
@@ -170,9 +168,9 @@
             line-height="20px"
             color="#5C6F82"
           >
-            <p style="margin-top: 0px; font-size: 14px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="margin-top: 0px; font-size: 14px">
               <%-footer%>
-            </p>
+            </p><% } %>
             <p style="margin-top: 0px; font-size: 14px">
               <%-it_footer%>
             </p>

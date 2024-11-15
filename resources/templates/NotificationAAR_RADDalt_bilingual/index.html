@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="author" content="SEND - Servizio Notifiche Digitali">
-    <title><span data-hide-on-it="true"><%-aar_label%> &bull; </span><%-it_aar_label%></title>
+    <title><% if (noIta) { %><span><%-aar_label%> &bull; </span><% } %><%-it_aar_label%></title>
     <style type="text/css" media="all">
         @font-face {
             font-family: "Titillium Pro";
@@ -571,11 +571,11 @@
         <div id="center-section" class="relative-box" style="height: 99mm;">
             <div class="absolute-box">
                 <div id="main__subject" class="twelve-px sixteen-lh">
-                    <p><b><span data-hide-on-it="true"><%-notification_subject%> &bull; </span><%-it_notification_subject%> (AAR):
+                    <p><b><% if (noIta) { %><span><%-notification_subject%> &bull; </span><% } %><%-it_notification_subject%> (AAR):
                                 ${notification.subject}</b></p>
                 </div>
                 <div id="main__disclaimer" class="eleven-px sixteen-lh">
-                    <p><span data-hide-on-it="true"><%-aar_subtitles_1%></span></p>
+                    <p><% if (noIta) { %><span><%-aar_subtitles_1%></span><% } %></p>
                     <p class="language-margin"><%-it_aar_subtitles_1%></p>
                 </div>
 
@@ -585,25 +585,25 @@
 
         <div id="lower-section" style="height: 99mm; position: relative;">
             <div class="row" style="height: 48mm;">
-                <div class="heading ten-px"><span data-hide-on-it="true"><%-access_to_document_title%> &bull;
-                    </span><%-it_access_to_document_title%></div>
+                <div class="heading ten-px"><% if (noIta) { %><span><%-access_to_document_title%> &bull;
+                    </span><% } %><%-it_access_to_document_title%></div>
                 <div id="view-online-box-description">
                     <div class="section-list nine-px eleven-lh">
                         <ol>
                             <li>
-                                <p data-hide-on-it="true"><%-access_to_document_1%>
+                                <% if (noIta) { %><p><%-access_to_document_1%>
                                         <b><%-access_to_document_1_link%></b>
-                                </p>
+                                </p><% } %>
                                 <p class="language-less-margin"><%-it_access_to_document_1%>
                                         <b><%-it_access_to_document_1_link%></b>
                                 </p>
                             </li>
                             <li>
-                                <p data-hide-on-it="true"><%-access_to_document_2%></p>
+                                <% if (noIta) { %><p><%-access_to_document_2%></p><% } %>
                                 <p class="language-less-margin"><%-it_access_to_document_2%></p>
                             </li>
                             <li>
-                                <p data-hide-on-it="true"><%-access_to_document_3%></p>
+                                <% if (noIta) { %><p><%-access_to_document_3%></p><% } %>
                                 <p class="language-less-margin"><%-it_access_to_document_3%></p>
                             </li>
                         </ol>
@@ -615,11 +615,11 @@
             </div>
             <div class="row">
                 <div id="send-perfezionamento" class="eight-px" style="padding-left: 2.5mm; line-height: normal;">
-                    <p data-hide-on-it="true"><%-send_refinement%> <b><%-send_refinement_link%></b></p>
+                    <% if (noIta) { %><p><%-send_refinement%> <b><%-send_refinement_link%></b></p><% } %>
                     <p class="language-margin"><%-it_send_refinement%> <b><%-it_send_refinement_link%></b></p>
                 </div>
                 <div id="read-more">
-                    <p><b><span data-hide-on-it="true"><%-read_more%> &bull; </span><%-it_read_more%></b></p>
+                    <p><b><% if (noIta) { %><span><%-read_more%> &bull; </span><% } %><%-it_read_more%></b></p>
                     <img id="arrow_image" src="images/arrow.jpg" />
                 </div>
             </div>
@@ -632,24 +632,24 @@
         <div id="main-page2">
             <div class="row">
                 <div class="heading ten-px" style="padding-right: 0;">
-                    <span data-hide-on-it="true"><%-retrieve_copy%> &bull; </span><%-it_retrieve_copy%></b>
+                    <% if (noIta) { %><span><%-retrieve_copy%> &bull; </span><% } %><%-it_retrieve_copy%></b>
                 </div>
                 <div class="section-list nine-px eleven-lh">
                     <ol>
                         <li>
-                            <p data-hide-on-it="true"><%-retrieve_copy_1%> <b><%-retrieve_copy_1_link%></b>
-                                    <span data-hide-on-it="true"><%-retrieve_copy_2%></span></p>
+                            <% if (noIta) { %><p><%-retrieve_copy_1%> <b><%-retrieve_copy_1_link%></b>
+                                    <span><%-retrieve_copy_2%></span></p><% } %>
                             <p class="language-less-margin"><%-it_retrieve_copy_1%> <b><%-it_retrieve_copy_1_link%></b>
                                     <%-it_retrieve_copy_2%></p>
                         </li>
                         <li>
-                            <p data-hide-on-it="true"><%-retrieve_copy_title_list%>
-                                    <ul id="square-list" data-hide-on-it="true">
-                                        <li data-hide-on-it="true"><%-retrieve_copy_list_1%></li>
-                                        <li data-hide-on-it="true"><%-retrieve_copy_list_2%></li>
-                                        <li data-hide-on-it="true"><%-retrieve_copy_list_3%></li>
+                            <% if (noIta) { %><p><%-retrieve_copy_title_list%>
+                                    <ul id="square-list">
+                                        <li><%-retrieve_copy_list_1%></li>
+                                        <li><%-retrieve_copy_list_2%></li>
+                                        <li><%-retrieve_copy_list_3%></li>
                                     </ul>
-                            </p>
+                            </p><% } %>
                             <p class="language-less-margin"><%-it_retrieve_copy_title_list%>
                                     <ul id="square-list">
                                         <li><%-it_retrieve_copy_list_1%></li>
@@ -659,8 +659,8 @@
                             </p>
                         </li>
                         <li>
-                            <p data-hide-on-it="true"><%-retrieve_copy_3%>
-                            </p>
+                            <% if (noIta) { %><p><%-retrieve_copy_3%>
+                            </p><% } %>
                             <p class="language-less-margin"><%-it_retrieve_copy_3%>
                             </p>
                         </li>
@@ -668,40 +668,40 @@
                 </div>
                 <div id="mandate-box">
                     <div class="heading ten-px">
-                        <span data-hide-on-it="true"><%-delegate_title%> &bull; </span><%-it_delegate_title%>
+                        <% if (noIta) { %><span><%-delegate_title%> &bull; </span><% } %><%-it_delegate_title%>
                     </div>
                     <div id="mandate-box__form" class="nine-px">
-                        <span data-hide-on-it="true"><%-io%> &bull; </span><%-it_io%>, ${recipient.denomination}
-                            ${recipient.taxId}, <span data-hide-on-it="true"><%-delego%> &bull; </span><%-it_delego%>
+                        <% if (noIta) { %><span><%-io%> &bull; </span><% } %><%-it_io%>, ${recipient.denomination}
+                            ${recipient.taxId}, <% if (noIta) { %><span><%-delego%> &bull; </span><% } %><%-it_delego%>
                                 <div class="nine-px eleven-lh border-bottom mb-form">
-                                    <p data-hide-on-it="true"><%-name%></p>
+                                    <% if (noIta) { %><p><%-name%></p><% } %>
                                     <p><%-it_name%></p>
                                 </div>
                                 <div class="nine-px eleven-lh border-bottom mb-form">
-                                    <p data-hide-on-it="true"><%-fiscalcode%></p>
+                                    <% if (noIta) { %><p><%-fiscalcode%></p><% } %>
                                     <p><%-it_fiscalcode%></p>
                                 </div>
-                                <p data-hide-on-it="true"><%-delegate_body%></p>
+                                <% if (noIta) { %><p><%-delegate_body%></p><% } %>
                                 <p><%-it_delegate_body%></p>
                                 <div class="nine-px eleven-lh border-bottom mb-form">
-                                    <p data-hide-on-it="true"><%-signature%></p>
+                                    <% if (noIta) { %><p><%-signature%></p><% } %>
                                     <p><%-it_signature%></p>
                                 </div>
                     </div>
                     <div id="mandate-box__list" class="section-list nine-px eleven-lh">
-                        <div data-hide-on-it="true">
+                        <% if (noIta) { %><div>
                             <%-delegate_title_list%>
                             <ul id="square-list-mandate">
-                                <li data-hide-on-it="true"><%-delegate_list_1%></li>
-                                <li data-hide-on-it="true"><%-delegate_list_2%></li>
-                                <li data-hide-on-it="true"><%-delegate_list_3%></li>
-                                <li data-hide-on-it="true"><%-delegate_list_4%>
+                                <li><%-delegate_list_1%></li>
+                                <li><%-delegate_list_2%></li>
+                                <li><%-delegate_list_3%></li>
+                                <li><%-delegate_list_4%>
                                         <#if recipient.recipientType=="PF">.</li>
                                 <#else>;</li>
-                                <li data-hide-on-it="true"><%-delegate_list_5%></li>
+                                <li><%-delegate_list_5%></li>
                                     </#if>
                             </ul>
-                        </div>
+                        </div><% } %>
 
                     <div class="language-margin">
                         <%-it_delegate_title_list%>

@@ -30,15 +30,15 @@
           <!-- Title -->
           <mj-text css-class="text" font-weight="700" align="left" padding-top="16px" padding-bottom="16px" font-size="32px" line-height="40px">
             <!-- H1 Desktop (from MUI Italia)-->
-            <h1 style="
+            <% if (noIta) { %><h1 style="
                 font-size: 32px;
                 font-weight: 700;
                 mso-line-height-rule: exactly;
                 line-height: 40px;
                 margin: 0;
-              " data-hide-on-it="true">
+              ">
               <%-subject%>
-            </h1>
+            </h1><% } %>
             <h1 style="
                 font-size: 32px;
                 font-weight: 700;
@@ -52,19 +52,19 @@
 
           <!-- Main Message -->
           <mj-text css-class="text" font-size="18px" line-height="28px" font-weight="400" align="left" padding-top="16px" padding-bottom="0px">
-            <p style="margin-top: 0px"><span data-hide-on-it="true">
-                <%-hello%> &bull; </span>
+            <p style="margin-top: 0px"><% if (noIta) { %><span>
+                <%-hello%> &bull; </span><% } %>
               <%-it_hello%>,</p>
           </mj-text>
           <mj-text css-class="text" font-size="18px" line-height="28px" font-weight="400" align="left" padding-top="0px">
-            <p style="
+            <% if (noIta) { %><p style="
                 margin-top: 0px;
                 font-size: 18px;
                 mso-line-height-rule: exactly;
                 line-height: 28px;
-              " data-hide-on-it="true">
+              ">
               <%-body1%>
-            </p>
+            </p><% } %>
             <p style="
                 margin-top: 0px;
                 font-size: 18px;
@@ -80,29 +80,29 @@
                 margin-left: 0;
               ">
               <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
-                <strong><span data-hide-on-it="true">
-                    <%-sender_label%> &bull; </span>
+                <strong><% if (noIta) { %><span>
+                    <%-sender_label%> &bull; </span><% } %>
                   <%-it_sender_label%></strong>: ${notification.sender.paDenomination}
               </li>
               <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
-                <strong><span data-hide-on-it="true">
-                    <%-subject_label%> &bull; </span>
+                <strong><% if (noIta) { %><span>
+                    <%-subject_label%> &bull; </span><% } %>
                   <%-it_subject_label%></strong>: ${notification.subject}
               </li>
               <li style="padding-left: 0; margin-left: 0">
-                <strong><span data-hide-on-it="true">
-                    <%-iun_label%> &bull; </span>
+                <strong><% if (noIta) { %><span>
+                    <%-iun_label%> &bull; </span><% } %>
                   <%-it_iun_label%></strong>: ${notification.iun}
               </li>
             </ul>
-            <p style="
+            <% if (noIta) { %><p style="
                 margin-top: 0px;
                 font-size: 18px;
                 mso-line-height-rule: exactly;
                 line-height: 28px;
-              " data-hide-on-it="true">
+              ">
               <%-body2%>
-            </p>
+            </p><% } %>
             <p style="
                 margin-top: 0px;
                 font-size: 18px;
@@ -110,9 +110,9 @@
                 line-height: 28px;">
               <%-it_body2%>
             </p>
-            <p style="margin-top: 20px; font-size: 18px; line-height: 28px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="margin-top: 20px; font-size: 18px; line-height: 28px">
               <%-body3%>
-            </p>
+            </p><% } %>
             <p style="margin-top: 20px; font-size: 18px; line-height: 28px">
               <%-it_body3%>
             </p>
@@ -124,23 +124,23 @@
                   padding: 8px 20px;
                   border-radius: 4px;
                   text-decoration: none;
-                " title="Visualizza i documenti" class="button" href="${quickAccessLink}"><strong><span data-hide-on-it="true">
-                    <%-button%> &bull; </span>
+                " title="Visualizza i documenti" class="button" href="${quickAccessLink}"><strong><% if (noIta) { %><span>
+                    <%-button%> &bull; </span><% } %>
                   <%-it_button%></strong></a>
             </p>
 
             <!-- SEND -->
-            <p style="font-size: 14px; line-height: 20px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="font-size: 14px; line-height: 20px">
               <%-read_more%>
-            </p>
+            </p><% } %>
             <p style="font-size: 14px; line-height: 20px">
               <%-it_read_more%>
             </p>
           </mj-text>
           <mj-text css-class="text" font-size="18px" line-height="20px" padding-bottom="0px">
             <p style="margin-top: 0px; margin-bottom: 14px; padding-bottom: 0px">
-              <span data-hide-on-it="true">
-                <%-greetings%> &bull; </span>
+              <% if (noIta) { %><span>
+                <%-greetings%> &bull; </span><% } %>
               <%-it_greetings%>,
             </p>
             <p style="margin: 0px; padding: 0px">SEND - Servizio Notifiche Digitali</p>
@@ -153,9 +153,9 @@
       <mj-section css-class="section" padding-bottom="16px" padding-top="0px">
         <mj-column>
           <mj-text css-class="footer-pec-text" font-size="14px" line-height="20px">
-            <p style="margin-top: 0px; font-size: 14px" data-hide-on-it="true">
+            <% if (noIta) { %><p style="margin-top: 0px; font-size: 14px">
               <%-footer%>
-            </p>
+            </p><% } %>
             <p style="margin-top: 0px; font-size: 14px">
               <%-it_footer%>
             </p>

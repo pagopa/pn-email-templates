@@ -32,21 +32,21 @@
       </div>
     </div>
 
-    <h3 class="document-type subject mb-0" data-hide-on-it="true">
+    <% if (noIta) { %><h3 class="document-type subject mb-0">
       <%=subject%>
-    </h3>
+    </h3><% } %>
     <h3 class="document-type subject">
       <%=it_subject%>
     </h3>
 
 
 
-    <p class="paragraph" data-hide-on-it="true">
+    <% if (noIta) { %><p class="paragraph">
       <%=body1%>
-    </p>
-    <p class="paragraph" data-hide-on-it="true">
+    </p><% } %>
+    <% if (noIta) { %><p class="paragraph">
       <%-body2%>
-    </p>
+    </p><% } %>
     <p class="paragraph">
       <%=it_body1%>
     </p>
@@ -63,12 +63,12 @@
         </#list>
       </ul>
     </p>
-    <p class="paragraph" data-hide-on-it="true">
+    <% if (noIta) { %><p class="paragraph">
       <%-body3%>
-    </p>
-    <p data-hide-on-it="true">
+    </p><% } %>
+    <% if (noIta) { %><p>
       <%-body4%>
-    </p>
+    </p><% } %>
     <p class="paragraph">
       <%-it_body3%>
     </p>
@@ -82,7 +82,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true"><%-denomination%> &bull; </span><%-it_denomination%></p>
+            <p><% if (noIta) { %><span><%-denomination%> &bull; </span><% } %><%-it_denomination%></p>
           </div>
           <div class="left-col col-5-10">
             <p><strong>${recipient.denomination}</strong></p>
@@ -91,7 +91,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true"><%-fiscalcode%> &bull; </span><%-it_fiscalcode%></p>
+            <p><% if (noIta) { %><span><%-fiscalcode%> &bull; </span><% } %><%-it_fiscalcode%></p>
           </div>
           <div class="left-col col-5-10">
             <p><strong>${recipient.taxId}</strong></p>
@@ -100,7 +100,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true"><%-digitaldomicile%> &bull; </span><%-it_digitaldomicile%></p>
+            <p><% if (noIta) { %><span><%-digitaldomicile%> &bull; </span><% } %><%-it_digitaldomicile%></p>
           </div>
           <div class="left-col col-5-10">
             <p>
@@ -117,7 +117,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true"><%-digitaldomicile_type%> &bull; </span><%-it_digitaldomicile_type%></p>
+            <p><% if (noIta) { %><span><%-digitaldomicile_type%> &bull; </span><% } %><%-it_digitaldomicile_type%></p>
           </div>
           <div class="left-col col-5-10">
             <p>
@@ -135,7 +135,7 @@
 
         <div class="row">
           <div class="left-col col-5-10">
-            <p><span data-hide-on-it="true"><%-address%> &bull; </span><%-it_address%></p>
+            <p><% if (noIta) { %><span><%-address%> &bull; </span><% } %><%-it_address%></p>
           </div>
           <div class="left-col col-5-10">
             <p>
@@ -160,7 +160,7 @@
         <p>&nbsp;</p>
       </div>
       <div class="left-col col-9-10">
-        <p class="right py-16"><span data-hide-on-it="true"><%-signature%> &bull; </span><%-it_signature%></p>
+        <p class="right py-16"><% if (noIta) { %><span><%-signature%> &bull; </span><% } %><%-it_signature%></p>
       </div>
     </div>
     <div class="row margin-top-large">
@@ -168,8 +168,8 @@
         <p>&nbsp;</p>
       </div>
       <div class="left-col col-6-10">
-        <p class="py-16" data-hide-on-it="true"><%-disclaimer_lang%></p>
-        <p data-hide-on-it="true"><%-it_disclaimer_lang%></p>
+        <% if (noIta) { %><p class="py-16"><%-disclaimer_lang%></p><% } %>
+        <% if (noIta) { %><p><%-it_disclaimer_lang%></p><% } %>
       </div>
     </div>
   </div>

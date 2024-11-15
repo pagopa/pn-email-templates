@@ -1,0 +1,145 @@
+:root {
+  color-scheme: light dark;
+  supported-color-schemes: light dark;
+}
+p {
+  font-size: 18px;
+  margin-top: 0px;
+}
+body,
+.mail-body {
+  background-color: #FFFFFF;
+}
+
+.header {
+  background-color: #FFFFFF;
+  /* border-top: 8px solid #0073E6; */
+}
+
+.section {
+  background-color: #FFFFFF;
+}
+
+.title div {
+  /* Text Primary */
+  color: #17324D !important;
+}
+
+
+.text div {
+  color: #17324D !important;
+}
+
+.footer-text,
+.footer-text div {
+  color: #5C6F82 !important;
+}
+.footer-pec-text {
+  color: #17324D !important;
+  font-size: 14px !important;
+  line-height: 20px !important
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 40px;
+}
+.link {
+  color: #0073E6 !important;
+}
+
+.footer-text a,
+.text a {
+  color: #0073E6 !important;
+}
+
+.info-list {
+  list-style-type:none; 
+  margin: 40px 0;
+}
+.section-logo-pec {
+  max-width: 116px;
+}
+
+@media (prefers-color-scheme: light) {
+
+  .dark-img,
+  [data-ogsc] .dark-img {
+    display: none !important;
+    mso-hide: all !important;
+  }
+
+  .light-img,
+  [data-ogsc] .light-img {
+    display: block;
+    display: block !important;
+  }
+  .column-logo {
+    min-width: 116px;
+    width: auto !important;
+  }
+  .column-text {
+    width: auto !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body,
+  .mail-body {
+    background-color: #323232;
+  }
+
+  .header {
+    background-color: #323232;
+    /* border-top: 8px solid #3da2ff; */
+  }
+
+  .section {
+    background-color: #323232;
+  }
+
+  .title div {
+    color: #ffffff !important;
+  }
+
+  .text div {
+    color: #eeeeee !important;
+  }
+
+  .footer-text,
+  .footer-text div {
+    color: #CCD4DC !important;
+  }
+
+  .footer-text a,
+  .text a {
+    color: #94C4F4 !important;
+    /* Primary Light in HSL - L = +25 */
+  }
+
+  /* IMAGES */
+  /* Source: https://www.litmus.com/blog/the-ultimate-guide-to-dark-mode-for-email-marketers/ */
+
+  .dark-img,
+  [data-ogsc] .dark-img {
+    display: block !important;
+    overflow: visible !important;
+    float: none !important;
+    line-height: auto !important;
+    margin-top: 0px !important;
+    visibility: inherit !important;
+  }
+  .footer-pec-text,  .footer-pec-text p{
+    color: #ffffff !important;
+  }
+
+  .column-logo {
+    min-width: 116px;
+    width: auto !important;
+  }
+  .column-text {
+    width: auto !important;
+  }
+
+}

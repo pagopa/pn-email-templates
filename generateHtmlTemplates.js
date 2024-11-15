@@ -51,16 +51,8 @@ async function generateHtmlTemplates() {
 
     for (const language of languages) {
       const fileName = language === "it" ? template : `${template}_${language}`;
-      const templateLang =
-        language === "it"
-          ? templateContent.replaceAll(
-              /<[^>]*data-hide-on-it="true"[^>]*>[\s\S]*?<\/[^>]*>/g,
-              ""
-            )
-          : templateContent;
-
       const translations = await loadTranslations(language, template);
-      const renderedHtml = ejs.render(templateLang, {
+      const renderedHtml = ejs.render(templateContent, {
         ...translations,
         noIta: language !== "it",
       });
