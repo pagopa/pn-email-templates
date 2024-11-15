@@ -1,0 +1,13 @@
+{
+  "language": "de",
+  "subject":"SEND - Neue Zustellung von ${notification.sender.paDenomination}",
+  "hello":"Hallo",
+  "body1":"Du hast auf SEND - Servizio Notifiche Digitali eine Zustellung von <strong>${notification.sender.paDenomination}</strong> mit IUN-Code ${notification.iun} erhalten. Eine Zustellung ist eine <strong>rechtsgültige Mitteilung</strong> , die aus einer Empfangsbestätigung und einem oder mehreren Dokumenten besteht.",
+  "body2":"Du hast bis zu 120 Tage ab dem <a href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">Datum der Vervollständigung</a> der Zustellung Zeit, <strong>auf die Dokumente zuzugreifen</strong>. Die Frist für eine etwaige Zahlung und für die Einlegung von Rechtsmitteln ist in den Dokumenten vermerkt.",
+  "perfection":"Solltest du keine PEC-Adresse haben und die Dokumente innerhalb von 5 Tagen (120 Stunden) nach Versand der Nachricht einsehen, erhältst du keine Zustellung mittels Einschreibebrief.",
+  "read_more":"SEND ist ein Tool, das den Versand von Zustellungen durch die öffentliche Verwaltung sicherer, effizienter und kostengünstiger macht. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">Mehr hierzu</a>",
+  "button":"Zugang zu den Dokumenten",
+  "greetings":"Bis bald",
+  "avviso_cortesia":"INFORMELLE BENACHRICHTIGUNG",
+  "footer":"Du erhältst diese Mitteilung, weil du deine E-Mail-Adresse unter den informellen SEND-Adressen angegeben hast. Um Adressen zu bearbeiten oder weitere hinzuzufügen, <a title=\"Continua su Piattaforma Notifiche\" class=\"link\" href=\"${piattaformaNotificheURL}recapiti\" style=\"color: #0073e6; text-decoration: underline\">gehe bitte auf deine Adressen</a>."
+}

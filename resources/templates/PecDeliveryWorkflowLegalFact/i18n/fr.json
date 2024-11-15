@@ -1,0 +1,17 @@
+{
+  "language": "fr",
+  "subject_success":"Attestation opposable aux tiers: notification numérique",
+  "subject_failure":"Attestation opposable aux tiers : échec de remise numérique",
+  "body1":"Conformément à l’art. 26, paragraphe 11, du décret-loi italien 76/2020 tel que modifié et complété, la société PagoPA S.p.A., en sa qualité d’opérateur ex lege de la Plateforme Notifications Numériques visée audit article 26 (également connue sous le nom de SEND - Servizio Notifiche Digitali), avec plein effet juridique quant à l’opposabilité aux tiers, CERTIFIE QUE:",
+  "body2":"les actes visés à la notification identifiée par IUN <b>${iun}</b> ont été traités comme suit:",
+  "body3_success":"l’accusé de réception au format électronique a été délivré le <strong>${delivery.responseDate}</strong> au domicile numérique indiqué immédiatement au-dessus de cette date.",
+  "body3_failure":"Le <strong>${delivery.responseDate}</strong>, le message d’échec de remise a été reçu à l’adresse numérique indiquée.",
+  "body4_failure":"Le <strong>${endWorkflowDate}</strong>, l’opérateur de la plateforme a mis à disposition la notification d’échec de remise du message conformément à l’article 26, paragraphe 6 du décret-loi italien 76 du 16 juillet 2020.",
+  "denomination":"Prénom et Nom / Raison Sociale",
+  "fiscalcode":"Code Fiscal",
+  "digitaldomicile":"Domicile numérique",
+  "digitaldomicile_type":"Type de domicile numérique",
+  "address":"Adresse physique",
+  "signature":"Signé numériquement par PagoPA S.p.A.",
+  "disclaimer_lang":"Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi."
+}

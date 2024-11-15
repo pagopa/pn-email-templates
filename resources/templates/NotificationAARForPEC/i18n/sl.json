@@ -1,0 +1,15 @@
+{
+  "language": "sl",
+  "subject":"SEND - Novo obvestilo od ${notification.sender.paDenomination}",
+  "hello":"Pozdravljeni",
+  "body1":"prejeli ste obvestilo prek storitve SEND - Servizio Notifiche Digitali.",
+  "sender_label":"Po&#353;iljatelj",
+  "subject_label":"Zadeva",
+  "iun_label":"IUN (Edinstvena identifikacijska oznaka obvestila)",
+  "body2":"Obvestilo je <strong>pravno veljavna komunikacija</strong> sestavljena iz potrdila o prejemu in enega ali ve&#269; dokumentov.",
+  "body3":"Za <strong>dostop do dokumentov</strong> imate na voljo do 120 dni od datuma <a style=\"color: #0073e6; text-decoration: underline\" href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">vro&#269;itve obvestila</a> &#268;e je predvideno, je rok za pla&#269;ilo in morebitne prito&#382;be naveden v dokumentih.",
+  "read_more":"To obvestilo prejemate kot ${recipientType} z dav&#269;no &#353;tevilko ${recipient.taxId}. SEND je orodje, ki omogo&#269;a varnej&#353;e, bolj u&#269;inkovito in gospodarno po&#353;iljanje obvestil javne uprave. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">Izvedite ve&#269;</a>",
+  "button":"Dostop do dokumentov",
+  "greetings":"Lep pozdrav",
+  "footer":"L&#39;ente mittente conosce questo indirizzo PEC perch&#xE9; l&#39;hai inserito nei tuoi recapiti di SEND, perch&#xE9; fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perch&#xE9; gliel&#39;hai comunicato in passato. Per modificare i recapiti o aggiungerne altri, <a title=\"Continua su Piattaforma Notifiche\" class=\"link\" href=\"${piattaformaNotificheURL}recapiti\" style=\"color: #0073e6; text-decoration: underline\">vai ai tuoi recapiti</a>."
+}

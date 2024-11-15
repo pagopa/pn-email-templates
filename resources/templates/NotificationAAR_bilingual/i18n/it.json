@@ -1,0 +1,13 @@
+{
+  "it_language": "it",
+  "it_aar_label": "Avviso di Avvenuta Ricezione",
+  "it_notification_subject": "Avviso di Avvenuta Ricezione",
+  "it_aar_subtitles_1": "Hai ricevuto una comunicazione a valore legale da ${notification.sender.paDenomination}: <b>prendi visione dei documenti notificati</b>. Se non sono inclusi in questo avviso, <b>accedi ai documenti online su SEND</b>. Se è previsto un pagamento, nei documenti troverai la data di scadenza e quella per eventuali ricorsi.",
+  "it_access_to_document_title": "Accedi ai documenti online - gratis",
+  "it_access_to_document_1": "Inquadra il codice QR o vai su",
+  "it_access_to_document_1_link":"<a href=\"${piattaformaNotificheURL}auth/login\">${piattaformaNotificheURLLabel}</a>",
+  "it_access_to_document_2": "Entra con SPID o CIE (Carta d'Identità Elettronica);",
+  "it_access_to_document_3": "Accedi ai documenti notificati.",
+  "it_send_refinement": "I documenti sono disponibili su SEND per 120 giorni dalla data di perfezionamento della notifica (data in cui assume valore di legge per tutte le diverse finalità). Scopri di più su",
+  "it_send_refinement_link": "<a href=\"${perfezionamentoURL}\">${perfezionamentoURLLabel}</a>"
+}

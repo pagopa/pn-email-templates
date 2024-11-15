@@ -1,0 +1,13 @@
+{
+  "language": "fr",
+  "subject":"SEND - Nouvelle notification de la part de ${notification.sender.paDenomination}",
+  "hello":"Bonjour",
+  "body1":"Vous avez reçu sur SEND - Servizio Notifiche Digitali une notification de la part de <strong>${notification.sender.paDenomination}</strong> con Codice IUN ${notification.iun}. Une notification est une <strong>communication ayant une valeur juridique</strong> compos&eacute;e d&apos;un accus&eacute; de r&eacute;ception et d&apos;un ou plusieurs documents.",
+  "body2":"Vous disposez d&apos;un d&eacute;lai de 120 jours &agrave; compter de la <a href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">date de finalisation</a> de la notification pour <strong>acc&eacute;der aux documents</strong>. Le d&eacute;lai &eacute;ventuel pour le paiement et, le cas &eacute;ch&eacute;ant, pour toute contestation est indiqu&eacute; dans les documents.",
+  "perfection":"Si vous n&apos;avez pas d&apos;adresse de courrier &eacute;lectronique certifi&eacute; (PEC) et que vous consultez les documents dans les 5 jours (120 heures) suivant l&apos;envoi du message, vous ne recevrez pas la notification par courrier recommand&eacute;.",
+  "read_more":"SEND est un outil qui rend l&apos;envoi de notifications par l&apos;administration publique plus s&ucirc;r, plus efficace et plus &eacute;conomique. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">En savoir plus</a>",
+  "button":"Acc&eacute;der aux documents",
+  "greetings":"&Agrave; bient&ocirc;t",
+  "avviso_cortesia":"AVIS DE COURTOISIE",
+  "footer":"Vous recevez cette communication parce que vous avez indiqu&eacute; votre adresse e-mail dans les coordonn&eacute;es de courtoisie de SEND. Pour modifier les coordonn&eacute;es ou en ajouter d&apos;autres, <a title=\"Continua su Piattaforma Notifiche\" class=\"link\" href=\"${piattaformaNotificheURL}recapiti\" style=\"color: #0073e6; text-decoration: underline\">acc&eacute;dez &agrave; vos coordonn&eacute;es</a>."
+}

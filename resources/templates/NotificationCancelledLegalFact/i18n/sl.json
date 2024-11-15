@@ -1,0 +1,12 @@
+{
+  "language": "sl",
+  "subject": "Obvestilo o preklicu obvestila na platformi SEND",
+  "body1": "S tem dokumentom, ki je prejemniku na voljo izključno na platformi SEND, se izjavlja, da je obvestilo z IUN <b>${notification.getIun()}</b>za prejemnik:",
+  "denomination":"Ime in priimek / Pravna oseba",
+  "fiscalcode":"Davčna številka",
+  "body2": ", in je bilo preklicano na posebno zahtevo Pošiljatelj <b>${notification.sender.paDenomination}</b> na dan <b>${notificationCancelledDate}</b>.",
+  "disclaimer1": "Preklic v storitvi SEND iz te izjave, ne pomeni nujno, da je zahteva po obveščanju prenehala obstajati ali da je preklicano tudi obveščanje glede dotičnih dokumentov, ki je bilo izvedena prek kanalov, ki niso platforma SEND.",
+  "disclaimer2": "Za kakršne koli informacije o razlogih za odpoved, navedene v tej izjavi, in o upravljanju katerega koli povezanega plačila, če je že bilo izvedeno pred preklicem, se mora prejemnik obrniti izključno na pošiljatelja.",
+  "signature":"Digitalno podpisano s strani PagoPA S.p.A.",
+  "disclaimer_lang":"Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
+}

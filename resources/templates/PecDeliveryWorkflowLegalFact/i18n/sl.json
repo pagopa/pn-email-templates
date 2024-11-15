@@ -1,0 +1,17 @@
+{
+  "language": "sl",
+  "subject_success":"Zavezujoče potrdilo za tretje osebe: digitalno obvestilo",
+  "subject_failure":"Zavezujoče potrdilo za tretje osebe: neuspešna digitalna dostava",
+  "body1":"V skladu z 11. odstavkom 26. člena zakonskega odloka 76/2020 s spremembami, družba PagoPA S.p.A. kot zakoniti upravljavec Platforme za digitalno obveščanje, opredeljene v istem 26. členu (znana tudi kot SEND - Servizio Notifiche Digitali), z vsemi pravnimi učinki za veljavnost do tretjih oseb, POTRJUJE, DA:",
+  "body2":"so bili akti, opredeljeni v obvestilu IUN <b>${iun}</b>, obravnavani, kot sledi:",
+  "body3_success":"Ustrezno obvestilo o prejemu v elektronski obliki je bilo dostavljeno dne <strong>${delivery.responseDate}</strong> na zgornji digitalni naslov.",
+  "body3_failure":"Dne <strong>${delivery.responseDate}</strong> e bilo prejeto sporočilo o neuspešni dostavi na navedeni digitalni naslov.",
+  "body4_failure":"Dne <strong>${endWorkflowDate}</strong> je upravljavec platforme dal na voljo obvestilo o neuspešni dostavi sporočila v skladu s 6. odstavkom 26. člena zakona št. 76 z dne 16. julija 2020.",
+  "denomination":"Ime in priimek / Pravna oseba",
+  "fiscalcode":"Davčna številka",
+  "digitaldomicile":"Digitalni naslov",
+  "digitaldomicile_type":"Vrsta digitalnega naslova",
+  "address":"Fizični naslov",
+  "signature":"Digitalno podpisano s strani PagoPA S.p.A.",
+  "disclaimer_lang":"Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
+}

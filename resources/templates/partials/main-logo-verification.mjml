@@ -1,0 +1,12 @@
+<mj-section text-align="left" css-class="header" padding="0">
+  <mj-column padding="0">
+    <mj-image
+      css-class="light-img"
+      width="116px"
+      align="left"
+      padding-right="0"
+      src="https://www.notifichedigitali.it/static/generic_assets/aar-logo-short-small.png"
+      alt="SEND - Servizio Notifiche Digitali"
+    />
+  </mj-column>
+</mj-section>

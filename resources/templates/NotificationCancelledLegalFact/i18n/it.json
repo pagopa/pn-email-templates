@@ -1,0 +1,12 @@
+{
+  "it_language": "it",
+  "it_subject": "Dichiarazione annullamento notifica sulla piattaforma SEND",
+  "it_body1": "Con il presente documento, reso disponibile al destinatario esclusivamente sulla Piattaforma SEND, si dichiara che la notifica avente IUN <b>${notification.getIun()}</b>, eseguita nei confronti di:",
+  "it_denomination": "Nome e Cognome / Ragione Sociale",
+  "it_fiscalcode": "Codice fiscale",
+  "it_body2": "è stata annullata su specifica istanza del Mittente <b>${notification.sender.paDenomination}</b> in data <b>${notificationCancelledDate}</b>.",
+  "it_disclaimer1": "L’annullamento su SEND oggetto della presente dichiarazione non implica necessariamente che il presupposto della notifica sia venuto meno ovvero che siano annullate parimenti notifiche aventi ad oggetto i medesimi atti eseguite su canali diversi dalla Piattaforma SEND.",
+  "it_disclaimer2": "Per ogni informazione sulle ragioni dell’annullamento di cui alla presente dichiarazione, e sulla gestione dell’eventuale relativo pagamento ove già effettuato precedentemente all’annullamento, il destinatario deve rivolgersi esclusivamente al Mittente.",
+  "it_signature": "Firmato digitalmente da PagoPA S.p.A.",
+  "it_disclaimer_lang": "Il testo originario di questi documenti è in lingua italiana. In caso di contrasto tra la versione italiana e le traduzioni in altre lingue, prevarranno il significato e le condizioni della lingua italiana."
+}

@@ -1,0 +1,17 @@
+{
+  "it_language": "it",
+  "it_subject_success":"Attestazione opponibile a terzi: notifica digitale",
+  "it_subject_failure":"Attestazione opponibile a terzi: mancato recapito digitale",
+  "it_body1":"Ai sensi dell’art. 26, comma 11, del decreto-legge 76/2020 s.m.i., la PagoPA S.p.A. nella sua qualità di gestore ex lege della Piattaforma Notifiche Digitali di cui allo stesso art. 26 (anche nota come SEND - Servizio Notifiche Digitali), con ogni valore legale per l'opponibilità a terzi, ATTESTA CHE:",
+  "it_body2":"gli atti di cui alla notifica identificata con IUN <b>${iun}</b> sono stati gestiti come segue:",
+  "it_body3_success":"il relativo avviso di avvenuta ricezione in formato elettronico è stato consegnato in data <strong>${delivery.responseDate}</strong> al domicilio digitale indicato immediatamente sopra la presente data.",
+  "it_body3_failure":"in data <strong>${delivery.responseDate}</strong> è stato ricevuto il relativo messaggio di mancato recapito al domicilio digitale indicato immediatamente sopra la presente data.",
+  "it_body4_failure":"In data <strong>${endWorkflowDate}</strong> il gestore della piattaforma ha reso disponibile l’avviso di mancato recapito del messaggio ai sensi dell’art. 26, comma 6 del D.L. 76 del 16 luglio 2020.",
+  "it_denomination":"Nome e Cognome / Ragione Sociale",
+  "it_fiscalcode":"Codice Fiscale",
+  "it_digitaldomicile":"Domicilio digitale",
+  "it_digitaldomicile_type":"Tipologia di domicilio digitale",
+  "it_address":"Indirizzo fisico",
+  "it_signature":"Firmato digitalmente da PagoPA S.p.A.",
+  "it_disclaimer_lang":"Il testo originario di questi documenti è in lingua italiana. In caso di contrasto tra la versione italiana e le traduzioni in altre lingue, prevarranno il significato e le condizioni della lingua italiana."
+}

@@ -2,6 +2,13 @@
 
 This repo contains the mail templates used by Piattaforma Notifiche, created using [MJML](https://mjml.io/) markup language.
 
+# ejs conventions
+
+Use:
+<%-variable_name%> Outputs the value into the template (HTML escaped)
+<%=variable_name%> Outputs the unescaped value into the template
+
+
 ## How to apply changes
 
 To edit them, you can choose among these following options:

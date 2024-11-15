@@ -1,0 +1,8 @@
+{
+    "language": "fr",
+    "subject": "Dépôt de l'accusé de réception",
+    "body1": "En ce qui concerne la notification comportant IUN ${iun}, conformément à l'article 26, alinéa 7, du décret législatif 76/2020, le destinataire étant ${recipient.denomination} <br>Code fiscale: ${recipient.taxId}, introuvable pour des raisons autres que sa propre absence temporaire ou son refus ou celui des autres personnes auxquelles l'enveloppe contenant l'accusé de réception de la notification concernée peut être remise, le ${endWorkflowDate} à ${endWorkflowTime} <br> l'accusé de réception a été déposé par le Gestionnaire sur la Plateforme et mis à la disposition du destinataire.",
+    "body2": "En vertu de l'article 26, alinéa 7, du décret législatif 76/2020, la notification est achevée le dixième jour suivant la date de dépôt sur la plate-forme comme indiqué ci-dessus, à moins que le destinataire ou la personne désignée pour la procuration n'ait accédé à la notification via la plate-forme à une date et une heure antérieures à l'expiration de ce délai.",
+    "signature": "Signé numériquement par PagoPA S.p.A.",
+    "disclaimer_lang": "Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi."
+}

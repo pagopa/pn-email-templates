@@ -1,0 +1,15 @@
+{
+  "language": "fr",
+  "subject":"Attestation opposable aux tiers : notification prise en charge",
+  "body1":"Conformément à l’art. 26, paragraphe 11, du décret-loi italien 76/2020 tel que modifié et complété, la société PagoPA S.p.A., en sa qualité d’opérateur ex lege de la Plateforme Notifications Numériques visée audit article 26 (également connue sous le nom de SEND - Servizio Notifiche Digitali), avec plein effet juridique quant à l’opposabilité aux tiers, CERTIFIE QUE:",
+  "body2":"le <b>${sendDate}</b>, l’expéditeur <b>${notification.getSender().getPaDenomination()}</b>, C.F. <b>${notification.getSender().getPaTaxId()}</b> a mis à la disposition de l’opérateur les documents informatiques visés à l’IUN <b>${notification.getIun()}</b> et identifiés de manière univoque par les hachs suivants:",
+  "body3":"l’expéditeur a demandé que la notification de ces documents ait pour objet ${subject} et qu’elle soit signifiée aux destinataires énumérés ci-dessous, ainsi qu’à leur éventuel domicile numérique spécial et à leur adresse physique, tels qu’ils ont été fournis par l’expéditeur lui-même.",
+  "body4":"Il est également certifié qu’aux fins de l’identification du domicile numérique à utiliser en premier pour la notification, les résultats des vérifications visées à l’article 7, paragraphes 1 et 2, du décret du ministre italien chargé de la transformation numérique 58/2022, restent inchangés.",
+  "denomination":"Prénom et Nom / Raison Sociale",
+  "fiscalcode":"Code Fiscal",
+  "digitaldomicile":"Domicile numérique",
+  "digitaldomicile_type":"Type de domicile numérique",
+  "address":"Adresse physique",
+  "signature":"Signé numériquement par PagoPA S.p.A.",
+  "disclaimer_lang":"Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi."
+}

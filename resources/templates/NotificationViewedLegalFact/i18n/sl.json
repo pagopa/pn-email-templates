@@ -1,0 +1,14 @@
+{
+  "language": "sl",
+  "subject":"Zavezujoče potrdilo za tretje osebe: opravljen dostop",
+  "body1":"V skladu z 11. odstavkom 26. člena zakonskega odloka 76/2020 s spremembami, družba PagoPA S.p.A. kot zakoniti upravljavec Platforme za digitalno obveščanje, opredeljene v istem 26. členu (znana tudi kot SEND – Servizio Notifiche Digitali), z vsemi pravnimi učinki za veljavnost do tretjih oseb, POTRJUJE, DA:",
+  "body2":"les actes visés à la notification identifiée par IUN <b>${iun}</b> ont été traités comme suit:",
+  "recipient":"Prejemnik",
+  "delegate":"Delegat",
+  "denomination":"Ime in priimek / Pravna oseba",
+  "fiscalcode":"Davčna številka",
+  "body3":"dne <strong>${when}</strong>, le <#if delegate??> délégué <#else> prejemnik </#if> je pooblaščenec dostopal do zadevnih elektronskih dokumentov, povezanih z zgoraj navedenim IUN.",
+  "signature":"Digitalno podpisano s strani PagoPA S.p.A.",
+  "disclaimer_lang":"Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku.",
+  "disclaimer":"Potrdilo vsebuje datum, ko je prejemnik (ali njegov pooblaščenec) na platformi prvič dostopal do dokumenta, ki je predmet obvestila. Ta datum ni nujno enak datumu popolne prijave, ki je lahko zaradi izteka roka tudi zgodnejši. Da bi ugotovili pravilen datum popolnosti vročitve, naj prejemnik (ali njegov pooblaščenec) <strong><a class=\"faq-link-perfezionamento\" href=\"https://notifichedigitali.pagopa.it/sl/faq/#perfezionamento-come-posso-sapere\">v teh pogostih vprašanjih</a></strong> preveri, kako se izračuna datum popolnosti."
+}

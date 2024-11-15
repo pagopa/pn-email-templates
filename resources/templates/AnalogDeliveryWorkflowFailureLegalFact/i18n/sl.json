@@ -1,0 +1,8 @@
+{
+    "language": "sl",
+    "subject": "Predložitev obvestila o prejemu",
+    "body1": "V zvezi z obvestilom, ki vsebuje IUN ${iun}, v skladu s členom 26, sedmi odstavek, zakonodajnega odloka št. 76/2020, je prejemnik ${recipient.denomination} <br>DŠ: ${recipient.taxId}, nedosegljiv iz razlogov, ki niso začasna odsotnost ali zavrnitev prejema z njegove strani ali drugih oseb, ki jim je mogoče dostaviti dokument z obvestilom o prejemu ustreznega obvestila, z dne ${endWorkflowDate} ob ${endWorkflowTime} <br> Upravitelj je obvestilo o prejemu odložil na platformo in ga dal na voljo prejemniku.",
+    "body2": "V skladu s členom 26, sedmi odstavek, zakonodajnega odloka št. 76/2020, je obvestilo zaključeno deseti dan po datumu vložitve na platformo, kot je navedeno zgoraj, razen če je prejemnik ali njegov pooblaščenec do obvestila dostopil prek platforme na datum in uro pred iztekom tega roka.",
+    "signature": "Digitalno podpisano s strani PagoPA S.p.A.",
+    "disclaimer_lang": "Izvirno besedilo dokumentov je v italijanskem jeziku. V primeru neskladja med italijansko različico in prevodi v druge jezike bodo prevladali pomen in pogoji v italijanskem jeziku."
+}

@@ -1,0 +1,167 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title>
+    <mj-font name="Titillium Sans Pro" href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css" />
+    <mj-attributes>
+      <mj-all font-family="Titillium Sans Pro, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+      <!-- MSO fallback per compatibilità con Outlook -->
+      <!--[if mso | IE]>
+        <style type="text/css">
+          body {
+            background-color: #ffffff;
+            color: #17324d;
+          }
+        </style>
+      <![endif]-->
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-wrapper>
+      <!-- PagoPA Logo -->
+      <mj-include path="../partials/main-pec-logo.mjml" />
+
+      <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+        <mj-column>
+          <!-- Title -->
+          <mj-text css-class="text" font-weight="700" align="left" padding-top="16px" padding-bottom="16px" font-size="32px" line-height="40px">
+            <!-- H1 Desktop (from MUI Italia)-->
+            <h1 style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              " data-hide-on-it="true">
+              <%-subject%>
+            </h1>
+            <h1 style="
+                font-size: 32px;
+                font-weight: 700;
+                mso-line-height-rule: exactly;
+                line-height: 40px;
+                margin: 0;
+              ">
+              <%-it_subject%>
+            </h1>
+          </mj-text>
+
+          <!-- Main Message -->
+          <mj-text css-class="text" font-size="18px" line-height="28px" font-weight="400" align="left" padding-top="16px" padding-bottom="0px">
+            <p style="margin-top: 0px"><span data-hide-on-it="true">
+                <%-hello%> &bull; </span>
+              <%-it_hello%>,</p>
+          </mj-text>
+          <mj-text css-class="text" font-size="18px" line-height="28px" font-weight="400" align="left" padding-top="0px">
+            <p style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              " data-hide-on-it="true">
+              <%-body1%>
+            </p>
+            <p style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              ">
+              <%-it_body1%>
+            </p>
+            <ul css-class="info-list" style="
+                list-style-type: none;
+                margin: 40px 0;
+                padding-left: 0;
+                margin-left: 0;
+              ">
+              <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
+                <strong><span data-hide-on-it="true">
+                    <%-sender_label%> &bull; </span>
+                  <%-it_sender_label%></strong>: ${notification.sender.paDenomination}
+              </li>
+              <li style="padding-left: 0; padding-bottom: 14px; margin-left: 0">
+                <strong><span data-hide-on-it="true">
+                    <%-subject_label%> &bull; </span>
+                  <%-it_subject_label%></strong>: ${notification.subject}
+              </li>
+              <li style="padding-left: 0; margin-left: 0">
+                <strong><span data-hide-on-it="true">
+                    <%-iun_label%> &bull; </span>
+                  <%-it_iun_label%></strong>: ${notification.iun}
+              </li>
+            </ul>
+            <p style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;
+              " data-hide-on-it="true">
+              <%-body2%>
+            </p>
+            <p style="
+                margin-top: 0px;
+                font-size: 18px;
+                mso-line-height-rule: exactly;
+                line-height: 28px;">
+              <%-it_body2%>
+            </p>
+            <p style="margin-top: 20px; font-size: 18px; line-height: 28px" data-hide-on-it="true">
+              <%-body3%>
+            </p>
+            <p style="margin-top: 20px; font-size: 18px; line-height: 28px">
+              <%-it_body3%>
+            </p>
+            <p style="margin: 40px 0px; font-size: 14px; border-radius: 4px">
+              <a style="
+                  letter-spacing: 0.3px;
+                  background-color: #0073e6;
+                  color: #fff !important;
+                  padding: 8px 20px;
+                  border-radius: 4px;
+                  text-decoration: none;
+                " title="Visualizza i documenti" class="button" href="${quickAccessLink}"><strong><span data-hide-on-it="true">
+                    <%-button%> &bull; </span>
+                  <%-it_button%></strong></a>
+            </p>
+
+            <!-- SEND -->
+            <p style="font-size: 14px; line-height: 20px" data-hide-on-it="true">
+              <%-read_more%>
+            </p>
+            <p style="font-size: 14px; line-height: 20px">
+              <%-it_read_more%>
+            </p>
+          </mj-text>
+          <mj-text css-class="text" font-size="18px" line-height="20px" padding-bottom="0px">
+            <p style="margin-top: 0px; margin-bottom: 14px; padding-bottom: 0px">
+              <span data-hide-on-it="true">
+                <%-greetings%> &bull; </span>
+              <%-it_greetings%>,
+            </p>
+            <p style="margin: 0px; padding: 0px">SEND - Servizio Notifiche Digitali</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer/Disclaimer -->
+      <mj-section css-class="section" padding-bottom="16px" padding-top="0px">
+        <mj-column>
+          <mj-text css-class="footer-pec-text" font-size="14px" line-height="20px">
+            <p style="margin-top: 0px; font-size: 14px" data-hide-on-it="true">
+              <%-footer%>
+            </p>
+            <p style="margin-top: 0px; font-size: 14px">
+              <%-it_footer%>
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

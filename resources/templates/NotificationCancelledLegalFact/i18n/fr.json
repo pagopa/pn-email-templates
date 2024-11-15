@@ -1,0 +1,12 @@
+{
+  "language": "fr",
+  "subject": "Déclaration d'annulation de la notification sur la plate-forme SEND",
+  "body1": "Il est déclaré par la présente, mise à la disposition du destinataire exclusivement sur la plate-forme SEND, que la notification comportant IUN <b>${notification.getIun()}</b>, exécutée à l'encontre de:",
+  "denomination":"Prénom et Nom / Raison Sociale",
+  "fiscalcode": "Code fiscale",
+  "body2": "a été annulée à la demande expresse de l'expéditeur <b>${notification.sender.paDenomination}</b> à <b>${notificationCancelledDate}</b>.",
+  "disclaimer1": "L'annulation sur SEND qui fait l'objet de la présente déclaration n'implique pas nécessairement que la condition préalable au service ait cessé d'exister ou que les notifications concernant les mêmes documents exécutées sur d'autres canaux que la plate-forme SEND soient également annulées.",
+  "disclaimer2": "Pour toute information sur les raisons de l'annulation mentionnée dans la présente déclaration, et sur le traitement de tout paiement y afférent s'il a déjà été effectué avant l'annulation, le destinataire doit s'adresser exclusivement à l'expéditeur.",
+  "signature":"Signé numériquement par PagoPA S.p.A.",
+  "disclaimer_lang":"Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi."
+}

@@ -1,0 +1,15 @@
+{
+  "language": "de",
+  "subject":"SEND - Neue Zustellung von ${notification.sender.paDenomination}",
+  "hello":"Hallo",
+  "body1":"Du hast eine Zustellung auf SEND - Servizio Notifiche Digitali.",
+  "sender_label":"Absender",
+  "subject_label":"Betreff",
+  "iun_label":"IUN-Code",
+  "body2":"Eine Zustellung ist eine <strong>rechtsgültige Mitteilung</strong> die aus einer Empfangsbestätigung und einem oder mehreren Dokumenten besteht.",
+  "body3":"Du hast bis zu 120 Tage ab dem <a style=\"color: #0073e6; text-decoration: underline\" href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">Datum der Vervollständigung</a> der Zustellung Zeit, <strong>auf die Dokumente zuzugreifen</strong>. Die Frist für eine etwaige Zahlung und für die Einlegung von Rechtsmitteln ist in den Dokumenten vermerkt.",
+  "read_more":"Du erhältst diese Empfangsbestätigung als ${recipientType} mit der Steuernummer ${recipient.taxId}. SEND ist ein Tool, das den Versand von Zustellungen durch die öffentliche Verwaltung sicherer, effizienter und kostengünstiger macht. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">Mehr hierzu</a>",
+  "button":"Zugang zu den Dokumenten",
+  "greetings":"Bis bald",
+  "footer":"L&apos;ente mittente conosce questo indirizzo PEC perch&eacute; l&apos;hai inserito nei tuoi recapiti di SEND, perch&eacute; fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perch&eacute; gliel&apos;hai comunicato in passato. Per modificare i recapiti o aggiungerne altri, <a title=\"Continua su Piattaforma Notifiche\" class=\"link\" href=\"${piattaformaNotificheURL}recapiti\" style=\"color: #0073e6; text-decoration: underline\">vai ai tuoi recapiti</a>."
+}

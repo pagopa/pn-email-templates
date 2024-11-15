@@ -1,0 +1,13 @@
+{
+  "language": "sl",
+  "subject":"SEND - Novo obvestilo od ${notification.sender.paDenomination}",
+  "hello":"Pozdravljeni",
+  "body1":"prek storitve SEND - Servizio Notifiche Digitali ste prejeli obvestilo od <strong>${notification.sender.paDenomination}</strong> s kodo IUN ${notification.iun}. Obvestilo je <strong>pravno veljavna komunikacija</strong> sestavljena iz potrdila o prejemu in enega ali ve&#269; dokumentov.",
+  "body2":"Za <strong>dostop do dokumentov</strong> imate na voljo najve&#269; 120 dni od datuma <a href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">vro&#269;itve obvestila</a>. &#268;e je predvideno, je rok za pla&#269;ilo in morebitne prito&#382;be naveden v dokumentih.",
+  "perfection":"&#268;e nimate certificiranega elektronskega naslova PEC in si dokumente ogledate v roku 5 dni (120 ur) od po&#353;iljanja sporo&#269;ila, ne boste prejeli obvestila po priporo&#269;eni po&#353;ti.",
+  "read_more":"SEND je orodje, ki omogo&#269;a varnej&#353;e, bolj u&#269;inkovito in gospodarno po&#353;iljanje obvestil javne uprave. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&ugrave;\">Izvedite ve&#269;</a>",
+  "button":"Dostop do dokumentov",
+  "greetings":"Lep pozdrav",
+  "avviso_cortesia":"PRIJAZNO OBVESTILO",
+  "footer":"To sporo&#269;ilo prejemate, ker ste svoj elektronski naslov vnesli med kontaktne podatke za obvestila storitve SEND. Za spremembo kontaktnih podatkov ali dodajanje novih <a title=\"Continua su Piattaforma Notifiche\" class=\"link\" href=\"${piattaformaNotificheURL}recapiti\" style=\"color: #0073e6; text-decoration: underline\">obi&#353;&#269;ite svoje kontakte</a>."
+}

@@ -1,0 +1,8 @@
+{
+    "language": "de",
+    "subject": "Hinterlegung der Empfangsbestätigung",
+    "body1": "Unter Bezugnahme auf die Zustellung mit IUN ${iun}, gemäß Art. 26, Absatz 7, des DgV 76/2020, da der Empfänger ${recipient.denomination} <br>STEUERNUMMER: ${recipient.taxId}, aus anderen Gründen als vorübergehender Abwesenheit oder Weigerung seitens seiner selbst oder anderer Personen, denen der Umschlag mit der Empfangsbestätigung der betreffenden Zustellung übergeben werden kann, am ${endWorkflowDate} um ${endWorkflowTime} <br> Uhr nicht erreichbar ist, wird die Empfangsbestätigung vom Betreiber auf der Plattform hinterlegt und dem Empfänger zur Verfügung gestellt.",
+    "body2": "Laut Art. 26, Absatz 7, des DgV 76/2020 wird die Zustellung am zehnten Tag nach der vorgenannten Hinterlegung auf der Plattform vervollständigt, es sei denn, der Empfänger oder sein Bevollmächtigter hat die Zustellung über die Plattform an einem Tag und zu einer Uhrzeit vor Ablauf dieser Frist abgerufen.",
+    "signature": "Von PagoPA S.p.A. digital signiert",
+    "disclaimer_lang": "Der Originaltext dieser Dokumente ist auf Italienisch. Bei Abweichungen zwischen der italienischen Fassung und den Übersetzungen in andere Sprachen sind die Bedeutung und die Bestimmungen der italienischen Sprache maßgebend."
+}

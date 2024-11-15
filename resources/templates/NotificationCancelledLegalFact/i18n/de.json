@@ -1,0 +1,12 @@
+{
+    "language": "de",
+    "subject": "Erklärung zur Stornierung der Zustellung auf der Plattform SEND",
+    "body1": "Mit diesem Dokument, das dem Empfänger ausschließlich auf der Plattform SEND zur Verfügung steht, wird erklärt, dass die Zustellung mit IUN <b>${notification.getIun()}</b>an den Empfänger:",
+    "denomination": "Vor- und Nachname / Firmenbezeichnung",
+    "fiscalcode": "Steuernummer",
+    "body2": ", auf ausdrückliches Ersuchen des Absenders <b>${notification.sender.paDenomination}</b> am <b>${notificationCancelledDate}</b>.",
+    "disclaimer1": "Die Stornierung auf SEND, die Gegenstand dieser Erklärung ist, bedeutet nicht notwendigerweise, dass die Voraussetzung für die Zustellung nicht eingetreten ist oder dass Zustellungen hinsichtlich der gleichen Dokumenten, die auf anderen Kanälen als der Plattform SEND ausgeführt werden, ebenfalls storniert werden.",
+    "disclaimer2": "Für Informationen über die Gründe für die Stornierung, auf die in dieser Erklärung Bezug genommen wird, und über die Abwicklung von Zahlungen, die bereits vor der Stornierung erfolgt sind, hat sich der Empfänger ausschließlich an den Absender zu wenden.",
+    "signature": "Von PagoPA S.p.A. digital signiert",
+    "disclaimer_lang": "Der Originaltext dieser Dokumente ist auf Italienisch. Bei Abweichungen zwischen der italienischen Fassung und den Übersetzungen in andere Sprachen sind die Bedeutung und die Bestimmungen der italienischen Sprache maßgebend."
+}

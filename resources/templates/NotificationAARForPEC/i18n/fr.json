@@ -1,0 +1,15 @@
+{
+  "language": "fr",
+  "subject":"SEND - Nouvelle notification de la part de ${notification.sender.paDenomination}",
+  "hello":"Bonjour",
+  "body1":"Vous avez re&#xE7;u une notification sur SEND - Servizio Notifiche Digitali.",
+  "sender_label":"Exp&#xE9;diteur",
+  "subject_label":"Objet",
+  "iun_label":"Code IUN",
+  "body2":"Une notification est une <strong>communication ayant une valeur juridique</strong> compos&#xE9;e dun accus&#xE9; de r&#xE9;ception et d&#39;un ou plusieurs documents.",
+  "body3":"Vous disposez d&#39;un d&#xE9;lai de 120 jours &#xE0; compter de la <a style=\"color: #0073e6; text-decoration: underline\" href=\"${perfezionamentoURL}\" title=\"data di perfezionamento\">date de finalisation</a> de la notification pour <strong>acc&#xE9;der aux documents</strong>. Le d&#xE9;lai &#xE9;ventuel pour le paiement et, le cas &#xE9;ch&#xE9;ant, pour toute contestation est indiqu&#xE9; dans les documents.",
+  "read_more":"Vous recevez cet accus&#xE9; de r&#xE9;ception en tant que ${recipientType} avec Code Fiscal ${recipient.taxId}. SEND est un outil qui rend l&#39;envoi de notifications par l&#39;administration publique plus s&#xFB;r, plus efficace et plus &#xE9;conomique. <a href=\"${PNFaqSendURL}\" title=\"Scopri di pi&#xF9;\">En savoir plus</a>",
+  "button":"Acc&#xE9;der aux documents",
+  "greetings":"&#xC0; bient&#xF4;t",
+  "footer":"L&#39;ente mittente conosce questo indirizzo PEC perch&#xE9; l&#39;hai inserito nei tuoi recapiti di SEND, perch&#xE9; fa parte di uno dei registri previsti dal Codice Amministrazione Digitale o perch&#xE9; gliel&#39;hai comunicato in passato. Per modificare i recapiti o aggiungerne altri, <a title=\"Continua su Piattaforma Notifiche\" class=\"link\" href=\"${piattaformaNotificheURL}recapiti\" style=\"color: #0073e6; text-decoration: underline\">vai ai tuoi recapiti</a>."
+}

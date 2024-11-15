@@ -1,0 +1,184 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title
+      >SEND - Nuova notifica da ${notification.sender.paDenomination}</mj-title
+    >
+    <mj-font
+      name="Titillium Sans Pro"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Sans Pro, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+      <meta name="color-scheme" content="light dark" />
+      <meta name="supported-color-schemes" content="light dark" />
+    </mj-raw>
+    <mj-style>
+      @media screen and (max-width: 600px) { .column-logo { min-width: 116px;
+      width: auto !important; } .column-text { width: auto !important; } }
+    </mj-style>
+  </mj-head>
+
+  <mj-body css-class="mail-body">
+    <mj-include path="../../styles/style.css" type="css" />
+
+    <mj-wrapper>
+      <!-- PagoPA Logo -->
+      
+      <mj-section padding="0">
+        <mj-group vertical-align="middle">
+          <mj-column
+            width="20%"
+            css-class="column-logo"
+            padding="0"
+            vertical-align="middle"
+          >
+            <mj-include padding="0" path="../partials/main-logo.mjml" />
+          </mj-column>
+          <mj-column
+            width="75%"
+            css-class="column-text"
+            vertical-align="middle"
+            padding-left="0"
+          >
+            <mj-text padding-left="15px">
+              <p style="font-size: 10px; font-weight: 700" data-hide-on-it="true">
+                <%-avviso_cortesia%>
+              </p>
+              <p style="font-size: 10px; font-weight: 700">
+                <%-it_avviso_cortesia%>
+              </p>
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+        <mj-column>
+          <!-- Title -->
+          <mj-text
+            css-class="text"
+            font-weight="bold"
+            align="left"
+            padding-top="16px"
+            padding-bottom="16px"
+            color="#17324D"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 style="font-size: 32px; line-height: 40px; margin: 0"  data-hide-on-it="true">
+              <%-subject%>
+            </h1>
+            <h1 style="font-size: 32px; line-height: 40px; margin: 0">
+              <%-it_subject%>
+            </h1>
+          </mj-text>
+
+          <!-- Main Message -->
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            padding-top="16px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px"><span data-hide-on-it="true"><%-hello%> &bull; </span><%-it_hello%>,</p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="18px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            padding-top="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 10px" data-hide-on-it="true">
+              <%-body1%>
+            </p>
+
+            <p style="margin-top: 20px" data-hide-on-it="true">
+              <%-body2%>
+            </p>
+
+            <p style="margin-top: 10px">
+              <%-it_body1%>
+            </p>
+
+            <p style="margin-top: 20px">
+              <%-it_body2%>
+            </p>
+            <!-- Don't include https:// in the URL label -->
+            <p style="margin: 40px 0px; font-size: 14px">
+              <a
+                style="
+                  letter-spacing: 0.3px;
+                  background-color: #0073e6;
+                  color: #fff !important;
+                  padding: 8px 20px;
+                  border-radius: 4px;
+                  text-decoration: none;
+                "
+                title="Accedi ai documenti"
+                class="button"
+                href="${quickAccessLink}"
+                ><strong><span data-hide-on-it="true"><%-button%> &bull; </span><%-it_button%></strong></a
+              >
+            </p>
+
+            <!-- Perfezionamento Notifica -->
+            <p style="margin-top: 0px" data-hide-on-it="true">
+              <%-perfection%>
+            </p>
+            <p style="font-size: 14px; line-height: 22px" data-hide-on-it="true">
+              <%-read_more%>
+            </p>
+            <p style="margin-top: 0px">
+              <%-it_perfection%>
+            </p>
+            <p style="font-size: 14px; line-height: 22px">
+              <%-it_read_more%>
+            </p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="14px"
+            line-height="20px"
+            padding-bottom="0px"
+            color="#17324D"
+          >
+            <p style="margin-top: 0px; margin-bottom: 14px">
+            <span data-hide-on-it="true"><%-greetings%> &bull; </span> <%-it_greetings%>,</p>
+            
+            <p style="margin: 0px">SEND - Servizio Notifiche Digitali</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Divider -->
+      <mj-include path="../partials/divider.mjml" />
+      <!-- Footer/Disclaimer -->
+      <mj-section css-class="section" padding-bottom="16px" padding-top="0px">
+        <mj-column>
+          <mj-text
+            css-class="footer-text"
+            font-size="14px"
+            line-height="20px"
+            color="#5C6F82"
+          >
+            <p style="margin-top: 0px; font-size: 14px" data-hide-on-it="true">
+              <%-footer%>
+            </p>
+            <p style="margin-top: 0px; font-size: 14px">
+              <%-it_footer%>
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>

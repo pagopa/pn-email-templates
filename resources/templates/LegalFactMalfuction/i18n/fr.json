@@ -1,0 +1,8 @@
+{
+  "language": "fr",
+  "subject":"Attestation opposable aux tiers : dysfonctionnement et remise en service",
+  "body1":"Conformément à l’art. 26, paragraphe 11, du décret-loi italien 76/2020 tel que modifié et complété, la société PagoPA S.p.A., en sa qualité d’opérateur ex lege de la Plateforme Notifications Numériques visée au même article 26 (également connue sous le nom de SEND - Servizio Notifiche Digitali), avec plein effet juridique quant à l’opposabilité aux tiers, CERTIFIE QUE:",
+  "body2":"à compter du <strong>DD/MM/YYYY HH:MM</strong>, et jusqu’au <strong>DD/MM/YYYY HH:MM</strong>, le fonctionnement de la plateforme a été défectueux avec tous les effets visés à l’article 26, paragraphe 13, lett. a) et b), du décret-loi 76/2020, pour les délais incombant à l’expéditeur ou au destinataire.",
+  "signature":"Signé numériquement par PagoPA S.p.A.",
+  "disclaimer_lang":"Le texte original de ces documents est en italien. En cas de différences entre la version italienne et ses traductions, le sens et les conditions de la langue italienne feront foi."
+}

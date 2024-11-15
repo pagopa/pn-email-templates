@@ -1,0 +1,14 @@
+{
+    "language": "de",
+    "subject": "Die Bescheinigung kann von Dritten beanstandet werden: Zugang erfolgt",
+    "body1": "Gemäß Artikel 26, Absatz 11 des Gesetzesdekrets 76/2020 in seiner geänderten und ergänzten Fassung BESCHEINIGT PagoPA S.p.A. als rechtmäßiger Verwalter der im selben Artikel 26 genannten Plattform für digitale Zustellungen (auch bekannt als SEND - Servizio Notifiche Digitali), mit aller rechtlichen Befugnis, diese Dritten gegenüber zu vertreten, HIERMIT, dass:",
+    "body2": "die in der durch IUN  <b>${iun}</b> identifizierten Zustellung genannten Akte wie folgt verwaltet wurden:",
+    "recipient": "Empfänger",
+    "delegate": "Delegierter",
+    "denomination": "Vor- und Nachname / Firmenbezeichnung",
+    "fiscalcode": "Steuernummer",
+    "body3": "am <strong>${when}</strong>, le <#if delegate??> Empfänger <#else> Delegierte </#if> Zugang zu den benachrichtigungspflichtigen und mit der bereits angegebenen IUN verbundenen IT-Dokumenten hatte.",
+    "signature": "Von PagoPA S.p.A. digital signiert",
+    "disclaimer_lang": "Der Originaltext dieser Dokumente ist auf Italienisch. Bei Abweichungen zwischen der italienischen Fassung und den Übersetzungen in andere Sprachen sind die Bedeutung und die Bestimmungen der italienischen Sprache maßgebend.",
+    "disclaimer": "In dem Nachweis wird das Datum angegeben, an dem der Empfänger (oder sein Delegierter) erstmals über die Plattform Zugang zu dem zustellungspflichtigen Dokument hatte. Dieses Datum entspricht nicht unbedingt dem Datum der Vervollständigung der Zustellung, das aufgrund des Fristablaufs auch früher liegen kann. Um das korrekte Datum der Vervollständigung der Zustellung zu ermitteln, wird der Empfänger (oder sein Delegierter) gebeten, <strong><a class=\"faq-link-perfezionamento\" href=\"https://notifichedigitali.pagopa.it/de/faq/#perfezionamento-come-posso-sapere\">in diesen FAQ</a></strong> zu prüfen, wie das Datum der Vervollständigung zu berechnen ist."
+}
