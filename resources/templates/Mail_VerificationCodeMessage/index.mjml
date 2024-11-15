@@ -16,7 +16,7 @@
   </mj-head>
 
   <mj-body css-class="mail-body">
-    <mj-include path="../style.css" type="css" />
+    <mj-include path="../../styles/style.css" type="css" />
     <mj-wrapper>
       <!-- PagoPA Logo -->
       <mj-include
